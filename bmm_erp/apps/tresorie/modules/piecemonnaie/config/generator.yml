@@ -1,0 +1,35 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           piecemonnaie
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          piecemonnaie
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: {label: Nouvelle fiche }
+      fields:  
+          libelle: {label: "Piece Monnaie"}
+          valeur: {label: "Valeur Piece Monnaie"}
+          
+      list:    
+          title: Liste des Piece Monnaie
+          display: [libelle,valeur]
+          batch_actions:  {}        
+          object_actions:                
+                _edit:      ~ 
+      filter:  ~
+      form:    
+        actions:
+             _list:   ~
+             _save:   ~
+      edit:    
+          title: Mise à jour fiche 
+      new:     
+          title: Nouvelle Piece Monnaie

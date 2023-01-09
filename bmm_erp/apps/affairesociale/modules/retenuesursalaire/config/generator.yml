@@ -1,0 +1,36 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           retenuesursalaire
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          retenuesursalaire
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_agents : { label: "Agents"}
+          id_fournisseur : { label: "Fournisseur"}
+          datedemande : { label: "Date Demande Retenue"}
+          naturepret : { label: "Nature"}
+          montantpret : { label: "Montant Total"}
+          nbrmois : { label: "Nbre Mois"}
+          retenuesursalaire : { label: "Montant Mensielle"}
+          datedebut : { label: "Date Début"}
+          datefin : { label: "Date Fin"}
+          annee : { label: "Année"}
+      list:   
+          title: Liste des Retenues Sur Salaire
+          display: [agents,fournisseur,mois,annee,montantpret,nbrmois,retenuesursalaire,datedebut,datefin]
+      filter:  
+           display: [id_agents,id_fournisseur,annee,mois]
+      form:    ~
+      edit:   
+          title: Mise à jour Fiche Retenue sur salaire
+      new:     
+          title: Nouvelle Fiche Retenue sur salaire

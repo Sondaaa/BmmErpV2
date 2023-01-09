@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           enfants
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          enfants
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+          title: Listes des Enfants
+          display: [nom,prenom,date_naissance,date_mageur,observation]
+      filter:  
+          display: [nom,prenom]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche enfant
+      new:    
+          title: Nouvelle fiche enfant

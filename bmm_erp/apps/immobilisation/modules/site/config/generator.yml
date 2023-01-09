@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           site
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          site
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        adresse: { label: "Adresse"}
+        id_adresse: { label: "Adresse"}
+      list:
+        title: "Liste des Adresse"
+        display: [site,adresse]
+      filter:  ~
+      form:    ~
+      edit:
+        title: Modifier Site
+      new:
+        title: Nouveaux Site
+

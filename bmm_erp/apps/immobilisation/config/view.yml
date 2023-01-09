@@ -1,0 +1,87 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+imprimercodeSuccess:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Inventaire d'immobilisation
+    description:  administration du caisse
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    []
+
+  javascripts:    []
+
+  has_layout:     true
+  layout:         layoutimp
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Inventaire d'immobilisation
+    description:  administration du caisse
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    []
+
+  javascripts:    []
+
+  has_layout:     true
+  layout:         layout
+connectSuccess:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Inventaire d'immobilisation
+    description:  administration du caisse
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    []
+
+  javascripts:    []
+
+  has_layout:     true
+  layout:         layoutlogin
+_impression:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        BIMAF
+    description:  administration du BIMAF
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    []
+
+  javascripts:    []
+
+  has_layout:     true
+  layout:         layoutimp
+statistiqueSuccess:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        BIMAF
+    description:  administration du BIMAF
+    #keywords:     symfony, project
+    #language:     en
+    #robots:       index, follow
+
+  stylesheets:    []
+
+  javascripts:    []
+
+  has_layout:     true
+  layout:         layoutstat

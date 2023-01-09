@@ -1,0 +1,12 @@
+.rib_compte{width: 100%;}
+.td_before_rib{
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    height: 5px;
+}
+.td_rib{
+    padding: 2px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}

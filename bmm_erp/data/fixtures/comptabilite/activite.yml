@@ -1,0 +1,15 @@
+## YAML Template.
+---
+Activitetiers:
+  a1:
+    libelle: "Formation, développement et web marketing"
+  a2:
+    libelle: "Formation"
+  a3:
+    libelle: "Batimment"
+  a4:
+    libelle: "Vente matérielle"
+  a5:
+    libelle: "Informatique"
+  a6:
+    libelle: "TOURISME"

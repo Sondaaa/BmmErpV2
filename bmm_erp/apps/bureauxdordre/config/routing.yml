@@ -1,0 +1,169 @@
+typeparamcourrier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeparamcourrier
+    module:               typeparamcourrier
+    prefix_path:          /typeparamcourrier
+    column:               id
+    with_wildcard_routes: true
+
+parametreexpedition:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                parametreexpedition
+    module:               parametreexpedition
+    prefix_path:          /parametreexpedition
+    column:               id
+    with_wildcard_routes: true
+
+affectaioncourrier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                affectaioncourrier
+    module:               affectaioncourrier
+    prefix_path:          /affectaioncourrier
+    column:               id
+    with_wildcard_routes: true
+
+famillecourrier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                famillecourrier
+    module:               famillecourrier
+    prefix_path:          /famillecourrier
+    column:               id
+    with_wildcard_routes: true
+
+actionparcour:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                actionparcour
+    module:               actionparcour
+    prefix_path:          /actionparcour
+    column:               id
+    with_wildcard_routes: true
+
+parcourcourier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                parcourcourier
+    module:               parcourcourier
+    prefix_path:          /parcourcourier
+    column:               id
+    with_wildcard_routes: true
+
+piecejoint:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                piecejoint
+    module:               piecejoint
+    prefix_path:          /piecejoint
+    column:               id
+    with_wildcard_routes: true
+
+courrier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                courrier
+    module:               courrier
+    prefix_path:          /courrier
+    column:               id
+    with_wildcard_routes: true
+
+modescourrier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                modescourrier
+    module:               modescourrier
+    prefix_path:          /modescourrier
+    column:               id
+    with_wildcard_routes: true
+
+typexpdes:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typexpdes
+    module:               typexpdes
+    prefix_path:          /typexpdes
+    column:               id
+    with_wildcard_routes: true
+
+gouvernera:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                gouvernera
+    module:               gouvernera
+    prefix_path:          /gouvernera
+    column:               id
+    with_wildcard_routes: true
+
+pays:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                pays
+    module:               pays
+    prefix_path:          /pays
+    column:               id
+    with_wildcard_routes: true
+
+annuaire:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                annuaire
+    module:               annuaire
+    prefix_path:          /annuaire
+    column:               id
+    with_wildcard_routes: true
+
+adresse:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                adresse
+    module:               adresse
+    prefix_path:          /adresse
+    column:               id
+    with_wildcard_routes: true
+
+famexpdes:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                famexpdes
+    module:               famexpdes
+    prefix_path:          /famexpdes
+    column:               id
+    with_wildcard_routes: true
+
+expdest:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                expdest
+    module:               expdest
+    prefix_path:          /expdest
+    column:               id
+    with_wildcard_routes: true
+
+
+
+
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: courrier, action: index }
+
+
+connect:
+  url:   /connect
+  param: { module: Admin, action: connect }
+deconnect:
+  url:   /deconnect
+  param: { module: Admin, action: deconnect }
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

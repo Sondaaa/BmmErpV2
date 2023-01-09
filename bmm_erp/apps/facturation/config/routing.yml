@@ -1,0 +1,117 @@
+adressefrs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                adressefrs
+    module:               adressefrs
+    prefix_path:          /adressefrs
+    column:               id
+    with_wildcard_routes: true
+
+adresse:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                adresse
+    module:               adresse
+    prefix_path:          /adresse
+    column:               id
+    with_wildcard_routes: true
+
+historiquemouvement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                historiquemouvement
+    module:               historiquemouvement
+    prefix_path:          /historiquemouvement
+    column:               id
+    with_wildcard_routes: true
+
+
+
+lignemouvementfacturation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                lignemouvementfacturation
+    module:               lignemouvementfacturation
+    prefix_path:          /lignemouvementfacturation
+    column:               id
+    with_wildcard_routes: true
+
+mouvementfacturation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                mouvementfacturation
+    module:               mouvementfacturation
+    prefix_path:          /mouvementfacturation
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rule
+reclamationfrs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                reclamationfrs
+    module:               reclamationfrs
+    prefix_path:          /reclamationfrs
+    column:               id
+    with_wildcard_routes: true
+
+familleartfrs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                familleartfrs
+    module:               familleartfrs
+    prefix_path:          /familleartfrs
+    column:               id
+    with_wildcard_routes: true
+fournisseur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                fournisseur
+    module:               fournisseur
+    prefix_path:          /fournisseur
+    column:               id
+    with_wildcard_routes: true
+activitetiers:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                activitetiers
+    module:               activitetiers
+    prefix_path:          /activitetiers
+    column:               id
+    with_wildcard_routes: true
+homepage:
+  url:   /
+  param: { module: lots, action: index }
+lots:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                lots
+    module:               lots
+    prefix_path:          /lots
+    column:               id
+    with_wildcard_routes: true
+documentachat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                documentachat
+    module:               documentachat
+    prefix_path:          /documentachat
+    column:               id
+    with_wildcard_routes: true
+# generic rules
+# please, remove them by adding more specific rules
+connect:
+  url:   /connect
+  param: { module: Admin, action: connect }
+deconnect:
+  url:   /deconnect
+  param: { module: Admin, action: deconnect }
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

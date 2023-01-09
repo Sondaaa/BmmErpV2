@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           recomposediscipline
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          recomposediscipline
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          explication : { label: "Explication"}
+       
+          id_typedecipline : { label: "Type Discipline "}
+          id_agents : {label: "Agents"}
+      list:    
+          title: Liste des Discplines
+          display: [explication,id_agents,id_typedecipline]
+      filter: 
+          display: [explication,id_agents,id_typedecipline]
+          
+      form:    ~
+      edit:    
+          title: Mise à jour fiche
+      new:     
+          title: Nouvelle fiche 

@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ouvrier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ouvrier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          nom : { label: "Nom "}
+          datenaissance: {label: "Date de naissance"}
+          cin: {label: "CIN"}
+          prenom: {label: "Prénom"}
+          
+          matricule: {label: "Matricule"}
+      list:    
+          title: Liste des ouvriers 
+          display: [matricule,nom,prenom,cin]
+      filter:  
+          
+          display: [matricule,nom,prenom]
+      form:    ~
+      edit:   
+          title: Fiche Ouvrier - %%nom%% %%prenom%%
+      new:     
+          title: Nouvelle fiche Ouvrier

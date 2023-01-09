@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           specialiteouvrier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          specialiteouvrier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Libellé (الأختصاص)"}
+          
+          
+      list:   
+          title: Liste des Spécialités(الأختصاصات)
+          display: [libelle]
+      filter:  ~
+      form:    ~
+      edit:   
+          title: Mise a jour Fiche 
+      new:     
+          title: Nouvelle Fiche 

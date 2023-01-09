@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           lignelangueagents
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          lignelangueagents
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          description : { label: "Description"}
+       
+          id_langue : { label: "Langue"}
+          id_angents : {label: "Agents"}
+      list:    
+          title: Liste des Langues
+          display: [description,id_angents,id_langue]
+      filter: 
+          display: [description,id_angents,id_langue]
+          
+      form:    ~
+      edit:    
+          title: Mise à jour fiche
+      new:     
+          title: Nouvelle fiche 

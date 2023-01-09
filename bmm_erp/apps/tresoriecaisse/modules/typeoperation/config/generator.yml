@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typeoperation
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typeoperation
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: { label: "Nom de l'opération"}
+          valeurop: { label: "Commission bancaire/CCP"}
+          id_banque: { label: "Banque/CCP"}
+          caissesbanques: { label: "Banque/CCP"}
+          codeop: { label: "Code Opération"}
+      list:    
+          title: Liste des Opérations Bancaires/CCP
+          display: [caissesbanques,libelle,codeop,valeurop]
+      filter:  
+          display: [id_banque,codeop]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche opération - %%libelle%% -
+      new:     
+          title: Nouvelle fiche d'opération bancaire/CCP

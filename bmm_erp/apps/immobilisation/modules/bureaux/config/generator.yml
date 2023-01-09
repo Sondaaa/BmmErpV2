@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           bureaux
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          bureaux
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id_etage: { label: "Etage N°"}
+        id_type: { label: "Local"}
+        typebureaux: { label: "Adresse"}
+        id_parent: { label: "Bureaux Parent"}
+        id_mag: { label: "Magasin"}
+        id_direction: { label: "Direction"}
+        bureau: { label: "Nom du Bureaux"}
+      list:
+        title: Liste des Bureaux
+        display: [code,bureau,etage,typebureaux]
+        max_per_page: 5
+      filter:
+        display: [code,id_type,id_etage]
+      form:    ~
+      edit:
+        title: Modifier %%bureau%%
+      new:
+        title: Nouveaux Bureaux

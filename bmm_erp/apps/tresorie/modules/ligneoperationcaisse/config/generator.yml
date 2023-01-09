@@ -1,0 +1,44 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ligneoperationcaisse
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ligneoperationcaisse
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_categorie: { label: "Catégorie "}
+          dateoperation: { label: "Date de Création"}
+          mntoperation: { label: "Mnt."}
+          id_docachat: { label: "Document Achat"}
+          id_caisse: { label: "Caisse"}
+          numeroo: { label: "Numéro"}
+          chequen : { label: "Chèque Numéro"}
+          objet: { label: "Object"}
+          id_budget: { label: "Budget"}
+          id_demarcheur : { label: "Démarcheur"}
+          id_user : { label: "Utilisateur"}
+          documentachat: { label: "Document Achat"}
+          caissesbanques: { label: "Caisses"}
+          categorieoperation: { label: "Catégorie"}
+          typeoperation: { label: "Type Opération"}
+          demarcheur: { label: "Démarcheur"}
+          numerodocachat: { label: "Numero Opération"}
+          etat: { label: "Etat Quitance"}
+      list:    
+          title: Liste des Quittances
+          display: [categorieoperation,dateoperation,numerodocachat,mntoperation,documentachat,categorieoperation,caissesbanques,etat]
+      filter:  
+          display: [dateoperation,id_categorie,id_caisse,id_docachat]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche quittance
+      new:     
+          title: Nouvelle fiche Quittance

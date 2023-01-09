@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           conge
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          conge
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+           id_agents : { label: "Agents"}
+           datedebut : { label: "Date Début"}
+           datefin : { label: "Date Fin"}
+      list:    
+          title: Liste des Demandes des Congés
+          display: [agents,datedebut,datefin]
+      filter:  
+          display: [id_agents]
+      form:    ~
+      edit:   
+          title: Mise à jour fiche Demande Congé
+      new: 
+          title: Nouvelle fiche Demande Congé

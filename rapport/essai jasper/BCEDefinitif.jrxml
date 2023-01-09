@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="boncommandeexterne2" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="200487ba-509d-42f5-862c-49b219cfa62b">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="cbbc17102022"/>
+	<subDataset name="Dataset1" uuid="20b7278e-1980-4cd7-baf2-6f98eac9b232">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="cbbc17102022"/>
+		<parameter name="docachat" class="java.lang.String">
+			<defaultValueExpression><![CDATA[$P{docachat}]]></defaultValueExpression>
+		</parameter>
+		<queryString language="SQL">
+			<![CDATA[$P{docachat}]]>
+		</queryString>
+		<field name="l__designationarticle" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="l__designationarticle"/>
+			<property name="com.jaspersoft.studio.field.label" value="l__designationarticle"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+		</field>
+		<field name="l__qte" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.name" value="l__qte"/>
+			<property name="com.jaspersoft.studio.field.label" value="l__qte"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+		</field>
+		<field name="l__pu" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.name" value="l__pu"/>
+			<property name="com.jaspersoft.studio.field.label" value="l__pu"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+		</field>
+		<field name="l__mntht" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.name" value="l__mntht"/>
+			<property name="com.jaspersoft.studio.field.label" value="l__mntht"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+		</field>
+		<field name="r__libelle" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="r__libelle"/>
+			<property name="com.jaspersoft.studio.field.label" value="r__libelle"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="rubrique"/>
+		</field>
+	</subDataset>
+	<parameter name="docachat" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[$P{docachat}]]>
+	</queryString>
+	<field name="l__designationarticle" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="l__designationarticle"/>
+		<property name="com.jaspersoft.studio.field.label" value="l__designationarticle"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+	</field>
+	<field name="l__qte" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="l__qte"/>
+		<property name="com.jaspersoft.studio.field.label" value="l__qte"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+	</field>
+	<field name="l__pu" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="l__pu"/>
+		<property name="com.jaspersoft.studio.field.label" value="l__pu"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+	</field>
+	<field name="l__mntht" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="l__mntht"/>
+		<property name="com.jaspersoft.studio.field.label" value="l__mntht"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+	</field>
+	<field name="r__libelle" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="r__libelle"/>
+		<property name="com.jaspersoft.studio.field.label" value="r__libelle"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rubrique"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="111" height="30" uuid="db120c51-419f-42fa-8703-9f386463b1e1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="708c484d-fbb7-4130-bab1-cc63b07c038e"/>
+				</reportElement>
+				<text><![CDATA[l__designationarticle]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="111" height="30" uuid="9f0337e4-3072-441b-adff-c1cb3f3730b4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e72d053d-cee4-4691-b79f-c5fe2a24f8a3"/>
+				</reportElement>
+				<text><![CDATA[l__qte]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="0" width="111" height="30" uuid="e241d0f7-38e2-4e5c-884b-34d42b561a5f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e53d2238-209f-49fe-8240-0686ca2b54c9"/>
+				</reportElement>
+				<text><![CDATA[l__pu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="0" width="111" height="30" uuid="19a342a1-8484-4de0-bc4b-25be7f0e0a05">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3709246d-a9d4-4607-9d7a-cc9eaaee7ed4"/>
+				</reportElement>
+				<text><![CDATA[l__mntht]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="111" height="30" uuid="a7d1108a-4168-41e3-a582-84021bf923ed">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e5c6094f-c566-4390-9572-75674737e108"/>
+				</reportElement>
+				<text><![CDATA[r__libelle]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="111" height="30" uuid="5b26e64b-fe6e-4c5f-b0fd-c3cdb70dbf27">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="708c484d-fbb7-4130-bab1-cc63b07c038e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{l__designationarticle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="111" height="30" uuid="d6383db2-dd10-47d8-83f8-ec318111c779">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e72d053d-cee4-4691-b79f-c5fe2a24f8a3"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{l__qte}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="0" width="111" height="30" uuid="9c9fc77a-9827-48d0-b46f-549e5fd42c09">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e53d2238-209f-49fe-8240-0686ca2b54c9"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{l__pu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="0" width="111" height="30" uuid="cf65e0d0-54e1-410d-869c-da64c66ff7cd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3709246d-a9d4-4607-9d7a-cc9eaaee7ed4"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{l__mntht}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="0" width="111" height="30" uuid="58176355-30c9-4df5-9f46-dbd848dc0216">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e5c6094f-c566-4390-9572-75674737e108"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{r__libelle}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

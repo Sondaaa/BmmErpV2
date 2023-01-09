@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           parametreamortissement
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          parametreamortissement
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          dateamortissement: {label: "Date d'amortissement"}
+          heightticket: {label: "Hauteur Ticket"}
+          widthticket: {label: "Largeur Ticket"}
+          heightcode: {label: "Hauteur Code à Barre"}
+          widthcode: {label: "Largeur Code à Barre (au moin 180)"}
+          align: {label: "Alignement Text"}
+          header: {label: "En-tête Ticket"}
+          footer: {label: "Pied Ticket"}
+          border: {label: "Bordure Ticket"}
+          taillecaractere: {label: "Taille Caractère"}
+          fontcaractere: {label: "Font du Caractère"}
+      list:    ~
+      filter:  ~
+      form:    ~
+      edit:
+          title: Modifier Paramétrage
+      new:
+          title: Nouveau Paramétrage

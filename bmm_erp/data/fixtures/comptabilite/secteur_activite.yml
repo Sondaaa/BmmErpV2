@@ -1,0 +1,61 @@
+Secteuractivite:
+  s1:
+    libelle: "Transports et services connexes"
+  s2:
+    libelle: "Télécommunication et technologies de l'information"
+  s3:
+    libelle: "Services et équipements pour la santé"
+  s2:
+    libelle: "Services aux entreprises"
+  s5:
+    libelle: "Pétrole et gaz"
+  s6:
+    libelle: "Mécanique et sous-traitance industrielle"
+  s7:
+    libelle: "Maison et décoration"
+  s8:
+    libelle: "Loisirs, tourisme et bien-être"
+  s9:
+    libelle: "Logistique, manutention et stockage"
+  s10:
+    libelle: "Informatique, bureautique et NTIC"
+  s11:
+    libelle: "Impression, papier et édition"
+  s12:
+    libelle: "Hydraulique et pneumatique"
+  s13:
+    libelle: "Habillement et industrie textile"
+  s14:
+    libelle: "Equipements pour la distribution"
+  s15:
+    libelle: "Environnement"
+  s16:
+    libelle: "Energie, minerais et matières premières"
+  s17:
+    libelle: "Emballage et conditionnement"
+  s18:
+    libelle: "Electricité , électronique et électroménager"
+  s19:
+    libelle: "Communication, événement et équipements audiovisuels"
+  s20:
+    libelle: "Chimie, cosmétique et hygiène"
+  s21:
+    libelle: "Chauffage et climatisation"
+  s22:
+    libelle: "Caoutchouc et plastique"
+  s23:
+    libelle: "Biens et équipements d'hôtellerie et de restauration"
+  s24:
+    libelle: "Biens et équipements d'entreprise"
+  s25:
+    libelle: "Bâtiment et construction"
+  s26:
+    libelle: "Artisanat"
+  s27:
+    libelle: "Analyse, mesure et pesage"
+  s28:
+    libelle: "Agroalimentaire"
+  s29:
+    libelle: "Agriculture , élevage et pêche"
+  s30:
+    libelle: "Administration et organismes"

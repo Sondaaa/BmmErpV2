@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           retenuesource
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          retenuesource
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          libelle: { label: "Retenue à la Source"}
+          valeurretenue: { label: "Taux"}
+      list:
+          title: Liste des Taux du Retenue à la Source
+          display: [libelle,valeurretenue]
+      filter:  ~
+      form:    ~
+      edit:
+          title: Mise à jour Retenue à la Source - %%libelle%%
+      new:
+          title: Nouveau Retenue à la Source

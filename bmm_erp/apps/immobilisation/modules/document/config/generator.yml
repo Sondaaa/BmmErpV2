@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           document
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          document
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        totalht: {label: "Total HT"}
+        totalttc: {label: "Total TTC"}
+        id_typedoc: {label: "Type Document"}
+        datedoc: {label: "Date Document"}
+        id_user: {label: "Utilisateur"}
+        id_bureau: {label: "Bureau"}
+      list:
+        title: Liste des documents
+        display: [datedoc,numero,bureaux]
+        max_per_page: 5
+      filter:
+        display: [datedoc,id_bureau]
+      form:    ~
+      edit:
+        title: Modifier Document
+      

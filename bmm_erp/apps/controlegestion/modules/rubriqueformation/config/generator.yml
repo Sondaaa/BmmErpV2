@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           rubriqueformation
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          rubriqueformation
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          
+           code : { label: "Code "}
+           libelle : { label: "Rubrique "}
+           id_domaine : {label: "Domaine d'utilisation"}
+           domaineuntilisation: {label: "Domaine d'utilisation"}
+       
+      list:    
+          title: Liste des  Rubriques
+          display: [domaineuntilisation,code,libelle]
+      filter:  
+          display: [id_domaine,libelle]
+      form:    ~
+      edit:   
+          title: Mise à jour fiche
+      new: 
+          title: Nouvelle fiche

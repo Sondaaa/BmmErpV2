@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           attestationouvrier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          attestationouvrier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+           id_chantier : { label: "Chantier"}
+           
+      list:    
+          title: Liste des Attestations de Travail des Ouvriers 
+          display: [chantier]
+      filter:  
+          display: [id_chantier]
+      form:    ~
+      edit:    
+          title: Mise a jour Attestation de Travail 
+      new:     
+          title: Nouvelle Fiche Attestation de Travail 

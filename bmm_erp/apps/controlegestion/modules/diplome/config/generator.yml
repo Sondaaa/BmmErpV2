@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           diplome
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          diplome
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Libellé"}
+      list:    
+          title: Liste des Diplômes
+          display: [libelle]
+      filter: 
+          display: [libelle]
+          
+      form:    ~
+      edit:    
+          title: Mise à jour fiche Diplôme
+      new:     
+          title: Nouvelle fiche Diplôme

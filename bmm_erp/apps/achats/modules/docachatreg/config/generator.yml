@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class: docachatreg
+    theme: admin
+    non_verbose_templates: true
+    with_show: false
+    singular: ~
+    plural: ~
+    route_prefix: docachatreg
+    with_doctrine_route: true
+    actions_base_class: sfActions
+
+    config:
+      actions: ~
+      fields:  
+        id_docreg: {label: "Demande Achat"}
+        id_bci: { label: "D.I."}
+        id_demandeur: { label: "Demandeur"}
+        id_useracheteur: { label: "Utilisateur"}
+        documentachat: {label: "Demande Achat"}        
+        demandeur: { label: "Demandeur"}
+        Utilisateur: { label: "Utilisateur"}
+      list:
+        title: Liste des BCI.Regroupe en D.Achats
+        display: [documentachat, id_bci, demandeur, Utilisateur]
+        max_per_page: 10
+      filter:
+        display: [id_docreg, id_bci, id_demandeur, id_useracheteur]
+    
+     
+       

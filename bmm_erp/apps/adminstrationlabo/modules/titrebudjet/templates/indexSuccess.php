@@ -1,0 +1,28 @@
+<?php use_helper('I18N', 'Date') ?>
+<?php include_partial('titrebudjet/assets') ?>
+
+<div id="sf_admin_container">
+    <?php if (strtolower($type_budget) == strtolower("Prototype")): ?>
+        <h1><?php echo __('Liste des budgets prototypes', array(), 'messages') ?></h1>
+    <?php else: ?>
+        <h1><?php echo __('Liste des budgets définitifs', array(), 'messages') ?></h1>
+    <?php endif; ?>
+    <?php include_partial('titrebudjet/flashes') ?>
+
+    <div id="sf_admin_header">
+        <?php include_partial('titrebudjet/list_header', array('pager' => $pager)) ?>
+    </div>
+
+    <div id="sf_admin_bar">
+        <?php include_partial('titrebudjet/filters', array('form' => $filters, 'configuration' => $configuration, 'type_budget' => $type_budget)) ?>
+    </div>
+
+    <div id="sf_admin_content">
+        <?php include_partial('titrebudjet/list', array('pager' => $pager, 'sort' => $sort, 'helper' => $helper)) ?>
+        
+    </div>
+
+    <div id="sf_admin_footer">
+        <?php include_partial('titrebudjet/list_footer', array('pager' => $pager)) ?>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           deductioncommune
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          deductioncommune
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          
+          designation : { label: "Désignation"}
+          montant : { label: "Montant"}
+          
+      list:    
+          title: Liste des  Déductions Communes
+          display: [designation,montant]
+      filter: 
+          display: [designation,montant]
+          
+      form:    ~
+      edit:    
+          title: Mise à jour fiche Déductions Communes
+      new:     
+          title: Nouvelle fiche Déductions Communes

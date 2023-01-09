@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           gouvernera
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          gouvernera
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        gouvernera: {label: "Gouvernorat"}
+        id_pays: {label: "Pays"}
+      list:
+        title: Liste des Gouvernorats
+        display: [pays,gouvernera]
+      filter:  ~
+      form:    ~
+      edit:
+        title: Midifier Gouvernorat
+      new:
+        title: Nouveaux Gouvernorat

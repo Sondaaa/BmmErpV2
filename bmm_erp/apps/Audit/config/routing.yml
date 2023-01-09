@@ -1,0 +1,1263 @@
+budgetprevglobal:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Titrebudjet
+    module:               budgetprevglobal
+    prefix_path:          /budgetprevglobal
+    column:               id
+    with_wildcard_routes: true
+
+prototype:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Titrebudjet
+    module:               Prototype
+    prefix_path:          /prototype
+    column:               id
+    with_wildcard_routes: true
+
+annexebudget:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                annexebudget
+    module:               annexebudget
+    prefix_path:          /annexebudget
+    column:               id
+    with_wildcard_routes: true
+
+rapportcontrole:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                rapportcontrole
+    module:               rapportcontrole
+    prefix_path:          /rapportcontrole
+    column:               id
+    with_wildcard_routes: true
+
+chantiercontrole:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                chantiercontrole
+    module:               chantiercontrole
+    prefix_path:          /chantiercontrole
+    column:               id
+    with_wildcard_routes: true
+
+servicecontrole:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                servicecontrole
+    module:               servicecontrole
+    prefix_path:          /servicecontrole
+    column:               id
+    with_wildcard_routes: true
+
+lieuchantier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                lieuchantier
+    module:               lieuchantier
+    prefix_path:          /lieuchantier
+    column:               id
+    with_wildcard_routes: true
+
+naturetravaux:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                naturetravaux
+    module:               naturetravaux
+    prefix_path:          /naturetravaux
+    column:               id
+    with_wildcard_routes: true
+
+projet:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                projet
+    module:               projet
+    prefix_path:          /projet
+    column:               id
+    with_wildcard_routes: true
+
+tableauxammortisement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                tableauxammortisement
+    module:               tableauxammortisement
+    prefix_path:          /tableauxammortisement
+    column:               id
+    with_wildcard_routes: true
+
+alimentationcompte:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                alimentationcompte
+    module:               alimentationcompte
+    prefix_path:          /alimentationcompte
+    column:               id
+    with_wildcard_routes: true
+
+immobilisation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                immobilisation
+    module:               immobilisation
+    prefix_path:          /immobilisation
+    column:               id
+    with_wildcard_routes: true
+
+autoristation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                autoristation
+    module:               autoristation
+    prefix_path:          /autoristation
+    column:               id
+    with_wildcard_routes: true
+
+demandedevoirfichieradmin:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                demandedevoirfichieradmin
+    module:               demandedevoirfichieradmin
+    prefix_path:          /demandedevoirfichieradmin
+    column:               id
+    with_wildcard_routes: true
+
+mission:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                mission
+    module:               mission
+    prefix_path:          /mission
+    column:               id
+    with_wildcard_routes: true
+
+attestationouvrier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                attestationouvrier
+    module:               attestationouvrier
+    prefix_path:          /attestationouvrier
+    column:               id
+    with_wildcard_routes: true
+
+formulaire:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                formulaire
+    module:               formulaire
+    prefix_path:          /formulaire
+    column:               id
+    with_wildcard_routes: true
+
+demandederemboursement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                demandederemboursement
+    module:               demandederemboursement
+    prefix_path:          /demandederemboursement
+    column:               id
+    with_wildcard_routes: true
+
+attestationdesalaire:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                attestationdesalaire
+    module:               attestationdesalaire
+    prefix_path:          /attestationdesalaire
+    column:               id
+    with_wildcard_routes: true
+
+attestationdetravail:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                attestationdetravail
+    module:               attestationdetravail
+    prefix_path:          /attestationdetravail
+    column:               id
+    with_wildcard_routes: true
+
+salaireouvrier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                salaireouvrier
+    module:               salaireouvrier
+    prefix_path:          /salaireouvrier
+    column:               id
+    with_wildcard_routes: true
+
+contratouvrier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                contratouvrier
+    module:               contratouvrier
+    prefix_path:          /contratouvrier
+    column:               id
+    with_wildcard_routes: true
+
+ouvrier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ouvrier
+    module:               ouvrier
+    prefix_path:          /ouvrier
+    column:               id
+    with_wildcard_routes: true
+
+lieuaffectationouvrier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                lieuaffectationouvrier
+    module:               lieuaffectationouvrier
+    prefix_path:          /lieuaffectationouvrier
+    column:               id
+    with_wildcard_routes: true
+
+situationadminouvrier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                situationadminouvrier
+    module:               situationadminouvrier
+    prefix_path:          /situationadminouvrier
+    column:               id
+    with_wildcard_routes: true
+
+specialiteouvrier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                specialiteouvrier
+    module:               specialiteouvrier
+    prefix_path:          /specialiteouvrier
+    column:               id
+    with_wildcard_routes: true
+
+chantier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                chantier
+    module:               chantier
+    prefix_path:          /chantier
+    column:               id
+    with_wildcard_routes: true
+
+recompense:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                recompense
+    module:               recompense
+    prefix_path:          /recompense
+    column:               id
+    with_wildcard_routes: true
+
+discipline:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                discipline
+    module:               discipline
+    prefix_path:          /discipline
+    column:               id
+    with_wildcard_routes: true
+
+contrat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                contrat
+    module:               contrat
+    prefix_path:          /contrat
+    column:               id
+    with_wildcard_routes: true
+
+agents:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                agents
+    module:               agents
+    prefix_path:          /agents
+    column:               id
+    with_wildcard_routes: true
+
+typeexperience:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeexperience
+    module:               typeexperience
+    prefix_path:          /typeexperience
+    column:               id
+    with_wildcard_routes: true
+
+langues:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                langues
+    module:               langues
+    prefix_path:          /langues
+    column:               id
+    with_wildcard_routes: true
+
+diplome:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                diplome
+    module:               diplome
+    prefix_path:          /diplome
+    column:               id
+    with_wildcard_routes: true
+
+specialite:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                specialite
+    module:               specialite
+    prefix_path:          /specialite
+    column:               id
+    with_wildcard_routes: true
+
+primes:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                primes
+    module:               primes
+    prefix_path:          /primes
+    column:               id
+    with_wildcard_routes: true
+
+titreprimes:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                titreprimes
+    module:               titreprimes
+    prefix_path:          /titreprimes
+    column:               id
+    with_wildcard_routes: true
+
+salairedebase:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                salairedebase
+    module:               salairedebase
+    prefix_path:          /salairedebase
+    column:               id
+    with_wildcard_routes: true
+
+echelon:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                echelon
+    module:               echelon
+    prefix_path:          /echelon
+    column:               id
+    with_wildcard_routes: true
+
+echelle:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                echelle
+    module:               echelle
+    prefix_path:          /echelle
+    column:               id
+    with_wildcard_routes: true
+
+grade:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                grade
+    module:               grade
+    prefix_path:          /grade
+    column:               id
+    with_wildcard_routes: true
+
+categorierh:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                categorierh
+    module:               categorierh
+    prefix_path:          /categorierh
+    column:               id
+    with_wildcard_routes: true
+
+souscorps:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                souscorps
+    module:               souscorps
+    prefix_path:          /souscorps
+    column:               id
+    with_wildcard_routes: true
+
+corpsdet:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                corpsdet
+    module:               corpsdet
+    prefix_path:          /corpsdet
+    column:               id
+    with_wildcard_routes: true
+
+corps:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                corps
+    module:               corps
+    prefix_path:          /corps
+    column:               id
+    with_wildcard_routes: true
+
+etatcivil:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                etatcivil
+    module:               etatcivil
+    prefix_path:          /etatcivil
+    column:               id
+    with_wildcard_routes: true
+
+taches:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                taches
+    module:               taches
+    prefix_path:          /taches
+    column:               id
+    with_wildcard_routes: true
+
+posterh:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                posterh
+    module:               posterh
+    prefix_path:          /posterh
+    column:               id
+    with_wildcard_routes: true
+
+unite:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                unite
+    module:               unite
+    prefix_path:          /unite
+    column:               id
+    with_wildcard_routes: true
+
+servicerh:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                servicerh
+    module:               servicerh
+    prefix_path:          /servicerh
+    column:               id
+    with_wildcard_routes: true
+
+direction:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                direction
+    module:               direction
+    prefix_path:          /direction
+    column:               id
+    with_wildcard_routes: true
+
+sousdirection:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sousdirection
+    module:               sousdirection
+    prefix_path:          /sousdirection
+    column:               id
+    with_wildcard_routes: true
+
+typerecompense:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typerecompense
+    module:               typerecompense
+    prefix_path:          /typerecompense
+    column:               id
+    with_wildcard_routes: true
+
+regroupementagents:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                regroupementagents
+    module:               regroupementagents
+    prefix_path:          /regroupementagents
+    column:               id
+    with_wildcard_routes: true
+
+retraite:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                retraite
+    module:               retraite
+    prefix_path:          /retraite
+    column:               id
+    with_wildcard_routes: true
+
+naturediscipline:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                naturediscipline
+    module:               naturediscipline
+    prefix_path:          /naturediscipline
+    column:               id
+    with_wildcard_routes: true
+
+typediscipline:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typediscipline
+    module:               typediscipline
+    prefix_path:          /typediscipline
+    column:               id
+    with_wildcard_routes: true
+
+sexe:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sexe
+    module:               sexe
+    prefix_path:          /sexe
+    column:               id
+    with_wildcard_routes: true
+
+niveauxage:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                niveauxage
+    module:               niveauxage
+    prefix_path:          /niveauxage
+    column:               id
+    with_wildcard_routes: true
+
+typepermis:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typepermis
+    module:               typepermis
+    prefix_path:          /typepermis
+    column:               id
+    with_wildcard_routes: true
+
+typecontrat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typecontrat
+    module:               typecontrat
+    prefix_path:          /typecontrat
+    column:               id
+    with_wildcard_routes: true
+
+regimehoraire:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                regimehoraire
+    module:               regimehoraire
+    prefix_path:          /regimehoraire
+    column:               id
+    with_wildcard_routes: true
+
+fonction:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                fonction
+    module:               fonction
+    prefix_path:          /fonction
+    column:               id
+    with_wildcard_routes: true
+
+accidents:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                accidents
+    module:               accidents
+    prefix_path:          /accidents
+    column:               id
+    with_wildcard_routes: true
+
+aidesociale:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                aidesociale
+    module:               aidesociale
+    prefix_path:          /aidesociale
+    column:               id
+    with_wildcard_routes: true
+
+tenues:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                tenues
+    module:               tenues
+    prefix_path:          /tenues
+    column:               id
+    with_wildcard_routes: true
+
+visitemedicale:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                visitemedicale
+    module:               visitemedicale
+    prefix_path:          /visitemedicale
+    column:               id
+    with_wildcard_routes: true
+
+historiqueretenue:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                historiqueretenue
+    module:               historiqueretenue
+    prefix_path:          /historiqueretenue
+    column:               id
+    with_wildcard_routes: true
+
+retenuesursalaire:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                retenuesursalaire
+    module:               retenuesursalaire
+    prefix_path:          /retenuesursalaire
+    column:               id
+    with_wildcard_routes: true
+
+demandepret:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                demandepret
+    module:               demandepret
+    prefix_path:          /demandepret
+    column:               id
+    with_wildcard_routes: true
+
+demandeavance:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                demandeavance
+    module:               demandeavance
+    prefix_path:          /demandeavance
+    column:               id
+    with_wildcard_routes: true
+
+sourcepret:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sourcepret
+    module:               sourcepret
+    prefix_path:          /sourcepret
+    column:               id
+    with_wildcard_routes: true
+
+pret:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                pret
+    module:               pret
+    prefix_path:          /pret
+    column:               id
+    with_wildcard_routes: true
+
+avance:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                avance
+    module:               avance
+    prefix_path:          /avance
+    column:               id
+    with_wildcard_routes: true
+
+typemission:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typemission
+    module:               typemission
+    prefix_path:          /typemission
+    column:               id
+    with_wildcard_routes: true
+
+typeaide:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeaide
+    module:               typeaide
+    prefix_path:          /typeaide
+    column:               id
+    with_wildcard_routes: true
+
+typetenue:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typetenue
+    module:               typetenue
+    prefix_path:          /typetenue
+    column:               id
+    with_wildcard_routes: true
+
+motif:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                motif
+    module:               motif
+    prefix_path:          /motif
+    column:               id
+    with_wildcard_routes: true
+
+conge:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                conge
+    module:               conge
+    prefix_path:          /conge
+    column:               id
+    with_wildcard_routes: true
+
+jourferier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                jourferier
+    module:               jourferier
+    prefix_path:          /jourferier
+    column:               id
+    with_wildcard_routes: true
+
+presence:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                presence
+    module:               presence
+    prefix_path:          /presence
+    column:               id
+    with_wildcard_routes: true
+
+typeconge:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeconge
+    module:               typeconge
+    prefix_path:          /typeconge
+    column:               id
+    with_wildcard_routes: true
+
+besoinsdeformation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                besoinsdeformation
+    module:               besoinsdeformation
+    prefix_path:          /besoinsdeformation
+    column:               id
+    with_wildcard_routes: true
+
+formateur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                formateur
+    module:               formateur
+    prefix_path:          /formateur
+    column:               id
+    with_wildcard_routes: true
+
+domaineuntilisation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                domaineuntilisation
+    module:               domaineuntilisation
+    prefix_path:          /domaineuntilisation
+    column:               id
+    with_wildcard_routes: true
+
+regroupementtheme:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                regroupementtheme
+    module:               regroupementtheme
+    prefix_path:          /regroupementtheme
+    column:               id
+    with_wildcard_routes: true
+
+planing:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                planing
+    module:               planing
+    prefix_path:          /planing
+    column:               id
+    with_wildcard_routes: true
+
+evaluation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                evaluation
+    module:               evaluation
+    prefix_path:          /evaluation
+    column:               id
+    with_wildcard_routes: true
+
+sousrubrique:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sousrubrique
+    module:               sousrubrique
+    prefix_path:          /sousrubrique
+    column:               id
+    with_wildcard_routes: true
+
+rubriqueformation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                rubriqueformation
+    module:               rubriqueformation
+    prefix_path:          /rubriqueformation
+    column:               id
+    with_wildcard_routes: true
+
+bordereauvirement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                bordereauvirement
+    module:               bordereauvirement
+    prefix_path:          /bordereauvirement
+    column:               id
+    with_wildcard_routes: true
+
+lignebanquecaisse:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                lignebanquecaisse
+    module:               lignebanquecaisse
+    prefix_path:          /lignebanquecaisse
+    column:               id
+    with_wildcard_routes: true
+
+declaration:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                declaration
+    module:               declaration
+    prefix_path:          /declaration
+    column:               id
+    with_wildcard_routes: true
+
+ligneoperationcaisse:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ligneoperationcaisse
+    module:               ligneoperationcaisse
+    prefix_path:          /ligneoperationcaisse
+    column:               id
+    with_wildcard_routes: true
+
+mouvementbanciare:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                mouvementbanciare
+    module:               mouvementbanciare
+    prefix_path:          /mouvementbanciare
+    column:               id
+    with_wildcard_routes: true
+
+lignebanquecaisse:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                lignebanquecaisse
+    module:               lignebanquecaisse
+    prefix_path:          /lignebanquecaisse
+    column:               id
+    with_wildcard_routes: true
+
+caissesbanques:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                caissesbanques
+    module:               caissesbanques
+    prefix_path:          /caissesbanques
+    column:               id
+    with_wildcard_routes: true
+
+papierordrepostal:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                papierordrepostal
+    module:               papierordrepostal
+    prefix_path:          /papierordrepostal
+    column:               id
+    with_wildcard_routes: true
+
+papiercheque:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                papiercheque
+    module:               papiercheque
+    prefix_path:          /papiercheque
+    column:               id
+    with_wildcard_routes: true
+
+objetreglement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                objetreglement
+    module:               objetreglement
+    prefix_path:          /objetreglement
+    column:               id
+    with_wildcard_routes: true
+
+instrumentpaiment:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                instrumentpaiment
+    module:               instrumentpaiment
+    prefix_path:          /instrumentpaiment
+    column:               id
+    with_wildcard_routes: true
+
+carnetordrepostal:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                carnetordrepostal
+    module:               carnetordrepostal
+    prefix_path:          /carnetordrepostal
+    column:               id
+    with_wildcard_routes: true
+
+carnetcheque:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                carnetcheque
+    module:               carnetcheque
+    prefix_path:          /carnetcheque
+    column:               id
+    with_wildcard_routes: true
+
+typeoperation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeoperation
+    module:               typeoperation
+    prefix_path:          /typeoperation
+    column:               id
+    with_wildcard_routes: true
+
+naturebanque:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                naturebanque
+    module:               naturebanque
+    prefix_path:          /naturebanque
+    column:               id
+    with_wildcard_routes: true
+
+typecaisse:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typecaisse
+    module:               typecaisse
+    prefix_path:          /typecaisse
+    column:               id
+    with_wildcard_routes: true
+
+categorieoperation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                categorieoperation
+    module:               categorieoperation
+    prefix_path:          /categorieoperation
+    column:               id
+    with_wildcard_routes: true
+
+demarcheur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                demarcheur
+    module:               demarcheur
+    prefix_path:          /demarcheur
+    column:               id
+    with_wildcard_routes: true
+
+sousdetailprix:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sousdetailprix
+    module:               sousdetailprix
+    prefix_path:          /sousdetailprix
+    column:               id
+    with_wildcard_routes: true
+
+visaachat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                visaachat
+    module:               visaachat
+    prefix_path:          /visaachat
+    column:               id
+    with_wildcard_routes: true
+
+ligavisdoc:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ligavisdoc
+    module:               ligavisdoc
+    prefix_path:          /ligavisdoc
+    column:               id
+    with_wildcard_routes: true
+
+marches:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                marches
+    module:               marches
+    prefix_path:          /marches
+    column:               id
+    with_wildcard_routes: true
+
+lots:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                lots
+    module:               lots
+    prefix_path:          /lots
+    column:               id
+    with_wildcard_routes: true
+
+fournisseur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                fournisseur
+    module:               fournisseur
+    prefix_path:          /fournisseur
+    column:               id
+    with_wildcard_routes: true
+
+annulationengagement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                annulationengagement
+    module:               annulationengagement
+    prefix_path:          /annulationengagement
+    column:               id
+    with_wildcard_routes: true
+
+mouvementfacturation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                mouvementfacturation
+    module:               mouvementfacturation
+    prefix_path:          /mouvementfacturation
+    column:               id
+    with_wildcard_routes: true
+
+certificatretenue:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                certificatretenue
+    module:               certificatretenue
+    prefix_path:          /certificatretenue
+    column:               id
+    with_wildcard_routes: true
+
+retenuesource:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                retenuesource
+    module:               retenuesource
+    prefix_path:          /retenuesource
+    column:               id
+    with_wildcard_routes: true
+
+typetransfert:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typetransfert
+    module:               typetransfert
+    prefix_path:          /typetransfert
+    column:               id
+    with_wildcard_routes: true
+
+transfertbudget:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                transfertbudget
+    module:               transfertbudget
+    prefix_path:          /transfertbudget
+    column:               id
+    with_wildcard_routes: true
+
+parametragetranche:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                parametragetranche
+    module:               parametragetranche
+    prefix_path:          /parametragetranche
+    column:               id
+    with_wildcard_routes: true
+
+piecejoint:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                piecejoint
+    module:               piecejoint
+    prefix_path:          /piecejoint
+    column:               id
+    with_wildcard_routes: true
+categorietitre:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                categorietitre
+    module:               categorietitre
+    prefix_path:          /categorietitre
+    column:               id
+    with_wildcard_routes: true
+
+documentbudget:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                documentbudget
+    module:               documentbudget
+    prefix_path:          /documentbudget
+    column:               id
+    with_wildcard_routes: true
+
+typepiecejointbudget:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typepiecejointbudget
+    module:               typepiecejointbudget
+    prefix_path:          /typepiecejointbudget
+    column:               id
+    with_wildcard_routes: true
+
+documentachat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                documentachat
+    module:               documentachat
+    prefix_path:          /documentachat
+    column:               id
+    with_wildcard_routes: true
+sourcesbudget:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sourcesbudget
+    module:               sourcesbudget
+    prefix_path:          /sourcesbudget
+    column:               id
+    with_wildcard_routes: true
+projet:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                projet
+    module:               projet
+    prefix_path:          /projet
+    column:               id
+    with_wildcard_routes: true
+ligprotitrub:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ligprotitrub
+    module:               ligprotitrub
+    prefix_path:          /ligprotitrub
+    column:               id
+    with_wildcard_routes: true
+
+sousrubrique:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sousrubrique
+    module:               sousrubrique
+    prefix_path:          /sousrubrique
+    column:               id
+    with_wildcard_routes: true
+
+rubrique:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                rubrique
+    module:               rubrique
+    prefix_path:          /rubrique
+    column:               id
+    with_wildcard_routes: true
+
+titrebudjet:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                titrebudjet
+    module:               titrebudjet
+    prefix_path:          /titrebudjet
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+#Plan Comptable
+ajouterCompteComptable:
+  url: /ajouter-compte-comptable
+  param: { module: plan_comptable, action: ajouterCompteComptable }
+affichecomptrepartie:
+  url: /ajouter-contre-partie
+  param: { module: journal, action: chargercontrepartie }
+saveCompteComptable:
+  url: /enregistrer-compte-comptable
+  param: { module: plan_comptable, action: save }
+planStandard:
+  url: /plan-comptable
+  param: { module: plan_comptable, action: index }
+checkPlanStandard:
+  url: /plan-comptable/check-standard
+  param: { module: plan_comptable, action: checkPlanStandard }
+showCompteComptable:
+  url: /afficher-compte-comptable
+  param: { module: plan_comptable, action: show }
+showEditCompteComptable:
+  url: /fiche-compte-comptable
+  param: { module: plan_comptable, action: showEdit }
+updateCompteComptable:
+  url: /mise-a-jour-compte-comptable
+  param: { module: plan_comptable, action: update }
+deleteCompteComptable:
+  url: /supprimer-compte-comptable
+  param: { module: plan_comptable, action: delete }
+deleteSoldeCompteComptable:
+  url: /supprimer-solde-compte-comptable
+  param: { module: importation, action: deleteSoldecompte }
+#Transfert
+transfert:
+  url: /transfert/base-standard
+  param: { module: transfert, action: index }
+# default rules
+homepage:
+  url:   /
+  param: { module: accueil, action: index }
+validerExerciceCourant:
+  url: /valider-exercice-courant
+  param: { module: accueil, action: validerExerciceCourant}
+#Exercice
+exercice:
+  url: /exercice-comptable
+  param: { module: parametre, action: listeExercice }
+ajouterExercice:
+  url: /ajouter-exercice-comptable
+  param: { module: parametre, action: ajouterExercice }
+deleteExercice:
+  url: /supprimer-exercice-comptable
+  param: { module: parametre, action: deleteExercice }
+editExercice:
+  url: /afficher-exercice-comptable
+  param: { module: parametre, action: editExercice }
+updateExercice:
+  url: /modifer-exercice-comptable
+  param: { module: parametre, action: updateExercice }
+Admin:
+  url: ./accueil.php/Admin
+PlanPrevesionelle:
+  url:   /plan_prevesionelle
+  param: { module: PlanPrevisionelle, action: index }
+PlanRealiser:
+  url:   /plan_realiser
+  param: { module: PlanRealiser, action: index }
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+Immo:
+  url:   /immo
+  param: { module: immob, action: index }
+
+default:
+  url:   /:module/:action/*

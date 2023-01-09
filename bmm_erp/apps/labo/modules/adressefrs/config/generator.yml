@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           adressefrs
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          adressefrs
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          adrs: { label: "Adresse"}
+          codepostal: { label: "Code postal"}
+          id_pays: { label: "Pays"}
+          pays: { label: "Pays"}
+          id_gouv: { label: "Gouvernorat"}
+          gouvernera: { label: "Gouvernorat"}
+          id_frs: { label: "Fournisseur"}
+          fournisseur: { label: "Fournisseur"}
+      list:    
+          title: Liste des adresses fournisseurs
+          display: [adrs,fournisseur,pays,gouvernera]
+      filter:  
+          display: [id_frs,id_pays,id_gouv,codepostal]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche %%adrs%%
+      new:     
+          title: Nouvelle fiche

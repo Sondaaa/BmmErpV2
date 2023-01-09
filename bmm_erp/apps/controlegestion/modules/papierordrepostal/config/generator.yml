@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           papierordrepostal
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          papierordrepostal
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          id_carnet: { label: "Carnet d'ordre"}
+          repapier: { label: "Numéro d'ordre"}
+          mnt: { label: "Mnt d'ordre"}
+          datesignature:  { label: "Date du Signature"}
+          cible: {label: "Bénéficiaire"}
+          etat: { label: "Etat d'ordre"}
+          carnetordrepostal: { label: "Carnet d'ordre"}
+          annule: { label: "Annulé"}
+      list:
+          title: Liste des ordres de virements
+          display: [carnetordrepostal,repapier,etat,mnt,datesignature,cible,annule]
+      filter:
+          display: [id_carnet,repapier,etat,annule]
+      form:    ~
+      edit:    ~
+      new:     ~

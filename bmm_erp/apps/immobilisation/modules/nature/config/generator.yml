@@ -1,0 +1,25 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           nature
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          nature
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: Liste des natures d'immobilsations
+        display: [nature]
+      filter:  ~
+      form:    ~
+      edit:
+        title: Modifier la Nature d'immobilsation
+      new:
+        title: Nouveaux Nature d'immobilsation

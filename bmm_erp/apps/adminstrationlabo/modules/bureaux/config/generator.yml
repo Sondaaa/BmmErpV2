@@ -1,0 +1,36 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class: bureaux
+    theme: admin
+    non_verbose_templates: true
+    with_show: false
+    singular: ~
+    plural: ~
+    route_prefix: bureaux
+    with_doctrine_route: true
+    actions_base_class: sfActions
+
+    config:
+      actions: 
+        _new: {label: "Nouvelle fiche local"}
+      fields:
+        id_etage: { label: "Sous Site"}
+        id_type: { label: "Type local" }
+        typebureaux: { label: "Type local" }
+        id_direction: { label: "Direction" }
+        site: { label: "Site" }
+        etage: { label: "Sous Site" }
+        id_site: { label: "Site" }
+        bureau: { label: "Nom du local" }
+      list:
+        title: Liste des Locaux
+        display: [code, bureau,typebureaux, site,etage]
+        max_per_page: 10
+      filter:
+        display: [code, id_site,id_etage]
+      form: ~
+      edit:
+        title: Modifier %%bureau%%
+      new:
+        title: Nouvelle fiche Local

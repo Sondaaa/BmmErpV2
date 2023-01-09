@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           avance
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          avance
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Libellé"}
+          remboursement: { label: "Remboursé sur"}
+          id_type: { label: "Type"}
+          
+          
+         
+      list:   
+          title: Liste des Types Avances 
+          display: [libelle,remboursement]
+      filter:  
+           display: [libelle,remboursement]
+      form:    ~
+      edit:   
+          title: Mise a jour Fiche 
+      new:     
+          title: Nouvelle Fiche 
+

@@ -1,0 +1,260 @@
+documentbudget_DocumentDef:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Documentbudget
+    module:               DocumentDef
+    prefix_path:          /DocumentDef
+    column:               id
+    with_wildcard_routes: true
+documentbudget_Ordonnancement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Documentbudget
+    module:               Ordonnancement
+    prefix_path:          /Ordonnancement
+    column:               id
+    with_wildcard_routes: true
+lignebanquecaisse:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                lignebanquecaisse
+    module:               lignebanquecaisse
+    prefix_path:          /lignebanquecaisse
+    column:               id
+    with_wildcard_routes: true
+
+alimentationcompte:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                alimentationcompte
+    module:               alimentationcompte
+    prefix_path:          /alimentationcompte
+    column:               id
+    with_wildcard_routes: true
+
+fournisseur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                fournisseur
+    module:               fournisseur
+    prefix_path:          /fournisseur
+    column:               id
+    with_wildcard_routes: true
+
+declaration:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                declaration
+    module:               declaration
+    prefix_path:          /declaration
+    column:               id
+    with_wildcard_routes: true
+
+lignemouvementfacturation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                lignemouvementfacturation
+    module:               lignemouvementfacturation
+    prefix_path:          /lignemouvementfacturation
+    column:               id
+    with_wildcard_routes: true
+
+annulationengagement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                annulationengagement
+    module:               annulationengagement
+    prefix_path:          /annulationengagement
+    column:               id
+    with_wildcard_routes: true
+
+mouvementfacturation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                mouvementfacturation
+    module:               mouvementfacturation
+    prefix_path:          /mouvementfacturation
+    column:               id
+    with_wildcard_routes: true
+
+certificatretenue:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                certificatretenue
+    module:               certificatretenue
+    prefix_path:          /certificatretenue
+    column:               id
+    with_wildcard_routes: true
+
+retenuesource:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                retenuesource
+    module:               retenuesource
+    prefix_path:          /retenuesource
+    column:               id
+    with_wildcard_routes: true
+
+typetransfert:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typetransfert
+    module:               typetransfert
+    prefix_path:          /typetransfert
+    column:               id
+    with_wildcard_routes: true
+
+transfertbudget:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                transfertbudget
+    module:               transfertbudget
+    prefix_path:          /transfertbudget
+    column:               id
+    with_wildcard_routes: true
+
+parametragetranche:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                parametragetranche
+    module:               parametragetranche
+    prefix_path:          /parametragetranche
+    column:               id
+    with_wildcard_routes: true
+
+piecejoint:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                piecejoint
+    module:               piecejoint
+    prefix_path:          /piecejoint
+    column:               id
+    with_wildcard_routes: true
+categorietitre:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                categorietitre
+    module:               categorietitre
+    prefix_path:          /categorietitre
+    column:               id
+    with_wildcard_routes: true
+
+documentbudget:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                documentbudget
+    module:               documentbudget
+    prefix_path:          /documentbudget
+    column:               id
+    with_wildcard_routes: true
+
+typepiecejointbudget:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typepiecejointbudget
+    module:               typepiecejointbudget
+    prefix_path:          /typepiecejointbudget
+    column:               id
+    with_wildcard_routes: true
+
+documentachat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                documentachat
+    module:               documentachat
+    prefix_path:          /documentachat
+    column:               id
+    with_wildcard_routes: true
+sourcesbudget:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sourcesbudget
+    module:               sourcesbudget
+    prefix_path:          /sourcesbudget
+    column:               id
+    with_wildcard_routes: true
+projet:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                projet
+    module:               projet
+    prefix_path:          /projet
+    column:               id
+    with_wildcard_routes: true
+ligprotitrub:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ligprotitrub
+    module:               ligprotitrub
+    prefix_path:          /ligprotitrub
+    column:               id
+    with_wildcard_routes: true
+
+sousrubrique:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sousrubrique
+    module:               sousrubrique
+    prefix_path:          /sousrubrique
+    column:               id
+    with_wildcard_routes: true
+
+rubrique:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                rubrique
+    module:               rubrique
+    prefix_path:          /rubrique
+    column:               id
+    with_wildcard_routes: true
+
+titrebudjet:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                titrebudjet
+    module:               titrebudjet
+    prefix_path:          /titrebudjet
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: accueil, action: index }
+validerExerciceCourant:
+  url: /valider-exercice-courant
+  param: { module: accueil, action: validerExerciceCourant}
+  
+#Exercice
+exercice:
+  url: /exercice-comptable
+  param: { module: parametre, action: listeExercice }
+ajouterExercice:
+  url: /ajouter-exercice-comptable
+  param: { module: parametre, action: ajouterExercice }
+deleteExercice:
+  url: /supprimer-exercice-comptable
+  param: { module: parametre, action: deleteExercice }
+editExercice:
+  url: /afficher-exercice-comptable
+  param: { module: parametre, action: editExercice }
+updateExercice:
+  url: /modifer-exercice-comptable
+  param: { module: parametre, action: updateExercice }
+connect:
+  url:   /connect
+  param: { module: Admin, action: connect }
+deconnect:
+  url:   /deconnect
+  param: { module: Admin, action: deconnect }
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

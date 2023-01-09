@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           repartitionsalaireouvrier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          repartitionsalaireouvrier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          date: { label: "Date Création"}
+          annee: { label: "Année"}
+          jour: { label: "Nbre Jours"}
+          montant: { label: "Montant Total"}
+      list:
+          title: Liste des Répartitions des Salaires Ouvriers
+          display: [date,annee,jour,montant]
+      filter:
+          display: [date,annee]
+      form:    ~
+      edit:    ~
+      new:
+          title: Nouvelle Répartition des Salaires Ouvriers

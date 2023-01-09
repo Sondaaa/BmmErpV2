@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           categorierh
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          categorierh
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Libelle"}
+          id_ccorps : { label: "Corps"}
+        
+          
+      list:   
+          title: Liste des catégories 
+          display: [libelle,corps,souscorps]
+      filter:  ~
+      form:    ~
+      edit:   
+          title: Mise a jour Fiche 
+      new:     
+          title: Nouvelle Fiche 

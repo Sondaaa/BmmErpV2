@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           formuleprimes
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          formuleprimes
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+       
+          libelle : { label: "Libellé"}
+  
+          
+      list:    
+          title: Liste des Types Formules Primes
+          display: [libelle]
+      filter: 
+          display: [libelle]
+          
+      form:    ~
+      edit:    
+          title: Mise à jour Type Formule Prime
+      new:     
+          title: Nouvelle Type Formule Prime

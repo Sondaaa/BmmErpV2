@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           visitemedicale
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          visitemedicale
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_agents : { label: "Agents"}
+          datedepart : { label: "Date Départ"}
+          dateretour : { label: "Date Retour"}
+          destinatonvisitemedicale: { label: "Destination"}
+          nbrjour : { label: "Nbre de Jours"}
+          motif : { label: "Motif "}                  
+      list:   
+          title: Liste des Consultations médicales   
+          display: [agents,destinatonvisitemedicale,datedepart,dateretour,nbrjour,motif]
+      filter: 
+          display: [id_agents,datedepart,dateretour]
+      form:    ~
+      edit:   
+          title: Mise a jour Fiche Consultation médicale 
+      new:     
+          title: Nouvelle Fiche Consultation médicale  

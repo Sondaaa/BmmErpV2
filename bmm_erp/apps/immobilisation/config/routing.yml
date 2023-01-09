@@ -1,0 +1,313 @@
+organisme:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                organisme
+    module:               organisme
+    prefix_path:          /organisme
+    column:               id
+    with_wildcard_routes: true
+
+marqueimmobilisation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                marqueimmobilisation
+    module:               marqueimmobilisation
+    prefix_path:          /marqueimmobilisation
+    column:               id
+    with_wildcard_routes: true
+
+typeaffectationimmo:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeaffectationimmo
+    module:               typeaffectationimmo
+    prefix_path:          /typeaffectationimmo
+    column:               id
+    with_wildcard_routes: true
+
+parametreamortissement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                parametreamortissement
+    module:               parametreamortissement
+    prefix_path:          /parametreamortissement
+    column:               id
+    with_wildcard_routes: true
+
+parents:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                parents
+    module:               parents
+    prefix_path:          /parents
+    column:               id
+    with_wildcard_routes: true
+
+documentachat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                documentachat
+    module:               documentachat
+    prefix_path:          /documentachat
+    column:               id
+    with_wildcard_routes: true
+typefamille:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typefamille
+    module:               typefamille
+    prefix_path:          /typefamille
+    column:               id
+    with_wildcard_routes: true
+
+sourcesfinancemment:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sourcesfinancemment
+    module:               sourcesfinancemment
+    prefix_path:          /sourcesfinancemment
+    column:               id
+    with_wildcard_routes: true
+
+tableauxammortisement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                tableauxammortisement
+    module:               tableauxammortisement
+    prefix_path:          /tableauxammortisement
+    column:               id
+    with_wildcard_routes: true
+
+role:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                role
+    module:               role
+    prefix_path:          /role
+    column:               id
+    with_wildcard_routes: true
+
+tauxammortisement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                tauxammortisement
+    module:               tauxammortisement
+    prefix_path:          /tauxammortisement
+    column:               id
+    with_wildcard_routes: true
+
+compte:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                compte
+    module:               compte
+    prefix_path:          /compte
+    column:               id
+    with_wildcard_routes: true
+
+modeammortisement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                modeammortisement
+    module:               modeammortisement
+    prefix_path:          /modeammortisement
+    column:               id
+    with_wildcard_routes: true
+
+fabricant:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                fabricant
+    module:               fabricant
+    prefix_path:          /fabricant
+    column:               id
+    with_wildcard_routes: true
+
+document:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                document
+    module:               document
+    prefix_path:          /document
+    column:               id
+    with_wildcard_routes: true
+
+
+typeimmobilsation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeimmobilsation
+    module:               typeimmobilsation
+    prefix_path:          /typeimmobilsation
+    column:               id
+    with_wildcard_routes: true
+
+nature:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                nature
+    module:               nature
+    prefix_path:          /nature
+    column:               id
+    with_wildcard_routes: true
+
+poste:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                poste
+    module:               poste
+    prefix_path:          /poste
+    column:               id
+    with_wildcard_routes: true
+
+sousfamille:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sousfamille
+    module:               sousfamille
+    prefix_path:          /sousfamille
+    column:               id
+    with_wildcard_routes: true
+
+famille:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                famille
+    module:               famille
+    prefix_path:          /famille
+    column:               id
+    with_wildcard_routes: true
+
+categoerie:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                categoerie
+    module:               categoerie
+    prefix_path:          /categoerie
+    column:               id
+    with_wildcard_routes: true
+
+immobilisation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                immobilisation
+    module:               immobilisation
+    prefix_path:          /immobilisation
+    column:               id
+    with_wildcard_routes: true
+
+fournisseur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                fournisseur
+    module:               fournisseur
+    prefix_path:          /fournisseur
+    column:               id
+    with_wildcard_routes: true
+
+agents:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                agents
+    module:               agents
+    prefix_path:          /agents
+    column:               id
+    with_wildcard_routes: true
+
+typebureaux:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typebureaux
+    module:               typebureaux
+    prefix_path:          /typebureaux
+    column:               id
+    with_wildcard_routes: true
+
+bureaux:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                bureaux
+    module:               bureaux
+    prefix_path:          /bureaux
+    column:               id
+    with_wildcard_routes: true
+
+etage:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                etage
+    module:               etage
+    prefix_path:          /etage
+    column:               id
+    with_wildcard_routes: true
+
+site:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                site
+    module:               site
+    prefix_path:          /site
+    column:               id
+    with_wildcard_routes: true
+
+adresse:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                adresse
+    module:               adresse
+    prefix_path:          /adresse
+    column:               id
+    with_wildcard_routes: true
+
+gouvernera:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                gouvernera
+    module:               gouvernera
+    prefix_path:          /gouvernera
+    column:               id
+    with_wildcard_routes: true
+
+pays:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                pays
+    module:               pays
+    prefix_path:          /pays
+    column:               id
+    with_wildcard_routes: true
+
+societe:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                societe
+    module:               societe
+    prefix_path:          /societe
+    column:               id
+    with_wildcard_routes: true
+
+utilisateur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                utilisateur
+    module:               utilisateur
+    prefix_path:          /utilisateur
+    column:               id
+    with_wildcard_routes: true
+
+homepage:
+  url:   /
+  param: { module: immobilisation, action: index }
+Immo:
+  url:   /immo
+  param: { module: immob, action: index }
+Imprimercb:
+  url: /Imprimercb
+  param: { module: immobilisation, action: imprimercb }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

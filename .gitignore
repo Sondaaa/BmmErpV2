@@ -1,0 +1,17 @@
+/nbproject/
+/nbproject/private/private.xml
+/bmm_erp/cache/
+/test/
+/config/
+/bmm_erp/config/
+/bmm_erp/cache/
+/assets/Highcharts-3.0.7/exporting-server/java/highcharts-export/highcharts-export-convert/target/
+/assets/Highcharts-3.0.7/exporting-server/java/highcharts-export/highcharts-export-web/target/
+ .idea/
+.htaccess
+
+/bmm_erp/config/
+/bmm_erp/log/
+/bmm_erp/vendor/
+/bmm_erp/cache/
+

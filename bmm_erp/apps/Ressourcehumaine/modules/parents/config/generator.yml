@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           parents
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          parents
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+          title: Liste des Parents
+          display: [nom,prenom,date_naissance,observation]
+      filter:  
+          display: [nom,prenom]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche
+      new:    
+          title: Nouvelle fiche

@@ -1,0 +1,1 @@
+<?php include_partial('maquette_saisie/form', array('journals' => $journals, 'nature_pieces' => $nature_pieces)) ?>

@@ -1,0 +1,44 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           parcourcourier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          parcourcourier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_exp: { label: "Expéditeur"}
+          id_rec: { label: "Récepteur"}
+          id_courier: { label: "Courrier"}
+          mdreponse: { label: "Max date réponse"}
+          id_action: { label: "Action"}
+          datecreation: { label: "Date Création"}
+          mdreponse: {label: "Max Réponse"}
+          recepteur: {label: "Récepteur"}
+          description: { label: "Description"}
+          expdest: { label: "Expéditeur"}
+          actionparcour: { label: "Action"}
+          reponsetext: { label: "Remarque"}
+          courriersource: { label: "Courrier Source"}
+          id_user: { label: "Utilisateur"}
+          datecreationetdatemax: { label: "Date&Utilisateur"}
+          expdestinataire: { label: "Exp.&&Réc."}
+          courrieretcourriersource: { label: "Courrier && Source"}
+          id_typecourrier: { label: "Type Courrier"}
+          typecourrier: { label: "Type Courrier"}
+      list:   
+          title: "Mouvements des courriers"
+          display: [datecreationetdatemax,courrieretcourriersource,expdestinataire]
+          max_per_page: 10
+      filter:  
+          display: [datecreation,id_typecourrier,id_action,id_exp,id_rec,id_user]
+      form:    ~
+      edit:    ~
+      new:     ~

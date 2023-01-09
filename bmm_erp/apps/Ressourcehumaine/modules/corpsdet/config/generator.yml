@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           corpsdet
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          corpsdet
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Libellé"}
+          corps : { label: "Filière"}
+      list:    
+          title: Liste des corps
+          display: [corps,libelle]
+      filter:  ~
+      form:    ~
+      edit:   
+          title: Mise à jour fiche corps
+      new:     
+          title: Nouvelle fiche corps

@@ -1,0 +1,116 @@
+body{
+    padding: 30px;
+    text-align: left;
+    font-size: medium;
+    font-weight: bold;
+}
+.sf_admin_td_actions{
+    display: -webkit-box;
+}
+.navbar-default {
+    background-color: #f7f7f7 !important;
+    border-color: #428bca !important;
+}
+.table-contenue{
+    margin-top: -35px;
+}
+.btn-primary{
+    color: #fff !important;
+}
+.btnGauche{
+    margin-left: 79%;
+    position: absolute;
+    margin-top: -14%;
+    width: 220px;
+    height: 150px;
+    background-color: #08c3;
+    font-size: 25px;
+    text-align: center;
+}
+.navbar-default {
+    background-color: rgba(255,255,255,0.9);
+    border-color: #428bca;
+}
+a {
+    color: #428bca;
+    text-decoration: none;
+}
+
+.sf_admin_text   a{
+    color: black ;
+    text-decoration: none;
+}
+.nav>li>a:hover{
+    color: white;
+    background-color: #428bca;
+}
+.nav>li>a.active{
+    color: white;
+    background-color: #428bca !important;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+    color: white !important;
+    background-color: #428bca !important;
+}
+.sf_admin_foreignkey a{
+    color: black ;
+    text-decoration: none;
+}
+.sf_admin_date  a{
+    color: black ;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+    margin: 5px;
+}
+
+.sf_admin_filter{
+    width: 820px;
+    padding: 10px;
+}
+#sf_admin_content {
+    padding: 10px;
+}
+.modal-dialog{
+    width: 75% !important;
+}
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    width: 250px !important;
+}
+body{
+
+    background-size: 100% 100%;
+
+}
+.col-lg-12{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.disabledbutton {
+    pointer-events: none;
+    opacity: 0.95;
+}
+.logoBmm{
+    color: #31708f !important;
+    font-size: 18px !important;
+    font-family: inherit;
+    font-style: italic;
+   
+
+}
+.disabledbutton {
+    pointer-events: none;
+    opacity: 0.95;
+}
+#page-wrapper{
+    margin: 0 0 0 88px !important;
+   
+}
+.sidebar{
+    width: 140px !important;
+    margin-top: 5%;
+}
+.sidebar .sidebar-nav.navbar-collapse{
+    padding-top: 10%;
+}

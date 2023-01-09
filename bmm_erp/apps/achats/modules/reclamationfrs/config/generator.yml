@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           reclamationfrs
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          reclamationfrs
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          daterec: {label: "Date reclamation"}
+          id_frs: { label: "Fournisseur"}
+          object: { label: "Objet"}
+      list:    
+          title: Liste des réclamations
+          display: [daterec,object,fournisseur]
+      filter:  
+          display: [daterec,object,id_frs]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche réclamation
+      new:     
+          title: Nouvelle réclamation
+      

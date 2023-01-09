@@ -1,0 +1,45 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           transfertbudget
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          transfertbudget
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+#datecreation date,
+#  id_source integer,
+#  id_destination integer,
+#  id_typetransfert integer,
+#  objectif text,
+#  description text,
+#  mnttransfert numeric(18,3),
+#  sourcebudget text,
+    config:
+      actions: ~
+      fields:  
+         datecreation: { label: "Date de création "} 
+         id_source: { label : "Source à partir de budget(Interne)"}
+         sourcebudget: { label: "Source externe"}
+         description: { label: "Description de transfert"}
+         objectif: { label: "Objectif de transfert"}
+         mnttransfert: { label: "Montant transféré"}
+         id_destination: { label: "Destination du budget"}
+         id_typetransfert: { label: "Type de Transfert"}
+         ligprotitrub: { label: "Source à partir de budget(Interne)"}
+         destination: { label: "Description de transfert"}
+         typetransfert: { label: "Type de transfert"}
+         sourcedubudget: { label: "Source à partir de budget(Interne)"}
+      list:    
+          title: Liste des transferts
+          display: [datecreation,typetransfert,objectif,sourcedubudget,sourcebudget,destination,mnttransfert]
+      filter:  
+          display: [datecreation,id_typetransfert,id_source,id_destination]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche de transfert %%objectif%%
+      new:     
+          title: Nouvelle fiche de transfert

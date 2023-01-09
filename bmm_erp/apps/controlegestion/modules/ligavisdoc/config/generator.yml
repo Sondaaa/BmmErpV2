@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ligavisdoc
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ligavisdoc
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          datecreation: { label: "Date de création"}
+          mntdisponible: { label: "Reliquat"}
+          id_avis: { label: "Avis Budgétaires"}
+          id_ligprotitrub: { label: "Rubrique Budgétaire"}
+          id_doc: { label: "B.C. Interne"}
+          avis: { label: "Avis Budgétaires"}
+          ligprotitrub: { label: "Rubrique Budgétaire"}
+          documentachat: { label: "B.C. Interne"}
+      list:
+          title: Liste des Avis Budgétaires
+          display: [avis,datecreation,documentachat,ligprotitrub,mntdisponible]
+          batch_actions: {}
+      filter:
+          display: [id_doc,datecreation]
+      form:    ~
+      edit:    ~
+      new:     ~

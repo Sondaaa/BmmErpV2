@@ -1,0 +1,38 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           utilisateur
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          utilisateur
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        login: {label: "Pseudo"}
+        pwd: {label: "Mot de passe"}
+        id_role: { label: "Role"}
+        Agents: {label: "Personnel"}
+        id_parent: {label: "Personnel"}
+        
+      list:
+        title: Liste des utilisateurs
+        display: [login,Agents,role]
+        object_actions:
+          _edit:      ~
+        batch_actions: {}
+      filter:
+        display: [login]
+      form:
+        actions:
+          _list:   ~
+          _save:   ~
+      edit:
+        title: Modifier utilisateur
+      new:
+        title: Ajouter utilisateur

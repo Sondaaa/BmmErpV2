@@ -1,0 +1,137 @@
+    1  apt-get update
+    2  apt-get upgrade
+    3  uname -r
+    4  uname -a
+    5  nano /etc/apt/sources.list
+    6  apt-get install apache2
+    7  nano /etc/apache2/apache2.conf
+    8  /etc/init.d/apache2 restart
+    9  apache2 -v
+   10  a2enmod rewrite
+   11  a2enmod userdir
+   12  service apache2 restart
+   13  apt-get install libapache2-mod-php5 php5 php5-common php5-curl php5-dev php5-gd php5-idn php-pear php5-imagick php5-imap php5-json php5-mcrypt php5-memcache php5-mhash php5-ming php5-mysql php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl
+   14  /etc/init.d/apache2 restart
+   15  nano /etc/php5/apache2/php.ini
+   16  nano /etc/php5/apache2/php.ini
+   17  /etc/init.d/apache2 restart
+   18  adduser baniola
+   19  mkdir /home/baniola/public_html
+   20  nano /home/baniola/public_html/index.php
+   21  chown baniola:baniola -R /home/baniola/public_html/
+   22  chmod -R g-w,o-w /home/baniola/public_html/
+   23  nano /etc/apache2/mods-enabled/php5.conf
+   24  /etc/init.d/apache2 restart
+   25  apt-get install mysql-server
+   26  apt-get install phpmyadmin
+   27  mysql_secure_installation
+   28  apt-get install apache2-suexec
+   29  apt-get install apache2-suexec-custom
+   30  nano /etc/apache2/suexec/www-data
+   31  apt-get install libapache2-mod-suphp
+   32  nano /etc/suphp/suphp.conf
+   33  a2dismod php5
+   34  a2enmod suexec
+   35  a2enmod suphp
+   36  /etc/init.d/apache2 restart
+   37  mv /etc/php5/cgi/php.ini /etc/php5/cgi/php.ini-old
+   38  cp /etc/php5/apache2/php.ini /etc/php5/cgi/php.ini
+   39  /etc/init.d/apache2 restart
+   40  adduser phpmyadmin
+   41  mkdir /home/phpmyadmin/public_html
+   42  cp -R /usr/share/phpmyadmin/* /home/phpmyadmin/public_html/
+   43  chown -R phpmyadmin:phpmyadmin /home/phpmyadmin/public_html/
+   44  chmod -R g-w,o-w /home/phpmyadmin/public_html/
+   45  cp /etc/phpmyadmin/apache.conf /etc/phpmyadmin/apache.conf.save
+   46  nano /etc/phpmyadmin/apache.conf
+   47  /etc/init.d/apache2 restart
+   48  nano /etc/ssh/sshd_config 
+   49  apt-get install vsftpd
+   50  nano /etc/vsftpd.conf
+   51  /etc/init.d/vsftpd restart
+   52  echo "deb http://ftp.fr.debian.org/debian/ sid main" >> /etc/apt/sources.list
+   53  apt-get update
+   54  apt-get update
+   55  apt-get install vsftpd/sid
+   56  nano /etc/apt/sources.list
+   57  apt-get update
+   58  nano /etc/vsftpd.conf
+   59  /etc/init.d/vsftpd restart
+   60  apt-get rmove vsftpd
+   61  apt-get remove vsftpd
+   62  /etc/init.d/vsftpd restart
+   63  echo "deb http://ftp.cyconet.org/debian wheezy-updates main non-free contrib" > /etc/apt/sources.list.d/wheezy-updates.cyconet.list
+   64  echo "deb http://ftp.cyconet.org/debian wheezy-updates main non-free contrib" > /etc/apt/sources.list.d/wheezy-updates.cyconet.list
+   65  nano /etc/apt/sources.list
+   66  apt-get update
+   67  apt-get install -t wheezy-updates debian-cyconet-archive-keyring vsftpd
+   68  echo "allow_writeable_chroot=YES" >> /etc/vsftpd.conf
+   69  vsftpd -v
+   70  nano /etc/vsftpd.conf
+   71  /etc/init.d/vsftpd restart
+   72  htop
+   73  apt-get install htop
+   74  htop
+   75  nano /etc/apache2/sites-available/default
+   76  cp /etc/apache2/sites-available/default /etc/apache2/sites-available/baniola.com
+   77  nano /etc/apache2/sites-available/baniola.com 
+   78  a2ensite baniola.com
+   79  service apache2 reload
+   80  a2enmod ssl
+   81  cp /etc/apache2/sites-available/default-ssl /etc/apache2/sites-available/baniola.com-ssl
+   82  nano /etc/apache2/sites-available/baniola.com-ssl 
+   83  a2dissite default-ssl
+   84  a2ensite baniola.com-ssl
+   85  service apache2 reload
+   86  apt-get update
+   87  apt-get install git
+   88  git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt --depth=1
+   89  cd /opt/letsencrypt
+   90  git pull
+   91  /opt/letsencrypt/letsencrypt-auto
+   92  clear
+   93  /opt/letsencrypt/letsencrypt-auto --apache -d baniola.com -d www.baniola.com
+   94  reboot
+   95  /opt/letsencrypt/letsencrypt-auto --apache -d baniola.com -d www.baniola.com
+   96  apt-get install -t wheezy-backports libaugeas0 augeas-lenses
+   97  apt-get install libaugeas0 augeas-lenses
+   98  echo "deb http://ftp.debian.org/debian wheezy-backports main" | sudo tee -a /etc/apt/sources.list
+   99  echo "deb http://ftp.debian.org/debian wheezy-backports main" |tee -a /etc/apt/sources.list
+  100  nano /etc/apt/sources.list
+  101  apt-get update
+  102  apt-get install -t wheezy-backports libaugeas0 augeas-lenses
+  103  /opt/letsencrypt/letsencrypt-auto --apache -d baniola.com -d www.baniola.com
+  104  htop
+  105  nano /etc/apache2/sites-available/baniola.com
+  106  nano /etc/apache2/sites-available/baniola.com-ssl 
+  107  /opt/letsencrypt/letsencrypt-auto --apache --renew-by-default  -d baniola.com -d www.baniola.com
+  108  curl -L -o /usr/local/sbin/le-renew http://do.co/le-renew
+  109  nano /etc/apt/sources.list
+  110  apt-get install php5-curl
+  111  curl -L -o /usr/local/sbin/le-renew http://do.co/le-renew
+  112  apt-get install curl
+  113  curl -L -o /usr/local/sbin/le-renew http://do.co/le-renew
+  114  chmod +x /usr/local/sbin/le-renew
+  115  le-renew baniola.com
+  116  crontab -e
+  117  htop
+  118  htop
+  119  apt-get update
+  120  apt-get upgrade
+  121  htop
+  122  useradd smmodes
+  123  mkdir /home/smmodes
+  124  mkdir /home/smmodes/public_html
+  125  useradd smmodes
+  126  adduser smmodes
+  127  userdelete smmodes
+  128  userdel smmodes
+  129  adduser smmodes
+  130  chown smmodes:smmodes -R /home/smmodes/public_html
+  131  chmod -R g-w,o-w /home/smmodes/public_html
+  132  cp /etc/apache2/sites-available/default /etc/apache2/sites-available/smmodes.com
+  133  nano /etc/apache2/sites-available/smmodes.com
+  134  a2ensite smmodes.com
+  135  /etc/init.d/apache2 reload
+  136  nano /etc/apache2/sites-available/smmodes.com
+  137  history > /home/commande.txt

@@ -1,0 +1,40 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           rapportcontrole
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          rapportcontrole
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          datecreation: { label: "Date Création"}
+          id_naturetravaux: { label: "Nature Travaux"}
+          naturetravaux: { label: "Nature Travaux"}
+          id_projet: { label: "Projet"}
+          projet: { label: "Projet"}
+          id_chantiercontrole: { label: "Chantier"}
+          chantiercontrole: { label: "Chantier"}
+          id_servicecontrole: { label: "Service"}
+          servicecontrole: { label: "Service"}
+          observation: { label: "Observation"}
+          total: { label: "Total"}
+      list:
+          title: Liste des Rapports Travaux des Chantiers          
+          display: [datecreation,chantiercontrole,servicecontrole,naturetravaux,projet,total]
+      filter:
+          display: [id_chantiercontrole,id_servicecontrole,id_naturetravaux,id_projet]
+      form:
+          actions:
+            _list:   ~
+            _save:   ~
+      edit:
+          title: Mise à Jour Rapports Travaux
+      new:
+          title: Nouveau Rapport Travaux du Chantier

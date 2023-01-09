@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           menus
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          menus
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          name: {label: "Nom du menu"}
+          id_parent: {label: "Nom du menu parent"}
+          link: {label: "Lien du menu"}
+      list:
+          title: Liste des Menus E.R.P
+          display: [ordre,name,link]
+          max_per_page: 10
+          sort:           [ordre, asc]
+      filter:
+          display: [name]
+      form:    ~
+      edit:
+          title: Modifier %%name%%
+      new:
+          title: Nouveau Menu E.R.P

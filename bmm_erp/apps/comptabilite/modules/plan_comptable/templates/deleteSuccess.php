@@ -1,0 +1,1 @@
+<?php include_partial('plan_comptable/list_comptes', array('comptes' => $comptes)); ?>

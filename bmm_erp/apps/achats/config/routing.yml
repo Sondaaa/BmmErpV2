@@ -1,0 +1,266 @@
+detailcommande:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                detailcommande
+    module:               detailcommande
+    prefix_path:          /detailcommande
+    column:               id
+    with_wildcard_routes: true
+ribbancaire:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ribbancaire
+    module:               ribbancaire
+    prefix_path:          /ribbancaire
+    column:               id
+    with_wildcard_routes: true
+
+typecommande:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typecommande
+    module:               typecommande
+    prefix_path:          /typecommande
+    column:               id
+    with_wildcard_routes: true
+
+droittimbre:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                droittimbre
+    module:               droittimbre
+    prefix_path:          /droittimbre
+    column:               id
+    with_wildcard_routes: true
+
+tva:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                tva
+    module:               tva
+    prefix_path:          /tva
+    column:               id
+    with_wildcard_routes: true
+
+ordredeservicecontratachat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ordredeservicecontratachat
+    module:               ordredeservicecontratachat
+    prefix_path:          /ordredeservicecontratachat
+    column:               id
+    with_wildcard_routes: true
+
+contratachat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                contratachat
+    module:               contratachat
+    prefix_path:          /contratachat
+    column:               id
+    with_wildcard_routes: true
+
+demandeur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                demandeur
+    module:               demandeur
+    prefix_path:          /demandeur
+    column:               id
+    with_wildcard_routes: true
+unitemarche:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                unitemarche
+    module:               unitemarche
+    prefix_path:          /unitemarche
+    column:               id
+    with_wildcard_routes: true
+symbole:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                symbole
+    module:               symbole
+    prefix_path:          /symbole
+    column:               id
+    with_wildcard_routes: true
+
+lieulivraisson:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                lieulivraisson
+    module:               lieulivraisson
+    prefix_path:          /lieulivraisson
+    column:               id
+    with_wildcard_routes: true
+
+objectdocument:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                objectdocument
+    module:               objectdocument
+    prefix_path:          /objectdocument
+    column:               id
+    with_wildcard_routes: true
+
+reclamationfrs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                reclamationfrs
+    module:               reclamationfrs
+    prefix_path:          /reclamationfrs
+    column:               id
+    with_wildcard_routes: true
+
+familleartfrs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                familleartfrs
+    module:               familleartfrs
+    prefix_path:          /familleartfrs
+    column:               id
+    with_wildcard_routes: true
+
+notesbce:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                notesbce
+    module:               notesbce
+    prefix_path:          /notesbce
+    column:               id
+    with_wildcard_routes: true
+
+activitetiers:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                activitetiers
+    module:               activitetiers
+    prefix_path:          /activitetiers
+    column:               id
+    with_wildcard_routes: true
+
+adressefrs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                adressefrs
+    module:               adressefrs
+    prefix_path:          /adressefrs
+    column:               id
+    with_wildcard_routes: true
+
+fournisseur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                fournisseur
+    module:               fournisseur
+    prefix_path:          /fournisseur
+    column:               id
+    with_wildcard_routes: true
+
+parametragetypedoc:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                parametragetypedoc
+    module:               parametragetypedoc
+    prefix_path:          /parametragetypedoc
+    column:               id
+    with_wildcard_routes: true
+
+documentachat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                documentachat
+    module:               documentachat
+    prefix_path:          /documentachat
+    column:               id
+    with_wildcard_routes: true
+
+visaachat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                visaachat
+    module:               visaachat
+    prefix_path:          /visaachat
+    column:               id
+    with_wildcard_routes: true
+
+avis:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                avis
+    module:               avis
+    prefix_path:          /avis
+    column:               id
+    with_wildcard_routes: true
+
+sourcesbudget:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sourcesbudget
+    module:               sourcesbudget
+    prefix_path:          /sourcesbudget
+    column:               id
+    with_wildcard_routes: true
+
+ligprotitrub:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ligprotitrub
+    module:               ligprotitrub
+    prefix_path:          /ligprotitrub
+    column:               id
+    with_wildcard_routes: true
+
+sousrubrique:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sousrubrique
+    module:               sousrubrique
+    prefix_path:          /sousrubrique
+    column:               id
+    with_wildcard_routes: true
+
+rubrique:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                rubrique
+    module:               rubrique
+    prefix_path:          /rubrique
+    column:               id
+    with_wildcard_routes: true
+
+titrebudjet:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                titrebudjet
+    module:               titrebudjet
+    prefix_path:          /titrebudjet
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: documentachat, action: index }
+
+#Demandeur
+saveDemandeur:
+  url: /ajouter-demandeur
+  param: { module: demandeur, action: saveDemandeur }
+connect:
+  url:   /connect
+  param: { module: Admin, action: connect }
+deconnect:
+  url:   /deconnect
+  param: { module: Admin, action: deconnect }
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           adresse
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          adresse
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id_couvernera: { label : "Gouvernera"}
+        codepostal: { label: "Code Postal"}
+        gouvernera: { label : "Gouvernera"}
+      list:
+        title: Liste des Adresses
+        display: [adresse,codepostal]
+      filter:  ~
+      form:    ~
+      edit:
+        title: Modifier Adresse
+      new:
+        title: Noveaux Adresse

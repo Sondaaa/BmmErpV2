@@ -1,0 +1,35 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           piecejoint
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          piecejoint
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_typepiece: { label: "Type Pièce"}
+          objet: { label: "Object"}
+          typepiece: { label: "Type Pièce"}
+          id_courrier: { label: "Courrier"}
+          id_parcour: { label: "Courrier Transféré"}
+          sujet: { label: "Observation"}
+          id_titrebudget: { label: "Titre Budget"}
+          titrebudjet: { label: "Titre du Budget"}
+          id_transfert: { label: "Fiche de transfert"}
+      list:    
+          title: Liste des Pièces-Jointes
+          display: [objet,titrebudjet]
+      filter:  
+          display: [id_titrebudget]
+      form:    
+          display: [id,id_titrebudget,id_transfert,objet,id_typepiece,chemin,sujet]
+      edit:    
+          title: Mise à jour  - %%id_titrebudget%% -
+      new:     ~

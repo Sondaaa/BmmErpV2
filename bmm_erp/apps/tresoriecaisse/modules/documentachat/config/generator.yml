@@ -1,0 +1,51 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           documentachat
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          documentachat
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          reference: {label: "Référence"}
+          datecreation: { label: "Date de création"}
+          observation: { label: "Observation"}
+          chemindoc: { label: "Image"}
+          id_demandeur: { label: "Demandeur"}
+          id_typedoc: { label: "Type doc."}
+          id_adresse: { label: "Adresse"}
+          id_lignedirectionsite: { label: "Direction par site"}
+          desiegnation: { label: "Desiegnation"}
+          id_objet: { label: "Objet"}
+          id_projet: { label: "Projet"}
+          mht: { label: "Mnt. HT"}
+          mnttva: { label: "Mnt. TVA"}
+          mntttc: { label: "Mnt. TTC"}
+          numerodocachat: { label: "Numero" }
+          typeparnumero: { label: "Type"}
+          datecreationachat: { label: "Date création"}
+          etatdocument: {label: "Etat"}
+          id_etatdoc: { label: "Etat"}
+      list:    
+          title: Listes des Bon de commandes externes
+          display: [datecreationachat,reference,agents]
+          object_actions:
+            _edit:      ~
+          batch_actions: {}
+          max_per_page: 5
+      filter:  
+          display: [datecreation,id_typedoc,id_demandeur]
+      form:    
+          actions:
+             _list:   ~
+             _save:   ~
+      edit:    ~
+      new:     
+          title: NOUVEAU FICHE

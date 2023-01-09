@@ -1,0 +1,39 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           mouvementbanciare
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          mouvementbanciare
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          reford: { label: "Référence d'ordonnace de paiement"}
+          id_object: { label: "Objet de paiement"}
+          objetreglement: { label: "Objet de réglement"}
+          refbenifi: { label: "Référence Bénéficiare"}
+          RIB: { label: "RIB Bénéficiaire"}
+          id_banque: { label: "Banque"}
+          caissesbanques: { label: "Banque"}
+          id_instrument: { label: "Instrument"}
+          instrumentpaiment: { label: "Instrument"}
+          id_cheque: { label: "Référence chéquier"}
+          papiercheque: { label: "Référence chéquier"}
+          mntenoper: { label: "Mnt d'opération"}
+          dateoperation: { label: "Date d'opération"}
+      list:    
+          title: Liste des mouvements caisse
+          display: [dateoperation,objetreglement,caissesbanques,instrumentpaiment,debit,credit,solde]
+      filter:  
+          display: [dateoperation,id_banque]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche de mouvement
+      new:     
+          title: Nouvelle fiche de mouvement

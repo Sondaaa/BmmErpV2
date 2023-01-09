@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           lieuchantier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          lieuchantier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          libelle: { label: "Lieu Chantier"}
+          id_lieutravail: { label: "Lieu Travail"}
+          Lieutravail: { label: "Lieu Travail"}
+      list:
+          title: Liste des Lieux Chantiers          
+          display: [libelle,Lieutravail]
+      filter:
+          display: [libelle,id_lieutravail]
+      form:
+          actions:
+            _list:   ~
+            _save:   ~
+      edit:
+          title: Mise à jour %%libelle%%
+      new:
+          title: Nouveau lieu chantier

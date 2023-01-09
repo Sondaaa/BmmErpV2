@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typepiece
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typepiece
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+          title: Liste des Types de pièce-jointe
+          display: [type]
+          max_per_page: 5
+      filter:  ~
+      form:    ~
+      edit:
+          title: Modifier %%type%%
+      new:
+          title: Nouveau type pièce-jointe

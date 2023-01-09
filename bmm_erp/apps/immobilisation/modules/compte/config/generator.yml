@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           compte
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          compte
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        comptecomptable: { label: "Compte Comptable"}
+      list:
+        title: Lise des comptes comptables
+        display: [comptecomptable]
+        max_per_page: 5
+      filter:  ~
+      form:    ~
+      edit:
+        title: Modifier %%comptecomptable%%
+      new:
+        title: Noveau compte

@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           retenue
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          retenue
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Libelle"}
+          typeretenue : { label: "Type Retenue"}
+      list:   
+          title: Liste des Types Retenues 
+          display: [libelle,typeretenue,typeavancepret]
+      filter:  
+           display: [libelle,id_type]
+      form:    ~
+      edit:   
+          title: Mise a jour Fiche 
+      new:     
+          title: Nouvelle Fiche 

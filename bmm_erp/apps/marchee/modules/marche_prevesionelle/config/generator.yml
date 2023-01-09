@@ -1,0 +1,46 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           MarchePrevesionelle
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          marche_prevesionelle
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: {label: "Nouvelle fiche du marches prévisionnelle"}
+      
+      fields:  
+          name: {label: "Sujet du marches موضوع الصفقة"}
+          nbre_jour: {label: "Creation/Jour آجال الإنجاز"}
+          id_methode: {label: "Methode de conclusion طريقة الابرام"}
+          id_procedure: {label: "Procedure الإجراءات"}
+          id_sources: {label: "Source مصدر التمويل"}
+          created_cahier: {label: "date creation إعداد كراس الشروط"}
+          date_annonce: {label: "الإعلان عن المنافسة"}
+          date_overture: {label: "فتح العروض"}
+          date_nomination: {label: "تعين لجنة الشراءات بالملف"}
+          date_transmission: {label: "إحالة الملف على لجنة الصفقات"}
+          date_reponse: {label: "الإجابة لجنة الصفقات"}
+          date_edition: {label: "النشر نتائج المنافسة"}
+          date_notifier: {label: "تبليغ المنافسة"}
+          date_commencement: {label: "بداية الإنجاز"}
+          id_exercice: {label: "Exercice"}
+      list:    
+          title: Liste des marches prévisionnelle
+          display: [exercice,name,nbre_jour,methode_conclusion,procedure_marche,source_marcheprevesionelle]
+          max_per_page: 5
+      filter:   
+        display: [id_exercice,name,id_methode,id_procedure,id_sources]
+      form:    
+        display: [id_exercice,name,nbre_jour,id_methode,id_procedure,id_sources,created_cahier,date_annonce,date_overture,date_nomination,date_transmission,date_reponse,date_edition,date_notifier,date_commencement]
+         
+      edit:
+          title: Modifier  %%name%%
+      new:     
+          title: Nouvelle fiche du marches prévisionnelle

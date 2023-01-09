@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           jourferier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          jourferier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+           date : { label: "Jour Férier"}    
+           libelle : { label: "Libellé"} 
+           paye : { label: "Payé"}
+           periodique: { label: "Périodique"}
+      list:    
+          title: Liste des  Jours Fériers
+          display: [libelle,date ,paye,periodique]
+      filter:  
+          display: [date,paye]
+      form:    ~
+      edit:   
+          title: Mise à jour fiche Jour Férier
+      new: 
+          title: Nouvelle fiche Jour Férier

@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           pvrception
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          pvrception
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          datepvrecptionprovisoire: { label: "Date P.V"}
+          typepv: { label: "Type P.V"}          
+      list:    
+         title: Liste des P.V Réceptions
+         display: [datepvrecptionprovisoire,typepv]
+         max_per_page: 10
+      filter:  
+          display: [datepvrecptionprovisoire,typepv]
+      form:    ~
+      edit:    
+         title: Mise à jour fiche P.V Réception
+      new:     
+         title: Nouveau P.V Réception

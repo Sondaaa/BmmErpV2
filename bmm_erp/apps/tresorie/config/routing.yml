@@ -1,0 +1,141 @@
+objetreglement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                objetreglement
+    module:               objetreglement
+    prefix_path:          /objetreglement
+    column:               id
+    with_wildcard_routes: true
+
+documentbudget_Ordonnancement2:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Documentbudget
+    module:               Ordonnancement2
+    prefix_path:          /Ordonnancement2
+    column:               id
+    with_wildcard_routes: true
+
+documentbudget_Ordonnacement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Documentbudget
+    module:               Ordonnacement
+    prefix_path:          /Ordonnacement
+    column:               id
+    with_wildcard_routes: true
+
+documentbudget_Ordonnancement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Documentbudget
+    module:               Ordonnancement
+    prefix_path:          /Ordonnancement
+    column:               id
+    with_wildcard_routes: true
+
+certificatretenue:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                certificatretenue
+    module:               certificatretenue
+    prefix_path:          /certificatretenue
+    column:               id
+    with_wildcard_routes: true
+
+documentbudget:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                documentbudget
+    module:               documentbudget
+    prefix_path:          /documentbudget
+    column:               id
+    with_wildcard_routes: true
+
+mouvementbanciare:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                mouvementbanciare
+    module:               mouvementbanciare
+    prefix_path:          /mouvementbanciare
+    column:               id
+    with_wildcard_routes: true
+    
+lignebanquecaisse:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                lignebanquecaisse
+    module:               lignebanquecaisse
+    prefix_path:          /lignebanquecaisse
+    column:               id
+    with_wildcard_routes: true
+
+ligneoperationcaisse:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ligneoperationcaisse
+    module:               ligneoperationcaisse
+    prefix_path:          /ligneoperationcaisse
+    column:               id
+    with_wildcard_routes: true
+
+demarcheur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                demarcheur
+    module:               demarcheur
+    prefix_path:          /demarcheur
+    column:               id
+    with_wildcard_routes: true
+
+caissesbanques:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                caissesbanques
+    module:               caissesbanques
+    prefix_path:          /caissesbanques
+    column:               id
+    with_wildcard_routes: true
+
+typecaisse:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typecaisse
+    module:               typecaisse
+    prefix_path:          /typecaisse
+    column:               id
+    with_wildcard_routes: true
+
+categorieoperation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                categorieoperation
+    module:               categorieoperation
+    prefix_path:          /categorieoperation
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+documentachat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                documentachat
+    module:               documentachat
+    prefix_path:          /documentachat
+    column:               id
+    with_wildcard_routes: true
+homepage:
+  url:   /
+  param: { module: caissesbanques, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

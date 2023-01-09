@@ -1,0 +1,39 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Titrebudjet
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          prototype
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: { label: "Nouvelle fiche prototype"}
+      fields:  
+          libelle: { label: "Titre de budget"}
+          datecreation: { label : "Date de Création"}
+          id_projet: { label: " Projet"}
+          id_direction: { label: " Direction"}
+          id_source : { label: "Origine"}
+          sourcesbudget: { label: "Origine"}
+          projet: { label: "Projet"}
+          mntglobal: { label: "Mnt. global"}
+          typebudget: { label: "Type Budget"}
+          id_cat: { label: "Catégorie du budget"}
+          categorietitre: { label: "Catégorie du budget"}
+      list:    
+          title: Liste des prototype budgétaire
+          display: [libelle,categorietitre,projet,sourcesbudget]
+          max_per_page: 20
+      filter:  
+          display: [id_projet,id_source]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche prototype - %%libelle%%
+      new:     
+          title: Nouvelle fiche prototype

@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           niveaueducatif
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          niveaueducatif
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: 
+           id_niveaueducatif: {label: "Niveau Educatif"}
+      list:    
+          title: Liste des niveaux éducatifs
+          display: [libelle]
+      filter:  ~
+      form:    ~
+      edit:   
+          title: Mise à jour fiche
+      new:     
+          title: Nouvelle fiche 

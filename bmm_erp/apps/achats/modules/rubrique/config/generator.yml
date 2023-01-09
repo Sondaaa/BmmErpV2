@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           rubrique
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          rubrique
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: { label: "Nom Rubrique"}
+          id_rubrique: { label: "Rubrique"}
+          rubriquebysousrubrique: { label: "Rubrique"}
+      list:    
+          title: Liste des Rubriques Ou Sous Rubriques
+          display: [libelle,rubriquebysousrubrique]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour %%libelle%%
+      new:     
+          title: Nouveau rubrique ou sous rubrique

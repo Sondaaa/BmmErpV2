@@ -1,0 +1,43 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           fournisseur
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          fournisseur
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: {label: "Nouvelle fiche fournisseur"}
+      fields:  
+          reference: { label: "Référence Fournisseur"}
+          rs: { label: "Raison Sociale"}
+          nom: { label: "Nom responsable"}
+          prenom: { label: "Prénom responsable"}
+          tel: { label: "Tél"}
+          gsm: { label: "Gsm"}
+          mail: { label: "E-Mail"}
+          id_activite: { label: "Activité fournisseur"}
+          activitetiers: { label: "Activité fournisseur"}
+          datecreation: { label: "Date de création"}
+          gouvernera: { label: "Governorat"}
+          nfiche: { label: "N° Fiche "}
+          codefrs: { label: "Code Fournisseur"}
+          id_famillearticle: { label: "Famille d'article"}
+          id_plancomptable: {labe: "Compte comptable "}
+          plancomptable: {labe: "Compte comptable "}
+      list:    
+          title: Liste des fournisseurs
+          display: [codefrs,nfiche,reference,rs,tel,mail,activitetiers,plancomptable]
+      filter:  
+          display: [codefrs,rs,id_famillearticle,id_activite]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche fournisseur - %%rs%%
+      new:     
+          title: Nouvelle fiche fournisseur

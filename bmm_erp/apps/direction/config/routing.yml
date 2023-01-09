@@ -1,0 +1,56 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+parcourcourier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                parcourcourier
+    module:               parcourcourier
+    prefix_path:          /parcourcourier
+    column:               id
+    with_wildcard_routes: true
+courrier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                courrier
+    module:               courrier
+    prefix_path:          /courrier
+    column:               id
+    with_wildcard_routes: true
+immobilisation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                immobilisation
+    module:               immobilisation
+    prefix_path:          /immobilisation
+    column:               id
+    with_wildcard_routes: true
+titrebudjet:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                titrebudjet
+    module:               titrebudjet
+    prefix_path:          /titrebudjet
+    column:               id
+    with_wildcard_routes: true
+ligprotitrub:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ligprotitrub
+    module:               ligprotitrub
+    prefix_path:          /ligprotitrub
+    column:               id
+    with_wildcard_routes: true
+homepage:
+  url:   /
+  param: { module: parcourcourier, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

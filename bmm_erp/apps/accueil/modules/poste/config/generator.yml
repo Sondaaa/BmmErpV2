@@ -1,0 +1,25 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           poste
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          poste
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+      list:
+        title: Liste des Postes
+        display: [poste]
+      filter:  ~
+      form:    ~
+      edit:
+        title: Modifier %%poste%%
+      new:
+        title: Nouvelle Poste

@@ -1,0 +1,580 @@
+notesbce:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                notesbce
+    module:               notesbce
+    prefix_path:          /notesbce
+    column:               id
+    with_wildcard_routes: true
+
+objectdocument:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                objectdocument
+    module:               objectdocument
+    prefix_path:          /objectdocument
+    column:               id
+    with_wildcard_routes: true
+
+parametragetypedoc:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                parametragetypedoc
+    module:               parametragetypedoc
+    prefix_path:          /parametragetypedoc
+    column:               id
+    with_wildcard_routes: true
+
+visaachat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                visaachat
+    module:               visaachat
+    prefix_path:          /visaachat
+    column:               id
+    with_wildcard_routes: true
+
+avis:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                avis
+    module:               avis
+    prefix_path:          /avis
+    column:               id
+    with_wildcard_routes: true
+
+marqueimmobilisation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                marqueimmobilisation
+    module:               marqueimmobilisation
+    prefix_path:          /marqueimmobilisation
+    column:               id
+    with_wildcard_routes: true
+
+menus:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                menus
+    module:               menus
+    prefix_path:          /menus
+    column:               id
+    with_wildcard_routes: true
+
+profil:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                profil
+    module:               profil
+    prefix_path:          /profil
+    column:               id
+    with_wildcard_routes: true
+
+applicationmoduleaction:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                applicationmoduleaction
+    module:               applicationmoduleaction
+    prefix_path:          /applicationmoduleaction
+    column:               id
+    with_wildcard_routes: true
+
+applicationmodule:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                applicationmodule
+    module:               applicationmodule
+    prefix_path:          /applicationmodule
+    column:               id
+    with_wildcard_routes: true
+
+application:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                application
+    module:               application
+    prefix_path:          /application
+    column:               id
+    with_wildcard_routes: true
+
+typedocbudget:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typedocbudget
+    module:               typedocbudget
+    prefix_path:          /typedocbudget
+    column:               id
+    with_wildcard_routes: true
+
+typeios:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeios
+    module:               typeios
+    prefix_path:          /typeios
+    column:               id
+    with_wildcard_routes: true
+
+parametragesociete:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                parametragesociete
+    module:               parametragesociete
+    prefix_path:          /parametragesociete
+    column:               id
+    with_wildcard_routes: true
+
+modeleapro:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                modeleapro
+    module:               modeleapro
+    prefix_path:          /modeleapro
+    column:               id
+    with_wildcard_routes: true
+
+methodevalorisation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                methodevalorisation
+    module:               methodevalorisation
+    prefix_path:          /methodevalorisation
+    column:               id
+    with_wildcard_routes: true
+typedetailprix:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typedetailprix
+    module:               typedetailprix
+    prefix_path:          /typedetailprix
+    column:               id
+    with_wildcard_routes: true
+
+typeagents:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeagents
+    module:               typeagents
+    prefix_path:          /typeagents
+    column:               id
+    with_wildcard_routes: true
+
+etatdocument:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                etatdocument
+    module:               etatdocument
+    prefix_path:          /etatdocument
+    column:               id
+    with_wildcard_routes: true
+
+typearticle:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typearticle
+    module:               typearticle
+    prefix_path:          /typearticle
+    column:               id
+    with_wildcard_routes: true
+typedoc:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typedoc
+    module:               typedoc
+    prefix_path:          /typedoc
+    column:               id
+    with_wildcard_routes: true
+
+direction:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                direction
+    module:               direction
+    prefix_path:          /direction
+    column:               id
+    with_wildcard_routes: true
+
+tva:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                tva
+    module:               tva
+    prefix_path:          /tva
+    column:               id
+    with_wildcard_routes: true
+
+lienmodule:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                lienmodule
+    module:               lienmodule
+    prefix_path:          /lienmodule
+    column:               id
+    with_wildcard_routes: true
+
+prvelegedroit:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                prvelegedroit
+    module:               prvelegedroit
+    prefix_path:          /prvelegedroit
+    column:               id
+    with_wildcard_routes: true
+
+pvdoc:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                pvdoc
+    module:               pvdoc
+    prefix_path:          /pvdoc
+    column:               id
+    with_wildcard_routes: true
+
+prevelege:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                prevelege
+    module:               prevelege
+    prefix_path:          /prevelege
+    column:               id
+    with_wildcard_routes: true
+
+rolemodule:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                rolemodule
+    module:               rolemodule
+    prefix_path:          /rolemodule
+    column:               id
+    with_wildcard_routes: true
+
+projet:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                projet
+    module:               projet
+    prefix_path:          /projet
+    column:               id
+    with_wildcard_routes: true
+
+typepiece:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typepiece
+    module:               typepiece
+    prefix_path:          /typepiece
+    column:               id
+    with_wildcard_routes: true
+
+typecourrier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typecourrier
+    module:               typecourrier
+    prefix_path:          /typecourrier
+    column:               id
+    with_wildcard_routes: true
+
+famexpdes:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                famexpdes
+    module:               famexpdes
+    prefix_path:          /famexpdes
+    column:               id
+    with_wildcard_routes: true
+typexpdes:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typexpdes
+    module:               typexpdes
+    prefix_path:          /typexpdes
+    column:               id
+    with_wildcard_routes: true
+
+famexpdes:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                famexpdes
+    module:               famexpdes
+    prefix_path:          /famexpdes
+    column:               id
+    with_wildcard_routes: true
+
+
+typefamille:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typefamille
+    module:               typefamille
+    prefix_path:          /typefamille
+    column:               id
+    with_wildcard_routes: true
+moduleerp:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                moduleerp
+    module:               moduleerp
+    prefix_path:          /moduleerp
+    column:               id
+    with_wildcard_routes: true
+sourcesfinancemment:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sourcesfinancemment
+    module:               sourcesfinancemment
+    prefix_path:          /sourcesfinancemment
+    column:               id
+    with_wildcard_routes: true
+
+tableauxammortisement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                tableauxammortisement
+    module:               tableauxammortisement
+    prefix_path:          /tableauxammortisement
+    column:               id
+    with_wildcard_routes: true
+
+role:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                role
+    module:               role
+    prefix_path:          /role
+    column:               id
+    with_wildcard_routes: true
+
+tauxammortisement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                tauxammortisement
+    module:               tauxammortisement
+    prefix_path:          /tauxammortisement
+    column:               id
+    with_wildcard_routes: true
+
+compte:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                compte
+    module:               compte
+    prefix_path:          /compte
+    column:               id
+    with_wildcard_routes: true
+
+modeammortisement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                modeammortisement
+    module:               modeammortisement
+    prefix_path:          /modeammortisement
+    column:               id
+    with_wildcard_routes: true
+
+fabricant:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                fabricant
+    module:               fabricant
+    prefix_path:          /fabricant
+    column:               id
+    with_wildcard_routes: true
+
+document:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                document
+    module:               document
+    prefix_path:          /document
+    column:               id
+    with_wildcard_routes: true
+
+
+
+typeimmobilsation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeimmobilsation
+    module:               typeimmobilsation
+    prefix_path:          /typeimmobilsation
+    column:               id
+    with_wildcard_routes: true
+
+nature:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                nature
+    module:               nature
+    prefix_path:          /nature
+    column:               id
+    with_wildcard_routes: true
+
+poste:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                poste
+    module:               poste
+    prefix_path:          /poste
+    column:               id
+    with_wildcard_routes: true
+
+sousfamille:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sousfamille
+    module:               sousfamille
+    prefix_path:          /sousfamille
+    column:               id
+    with_wildcard_routes: true
+
+famille:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                famille
+    module:               famille
+    prefix_path:          /famille
+    column:               id
+    with_wildcard_routes: true
+
+categoerie:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                categoerie
+    module:               categoerie
+    prefix_path:          /categoerie
+    column:               id
+    with_wildcard_routes: true
+
+immobilisation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                immobilisation
+    module:               immobilisation
+    prefix_path:          /immobilisation
+    column:               id
+    with_wildcard_routes: true
+
+fournisseur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                fournisseur
+    module:               fournisseur
+    prefix_path:          /fournisseur
+    column:               id
+    with_wildcard_routes: true
+
+agents:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                agents
+    module:               agents
+    prefix_path:          /agents
+    column:               id
+    with_wildcard_routes: true
+
+typebureaux:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typebureaux
+    module:               typebureaux
+    prefix_path:          /typebureaux
+    column:               id
+    with_wildcard_routes: true
+
+bureaux:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                bureaux
+    module:               bureaux
+    prefix_path:          /bureaux
+    column:               id
+    with_wildcard_routes: true
+
+etage:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                etage
+    module:               etage
+    prefix_path:          /etage
+    column:               id
+    with_wildcard_routes: true
+
+site:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                site
+    module:               site
+    prefix_path:          /site
+    column:               id
+    with_wildcard_routes: true
+
+adresse:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                adresse
+    module:               adresse
+    prefix_path:          /adresse
+    column:               id
+    with_wildcard_routes: true
+
+gouvernera:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                gouvernera
+    module:               gouvernera
+    prefix_path:          /gouvernera
+    column:               id
+    with_wildcard_routes: true
+
+pays:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                pays
+    module:               pays
+    prefix_path:          /pays
+    column:               id
+    with_wildcard_routes: true
+
+societe:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                societe
+    module:               societe
+    prefix_path:          /societe
+    column:               id
+    with_wildcard_routes: true
+
+utilisateur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                utilisateur
+    module:               utilisateur
+    prefix_path:          /utilisateur
+    column:               id
+    with_wildcard_routes: true
+global:
+    url: /Accueil
+    param: { module: Accueil, action: global}
+
+homepage:
+  url:   /
+  param: { module: Admin, action: connect }
+Immo:
+  url:   /immo
+  param: { module: immob, action: index }
+Imprimercb:
+  url: /Imprimercb
+  param: { module: immobilisation, action: imprimercb }
+connect:
+  url:   /connect
+  param: { module: Admin, action: connect }
+deconnect:
+  url:   /deconnect
+  param: { module: Admin, action: deconnect }
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

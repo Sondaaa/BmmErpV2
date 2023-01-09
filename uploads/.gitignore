@@ -1,0 +1,11 @@
+/nbproject/
+/nbproject/private/private.xml
+/cache/
+/log/
+/test/
+/config/
+/web/codebarre/
+/web/uploads/
+/web/assets/Highcharts-3.0.7/exporting-server/java/highcharts-export/highcharts-export-convert/target/
+/web/assets/Highcharts-3.0.7/exporting-server/java/highcharts-export/highcharts-export-web/target/
+ .idea

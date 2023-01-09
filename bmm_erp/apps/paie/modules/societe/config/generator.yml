@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           societe
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          societe
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        rs: {label: "Raison Social"}
+        matfiscal: {label: "Matricule Fiscale"}
+        codepostal: { label: "Code Postal"}
+        id_gouvernera: { label: "Gouvernorat"}
+        id_pays: { label : "Pays"}
+        idunique : {label: " N° Code Sociale" }
+        typecotisation : {label: "Type Cotisation" }
+      list:    
+          title: Société
+          display: [rs,lien_logo,id_gouvernera,matfiscal,idunique]
+      filter:  
+           display: [rs,matfiscal]
+      form:    ~
+      edit:    
+          title: Mise à jour Société 
+      new:     
+          title: Nouvelle Société 

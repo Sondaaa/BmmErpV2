@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           specialite
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          specialite
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Libellé"}
+      list:    
+          title: Liste des Spécialités
+          display: [libelle]
+      filter: 
+          display: [libelle]
+          
+      form:    ~
+      edit:    
+          title: Mise à jour fiche Spécialité
+      new:     
+          title: Nouvelle fiche Spécialité

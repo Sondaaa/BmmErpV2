@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           rolemodule
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          rolemodule
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_module: { label: "Module Erp"}
+          id_user: { label: "Utilisateur"}
+          id_role: { label: "Role"}
+      list:    
+          title: Liste des modules par droit d'accès
+          display: [moduleerp,utilisateur,role]
+          max_per_page: 10
+      filter:  ~
+      form: ~
+      edit:    
+          title: Modifier %%id_user%%
+      new:     
+          title: "Nouveau role par module et utilisateur"

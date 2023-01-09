@@ -1,0 +1,37 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           planing
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          planing
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          
+           
+           id_regroupement : { label: "Regroupemet de Formation"}
+           id_besoins : {label: " Besoin en Formation "}
+           datefinentete : {label: " Date Fin  "}
+           datedebutentete : {label: " Date Formation  "}
+           objet : {label: " Objet  "}
+           annee : {label: " Année  "}
+           
+           
+       
+      list:    
+          title: Planning
+          display: [objet,annee]
+      filter:  
+          display: [annee]
+      form:    ~
+      edit:   
+          title: Mise à jour fiche Planning Prévisionnel
+      new: 
+          title: Nouvelle fiche Planning Prévisionnel

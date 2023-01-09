@@ -1,0 +1,1 @@
+<?php include_partial("maquette_saisie/liste_maquette", array("pager" => $pager, "page" => $page)) ?>

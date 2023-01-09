@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           presence
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          presence
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+           id_agents : { label: "Agents"}
+           annee : { label: "Année"}
+      list:    
+          title: Liste des Présences par Agent
+          display: [agents,mois,annee]
+      filter:  
+          display: [id_agents,mois,annee]
+      form:    ~
+      edit:   
+          title: Mise à jour fiche Présence
+      new: 
+          title: Nouvelle fiche Présence

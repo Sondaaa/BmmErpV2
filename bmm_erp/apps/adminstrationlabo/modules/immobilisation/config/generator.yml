@@ -1,0 +1,50 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class: immobilisation
+    theme: admin
+    non_verbose_templates: true
+    with_show: false
+    singular: ~
+    plural: ~
+    route_prefix: immobilisation
+    with_doctrine_route: true
+    actions_base_class: sfActions
+
+    config:
+      fields:
+        id_agent: { label: "Agent" }
+        donneescomptable: { label: "Données Comptables" }
+        Classificationcomptable: { label: "Classification des comptes" }
+        dateacquisition1: { label: "date d'acquisition" }
+        comptecomptabel: { label: "Compte Comptable" }
+        mntttc1: { label: "Prix d'acquisition" }
+        numero: { label: "Numéro" }
+        id_site: { label: "Site" }
+        id_bureaux: { label: "Local" }
+        id_categorie: { label: "Categorie" }
+        categorie : { label: "Categorie" }
+        id_famille: { label: "Famille" }
+        famille: { label: "Famille" }
+        id_sousfamille: { label: "Sous Famille" }
+        sousfamille: { label: "Sous Famille" }
+        bureaux: { label: "Local" }
+        id_etage: { label: "Sous Site" }
+        etage: { label: "Sous Site" }
+        id_typedobureau: { label: "Type Local" }
+        typebureaux: { label: "Type Local" }
+        designation: { label: "Désignation" }
+      list:
+        title: Liste des Immobilisations
+        display: [designation, dateacquisition1, site, etage, bureaux,typefamille,famille,sousfamille]
+        max_per_page: 10
+      filter:
+        display: [designation, id_site, id_etage, id_bureaux,id_categorie,id_famille,id_sousfamille]
+      form:
+        actions:
+          _list: ~
+          _save: ~
+      edit:
+        title: Modifier %%reference%%
+      new:
+        title: Nouvelle Fiche d'immobilisation

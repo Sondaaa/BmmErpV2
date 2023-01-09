@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           tenues
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          tenues
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_agents : { label: "Agents"} 
+          observation : { label: "Observation"} 
+          id_ouvrier : { label: "Ouvrier"} 
+          typetenue : { label: "Type Tenue"} 
+      list:   
+          title: Liste des Affectations des Tenues de Travail
+          display: [agents,typetenue,date,observation]
+      filter:  
+           display: [id_agents,id_ouvrier,date]
+      form:    ~
+      edit:   
+          title: Mise à jour Affectation Tenues de Travail
+      new:     
+          title: Nouvelle Affectation Tenues de Travail
+

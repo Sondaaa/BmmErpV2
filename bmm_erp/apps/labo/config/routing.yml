@@ -1,0 +1,228 @@
+magasin:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Magasin
+    module:               magasin
+    prefix_path:          /magasin
+    column:               id
+    with_wildcard_routes: true
+
+
+
+
+demandeur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                demandeur
+    module:               demandeur
+    prefix_path:          /demandeur
+
+typearticle:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Typearticle
+    module:               typearticle
+    prefix_path:          /typearticle
+    column:               id
+    with_wildcard_routes: true
+
+documentachat_Achatdoc:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Documentachat
+    module:               Achatdoc
+    prefix_path:          /Achatdoc
+    column:               id
+    with_wildcard_routes: true
+
+
+saveDemandeur:
+  url: /ajouter-demandeur
+  param: { module: demandeur, action: saveDemandeur }
+inventairestock:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                inventairestock
+    module:               inventairestock
+    prefix_path:          /inventairestock
+    column:               id
+    with_wildcard_routes: true
+
+naturearticle:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                naturearticle
+    module:               naturearticle
+    prefix_path:          /naturearticle
+    column:               id
+    with_wildcard_routes: true
+familleartfrs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                familleartfrs
+    module:               familleartfrs
+    prefix_path:          /familleartfrs
+    column:               id
+    with_wildcard_routes: true
+activitetiers:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                activitetiers
+    module:               activitetiers
+    prefix_path:          /activitetiers
+    column:               id
+    with_wildcard_routes: true
+
+adressefrs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                adressefrs
+    module:               adressefrs
+    prefix_path:          /adressefrs
+    column:               id
+    with_wildcard_routes: true
+
+fournisseur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                fournisseur
+    module:               fournisseur
+    prefix_path:          /fournisseur
+    column:               id
+    with_wildcard_routes: true
+lignecararticle:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                lignecararticle
+    module:               lignecararticle
+    prefix_path:          /lignecararticle
+    column:               id
+    with_wildcard_routes: true
+
+caracteristiquearticle:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                caracteristiquearticle
+    module:               caracteristiquearticle
+    prefix_path:          /caracteristiquearticle
+    column:               id
+    with_wildcard_routes: true
+
+sousfamillearticle:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sousfamillearticle
+    module:               sousfamillearticle
+    prefix_path:          /sousfamillearticle
+    column:               id
+    with_wildcard_routes: true
+
+fabricant:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                fabricant
+    module:               fabricant
+    prefix_path:          /fabricant
+    column:               id
+    with_wildcard_routes: true
+
+famillearticle:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                famillearticle
+    module:               famillearticle
+    prefix_path:          /famillearticle
+    column:               id
+    with_wildcard_routes: true
+
+
+
+unitemarche:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                unitemarche
+    module:               unitemarche
+    prefix_path:          /unitemarche
+    column:               id
+    with_wildcard_routes: true
+
+documentachat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                documentachat
+    module:               documentachat
+    prefix_path:          /documentachat
+    column:               id
+    with_wildcard_routes: true
+
+article:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                article
+    module:               article
+    prefix_path:          /article
+    column:               id
+    with_wildcard_routes: true
+import_article:
+  url: article/import
+  param: { module: article, action: import}
+stock:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                stock
+    module:               stock
+    prefix_path:          /stock
+    column:               id
+    with_wildcard_routes: true
+
+
+
+
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+showsuiviecommande:
+  url: /suiviecommande
+  param: { module: Accueil , action: Showsuivicommandebci}
+
+importArticle:
+  url: /import-Article
+  param: { module: article , action: import}
+  
+misajourtva:
+  url: /mise-ajour-tva
+  param: { module: article , action: misajourtva}
+showdocument:
+  url: /showdocument
+  param: { module: Achatdoc , action: Showdocument }
+edit:
+  url: /edit
+  param: { module: Achatdoc , action: edit }
+# default rules
+homepage:
+  url:   /
+  param: { module: Accueil,  action: profil }
+connect:
+  url:   /connect
+  param: { module: Admin, action: connect }
+
+exportinv:
+  url:   /export-inventaire
+  param: { module: article, action: exportinv }
+
+showdocument:
+  url:   /ouvrir-documentachat
+  param: { module: Achatdoc, action: showdocument }
+
+
+ouvrir:
+  url:   /nouvelle-fiche-inventaire
+  param: { module: inventairestock, action: ouvrir }
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

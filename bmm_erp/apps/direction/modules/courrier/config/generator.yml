@@ -1,0 +1,54 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           courrier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          courrier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_user: { label: "Utilisateur"}
+          id_type: { label: "Type"}
+          id_bureaux: { label: "Bureaux"}
+          id_mode: { label: "Mode"}
+          id_piece: { label: "Piéce-Joint"}
+          datecreation: { label: "Date de Création"}
+          modescourrier: { label: "Mode"}
+          typecourrier: { label: "Type"}
+          object: { label: "Recherche par text"}
+          description: { label: "Description"}
+          titre: { label: "Titre"}
+          id_courrier: { label: "Courrier Source"}
+          id_famille: { label: "Note pour courrier"}
+          id_affectation: { label: "Affectation pour courrier"}
+          courriersource: { label: "Courrier Sources"}
+          expediteursource: { label: "Expéditeur"}
+          numerocourrierstring: { label: "Numéro"}
+          datemaxdereponse: { label: "D.M.P.Réponse"}
+          referencecourrier: { label: "Réference"}
+          famillecourrier: { label: "Note Courrier"}
+          id_famille: { label: "Note Courrier"}
+      list:    
+          title: Liste des courriers
+          display: [numerocourrierstring,famillecourrier,datecreation,titre,typecourrier,expediteursource,courriersource,datemaxdereponse]
+          object_actions:
+            _edit:      ~
+          batch_actions: {}
+      filter:  
+          display: [datecreation,referencecourrier,id_famille,id_mode,id_type,titre,object]
+      form:    
+          actions:
+             _list:   ~
+             _save:   ~
+      edit:    
+          title: Mise à jour Courrier  - %%numero%% -
+          
+      new:     
+          title: Nouveau courrier

@@ -1,0 +1,25 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           marqueimmobilisation
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          marqueimmobilisation
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: Liste des Marques d'immobilsations
+        display: [name]
+      filter:  ~
+      form:    ~
+      edit:
+        title: Modifier la Marque d'immobilsation
+      new:
+        title: Nouveaux Marque d'immobilsation

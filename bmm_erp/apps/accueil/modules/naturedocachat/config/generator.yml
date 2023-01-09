@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           naturedocachat
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          naturedocachat
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: Liste des natures du document achat
+        display: [code,libelle]
+      filter:  
+        display: [code,libelle]
+      form: ~ 
+        
+      edit:
+        title: Modifier la Nature Document Achat
+      new:
+        title: Nouvelle Nature Document Achat

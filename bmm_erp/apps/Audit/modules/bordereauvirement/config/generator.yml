@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           bordereauvirement
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          bordereauvirement
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          date: { label: "Date"}
+          id_compte: { label: "Compte bancaire / CCP"}
+          caissesbanques: { label: "Compte"}
+          id_typeoperation: { label: "Type d'opération"}
+          typeoperation: { label: "Type d'opération"}
+          id_naturecompte: { label: "Nature compte bénéficiaire"}
+          naturebanque: { label: "Nature compte bénéficiaire"}
+          id_papierordrepostal: { label: "Ordre de virement postal"}
+          papierordrepostal: { label: "Ordre de virement postal"}
+          valide: { label: "Validé"}
+      list:
+          title: Liste des bordereaux
+          display: [date,total,caissesbanques,typeoperation,naturebanque,papierordrepostal,valide]
+      filter:
+          display: [date,id_compte,id_typeoperation,id_naturecompte,valide]
+      form:    ~
+      edit:    ~
+      new:     ~

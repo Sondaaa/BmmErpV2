@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           tauxammortisement
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          tauxammortisement
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        tauxammortisement: {label: "Taux d'amortissement"}
+      list:
+        title: Liste des Taux d'amortissement
+        display: [tauxammortisement]
+        max_per_page: 5
+      filter:  ~
+      form:    ~
+      edit:
+        title: Modifier %%tauxammortisement%%
+      new:
+        title: Noveau Taux d'amortissement

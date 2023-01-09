@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           posterh
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          posterh
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Libellé"}
+          id_unite: {label: "Unité"}
+          unite: {label: "Unité"}
+      list:    
+          title: Liste des Postes
+          display: [unite,libelle]
+      filter: 
+          display: [id_unite,libelle]
+          
+      form:    ~
+      edit:    
+          title: Mise à jour fiche Poste
+      new:     
+          title: Nouvelle fiche Poste

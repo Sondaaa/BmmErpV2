@@ -1,0 +1,39 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           contrat
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          contrat
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_posterh : { label: "Poste"}
+          id_agents : { label: "Agents"}
+          id_bureaux : { label: "Bureaux"}
+          dateaccusition : { label: "Date acquisition"}
+          dateemposte : { label: "Date Recrutement"}
+          datetitulaire: { label: "Date tutilaire"}
+          ncnss : { label: "NCNSS"}
+          id_categorie : { label: "Catégorie"}
+          id_grade : { label: "Grade"}
+          id_echelle : { label: "Echelle"}
+          id_echelon : { label: "Echelon"}
+          id_souscorps : { label: "Sous Corps"}
+          fonction: { label: "Fonction"}
+      list:    
+          title: Liste des Carrières
+          display: [agents,id_posterh,id_unite]
+      filter: 
+          display: [id_agents,id_posterh]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche Carrière
+      new:     
+          title: Nouvelle fiche Carrière

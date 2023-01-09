@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           lignespecialteagents
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          lignespecialteagents
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          description : { label: "Description"}
+       
+          id_specialite : { label: "Specialité"}
+          id_agents : {label: "Agents"}
+      list:    
+          title: Listes des Spécialités
+          display: [description,id_specialite]
+      filter: 
+          display: [description,id_specialite]
+          
+      form:    ~
+      edit:    
+          title: Mise à jour fiche
+      new:     
+          title: Nouvelle fiche 

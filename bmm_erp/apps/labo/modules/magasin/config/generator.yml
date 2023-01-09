@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Magasin
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          magasin
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: {label: Nouvelle fiche magasin}
+      fields:  
+        id_etage: {label: "Sous Site"}
+        etage: { label: "Sous Site"}
+        id_mag: {label: "Bureaux"}
+        bureaux: {label: "Bureaux"}
+      list:  
+        title: Liste des Magsins 
+        display:  [code,libelle,etage,bureaux]
+      filter:  
+        display: [code]
+      form:    ~
+      edit:    
+        title: Mis a jour fiche %libelle%
+      new:     
+        title: Nouvelle fiche

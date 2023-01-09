@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="docachat" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="37a14392-446e-4b55-8fe2-22cd63995458">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="cbbc17102022"/>
+	<subDataset name="Dataset1" uuid="55034e06-d520-4f51-8542-18f24cc9a8e5">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="cbbc17102022"/>
+		<parameter name="requette" class="java.lang.String">
+			<defaultValueExpression><![CDATA[$P{requette}]]></defaultValueExpression>
+		</parameter>
+		<queryString language="SQL">
+			<![CDATA[select 
+         concat(article.codeart, article.designation) as
+         designation,qtelignedoc.qtedemander as qte,
+         lignedocachat.observation, lignedocachat.nordre as nordre
+         from lignedocachat inner join article  on lignedocachat.id_articlestock=article.id 
+          inner join qtelignedoc on lignedocachat.id=qtelignedoc.id_lignedocachat 
+          inner join documentachat on documentachat.id=lignedocachat.id_doc 
+          where documentachat.id=1265]]>
+		</queryString>
+		<field name="designation" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="designation"/>
+			<property name="com.jaspersoft.studio.field.label" value="designation"/>
+		</field>
+		<field name="qte" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.name" value="qte"/>
+			<property name="com.jaspersoft.studio.field.label" value="qte"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="qtelignedoc"/>
+		</field>
+		<field name="observation" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="observation"/>
+			<property name="com.jaspersoft.studio.field.label" value="observation"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+		</field>
+		<field name="nordre" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="nordre"/>
+			<property name="com.jaspersoft.studio.field.label" value="nordre"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+		</field>
+	</subDataset>
+	<parameter name="requette" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[select 
+         concat(article.codeart, article.designation) as
+         designation,qtelignedoc.qtedemander as qte,
+         lignedocachat.observation, lignedocachat.nordre as nordre
+         from lignedocachat inner join article  on lignedocachat.id_articlestock=article.id 
+          inner join qtelignedoc on lignedocachat.id=qtelignedoc.id_lignedocachat 
+          inner join documentachat on documentachat.id=lignedocachat.id_doc 
+          where documentachat.id=1265]]>
+	</queryString>
+	<field name="designation" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="designation"/>
+		<property name="com.jaspersoft.studio.field.label" value="designation"/>
+	</field>
+	<field name="qte" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="qte"/>
+		<property name="com.jaspersoft.studio.field.label" value="qte"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="qtelignedoc"/>
+	</field>
+	<field name="observation" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="observation"/>
+		<property name="com.jaspersoft.studio.field.label" value="observation"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+	</field>
+	<field name="nordre" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="nordre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nordre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="141" height="30" uuid="74adbd9f-3a70-4024-8792-dc70b6cfdaa8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="55361ef8-dd1d-483a-b606-c4b5795df61f"/>
+				</reportElement>
+				<text><![CDATA[designation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="141" y="0" width="138" height="30" uuid="f09cc9ba-a3e0-4b1d-b04b-1aac3e8d8dd8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a83239b2-0edf-469c-8bff-2903ab9e0649"/>
+				</reportElement>
+				<text><![CDATA[qte]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="138" height="30" uuid="28b60675-7467-4d8b-ab17-14a99a1fd40a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="49200899-94a3-4dab-9d99-6c0b0ca82fe3"/>
+				</reportElement>
+				<text><![CDATA[observation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="138" height="30" uuid="e4944489-afc5-4be2-9108-3671c8da5679">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0d0193c5-49fd-4422-aecf-8de3cdd123d9"/>
+				</reportElement>
+				<text><![CDATA[nordre]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="141" height="30" uuid="3adcc967-1c96-44d2-b400-cdb70ee79430">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="55361ef8-dd1d-483a-b606-c4b5795df61f"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{designation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="0" width="138" height="30" uuid="d4c9ef23-6495-44a0-abfc-128874f27659">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a83239b2-0edf-469c-8bff-2903ab9e0649"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{qte}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="138" height="30" uuid="423300f0-239f-4008-8623-9320873f2715">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="49200899-94a3-4dab-9d99-6c0b0ca82fe3"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{observation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="138" height="30" uuid="e326a987-81c8-47b1-821a-713629efa5f6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0d0193c5-49fd-4422-aecf-8de3cdd123d9"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{nordre}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

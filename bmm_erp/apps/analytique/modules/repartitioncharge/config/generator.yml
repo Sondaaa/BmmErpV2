@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           repartitioncharge
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          repartitioncharge
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          date: { label: "Date Création"}
+          annee: { label: "Année"}
+          montant: { label: "Montant Total"}
+      list:
+          title: Liste des Répartitions des Charges
+          display: [date,annee,montant]
+      filter:
+          display: [annee]
+      form:    ~
+      edit:
+          title: Modifier Répartition des Charges - %%annee%%
+      new:
+          title: Nouvelle Répartition des Charges

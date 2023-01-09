@@ -1,0 +1,500 @@
+dossierexerciceutilisateur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                dossierexerciceutilisateur
+    module:               dossierexerciceutilisateur
+    prefix_path:          /dossierexerciceutilisateur
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: accueil, action: index }
+dossiervide:
+  url:   /dossiervide
+  param: { module: accueil, action: index }  
+validerDossierCourant:
+  url: /valider-dossier-courant
+  param: { module: accueil, action: validerDossierCourant}
+
+agents:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                agents
+    module:               agents
+    prefix_path:          /agents
+    column:               id
+    with_wildcard_routes: true
+#Dossier Comptable
+showDossier:
+  url: /afficher-dossier-comptable
+  param: { module: dossier, action: show }
+referentiel:
+  url: /ajouter-referntiel-comptable
+  param: { module: dossier, action: uploadfichicer }
+referentielcomptable:
+  url: /referntiel-comptable
+  param: { module: referentielcomptable, action: listeReferentiel }
+
+dossierutile:
+  url: /dossier-utile-comptable
+  param: { module: referentielcomptable, action: listeDossierutile }
+piecejuridique:
+  url: /piece-juridique
+  param: { module: referentielcomptable, action: listePieceJuridique }
+showEditDossier:
+  url: /dossier-comptable
+  param: { module: dossier, action: showEdit }
+saveEditDossierComptable:
+  url: /dossier-modfier
+  param: { module: dossier, action: saveEdit }
+villePaysChoisi:
+  url: /ville-pays
+  param: {module: dossier, action: villePaysChoisi}
+listePlanDossier:
+  url: /dossier/planComptable/liste
+  param: { module: dossier, action: listePlanDossier }
+baseStandard:
+  url: /dossier/base-standard
+  param: { module: dossier, action: baseStandard }
+ajouterFormeForDossier:
+  url: /dossier-ajouter-forme-juridique
+  param: { module: dossier, action: ajouterForme }
+ajouterActiviteForDossier:
+  url: /dossier-ajouter-activite
+  param: { module: dossier, action: ajouterActivite }
+ajouterSecteurForDossier:
+  url: /dossier-ajouter-secteur-activite
+  param: { module: dossier, action: ajouterSecteurActivite }
+#Exercice
+anterieurDossier:
+  url: /dossier-anterieur
+  param: { module: exercice, action: listeAnterieur }
+ajoutAnterieur:
+  url: /AjoutAnterieur
+  param: { module: exercice, action: ajoutAnterieur }
+deleteAnterieur:
+  url: /DeleteAnterieur
+  param: { module: exercice, action: deleteAnterieur }
+goPageAnterieur:
+  url: /GoPageAnterieur
+  param: { module: exercice, action: goPageAnterieur }
+  
+
+ajouterUtilisateur:
+  url: /ajouter-utilisateur
+  param: { module: dossierexerciceutilisateur, action: ajouterUtilisateur }
+#Plan Comptable
+ajouterCompteComptable:
+  url: /ajouter-compte-comptable
+  param: { module: plan_comptable, action: ajouterCompteComptable }
+affichecomptrepartie:
+  url: /ajouter-contre-partie
+  param: { module: journal, action: chargercontrepartie }
+saveCompteComptable:
+  url: /enregistrer-compte-comptable
+  param: { module: plan_comptable, action: save }
+planStandard:
+  url: /plan-comptable
+  param: { module: plan_comptable, action: index }
+checkPlanStandard:
+  url: /plan-comptable/check-standard
+  param: { module: plan_comptable, action: checkPlanStandard }
+showCompteComptable:
+  url: /afficher-compte-comptable
+  param: { module: plan_comptable, action: show }
+showEditCompteComptable:
+  url: /fiche-compte-comptable
+  param: { module: plan_comptable, action: showEdit }
+updateCompteComptable:
+  url: /mise-a-jour-compte-comptable
+  param: { module: plan_comptable, action: update }
+deleteCompteComptable:
+  url: /supprimer-compte-comptable
+  param: { module: plan_comptable, action: delete }
+deleteSoldeCompteComptable:
+  url: /supprimer-solde-compte-comptable
+  param: { module: importation, action: deleteSoldecompte }
+#Transfert
+transfert:
+  url: /transfert/base-standard
+  param: { module: transfert, action: index }
+
+#dossierexerciceutilisateur
+#newDossierexerciceutilisateur:
+#  url: /nouveau-affectation-dossier
+#  param: { module: dossierexerciceutilisateur, action: new }
+#Journal Comptable
+listeJournalComptable:
+  url: /liste-journaux-comptables
+  param: { module: journal, action: index }
+newJournalComptable:
+  url: /nouveau-journal-comptable
+  param: { module: journal, action: new }
+genererNumerotation:
+  url: /journal-comptable-generer-numerotation
+  param: { module: journal, action: genererNumerotation }
+gererComptesDossier:
+  url: /journal-comptable-gerer-les-comptes
+  param: { module: journal, action: gererComptesDossier }
+saveJournal:
+  url: /enregistrer-journal-comptable
+  param: { module: journal, action: save }
+bloquerJournal:
+  url: /bloquer-journal-comptable
+  param: { module: journal, action: bloquerJournal }
+validerJournal:
+  url: /valider-journal-comptable
+  param: { module: journal, action: validerJournal }
+listeNumSerie:
+  url: /journal-comptable-numerotation-serie-liste
+  param: { module: journal, action: listeNumSerie }
+bloquerNumSerieJournal:
+  url: /journal-comptable-numerotation-serie-bloquer
+  param: { module: journal, action: bloquerNumSerieJournal }
+validerNumSerieJournal:
+  url: /journal-comptable-numerotation-serie-valider
+  param: { module: journal, action: validerNumSerieJournal }
+bloquerNumSerieJournalTous:
+  url: /journal-comptable-numerotation-serie-tous-bloquer
+  param: { module: journal, action: bloquerNumSerieJournalTous }
+validerNumSerieJournalTous:
+  url: /journal-comptable-numerotation-serie-tous-valider
+  param: { module: journal, action: validerNumSerieJournalTous }
+listePlanJournal:
+  url: /journal-comptable-plan-comptable-liste
+  param: { module: journal, action: listePlanJournal }
+deleteCompteJournal:
+  url: /journal-comptable-plan-comptable-liste-supprimer
+  param: { module: journal, action: deleteCompteJournal }
+bloquerCompteJournal:
+  url: /journal-comptable-plan-comptable-liste-bloquer
+  param: { module: journal, action: bloquerCompteJournal }
+deleteJournalComptable:
+  url: /journal-comptable-supprimer
+  param: { module: journal, action: delete }
+showJournal:
+  url: /journal-comptable-afficher
+  param: { module: journal, action: show }
+showEditJournal:
+  url: /journal-comptable-modifier/:id
+  param: { module: journal, action: showEdit }
+saveEditJournal:
+  url: /journal-comptable-modifier-enregistrer
+  param: { module: journal, action: saveEdit }
+
+saveEditClient:
+  url: /Client-modifier-enregistrer
+  param: { module: tiers, action: saveEdit }
+  
+saveEditFournisseur:
+  url: /Fournisseur-modifier-enregistrer
+  param: { module: tiers, action: saveEditFournisseur }
+showEditClient:
+  url: /client-modifier/:id
+  param: { module: tiers, action: showEditClient }
+showEditFournisseur:
+  url: /fournisseur-modifier/:id
+  param: { module: tiers, action: showEditFournisseur }
+#Saisie de pièce
+saisiePieces:
+  url: /traitement-saisie-pieces
+  param: { module: saisie_pieces, action: index }
+getSerieJournal:
+  url: /traitement-saisie-pieces-charger-serie
+  param: { module: saisie_pieces, action: getSerieJournal }
+getSerieJournalPopup:
+  url: /etat-pieces-charger-serie
+  param: { module: etat, action: getSerieJournal }
+addLigneSaisie:
+  url: /traitement-saisie-pieces-ajouter-ligne
+  param: { module: saisie_pieces, action: addLigne }
+addLigneSaisieNonequilibrer:
+  url: /etat_ligne_vide_nonequilibre-pieces-ajouter-ligne
+  param: { module: etat, action: addLigneVideNonEwuilibrer }
+addLigneSaisieVide:
+  url: /etat-pieces-ajouter-ligne-vide
+  param: { module: etat, action: addLigneVide }
+addLigneSaisiePopup:
+  url: /etat-pieces-ajouter-ligne
+  param: { module: etat, action: addLigne }
+addLigneMaquette:
+  url: /maquette-saisie-ajouter-ligne
+  param: { module: maquette_saisie, action: addLigne }
+verifierNumeroExterne:
+  url: /traitement-saisie-pieces-verifier-numero-externe
+  param: { module: saisie_pieces, action: verifierNumeroExterne }
+nouveauSaisiePieces:
+  url: /traitement-nouveau-saisie-pieces
+  param: { module: saisie_pieces, action: nouveauSaisiePieces }
+getPieceLigneVente:
+  url: /traitement-saisie-pieces-charger-ligne-piece-vente
+  param: { module: saisie_pieces, action: getPieceLigneVente }
+getPieceLigneAchat:
+  url: /traitement-saisie-pieces-charger-ligne-piece-achat
+  param: { module: saisie_pieces, action: getPieceLigneAchat }
+validerPiece:
+  url: /traitement-valider-saisie-pieces
+  param: { module: saisie_pieces, action: validerPiece }
+validerPieceExtrait:
+  url: /etat-valider-saisie-pieces
+  param: { module: etat, action: validerPieceExtraitcompte }
+brouillonPiece:
+  url: /traitement-brouillon-saisie-pieces
+  param: { module: saisie_pieces, action: brouillonPiece }
+listePiece:
+  url: /traitemant/liste-piece
+  param: { module: saisie_pieces, action: listePiece }
+goPagePiece:
+  url: /saisie-pieces-page-suivante
+  param: { module: saisie_pieces, action: goPage }
+showPiece:
+  url: /saisie-pieces-afficher
+  param: { module: saisie_pieces, action: show }
+deletePiece:
+  url: /saisie-pieces-delete
+  param: { module: saisie_pieces, action: delete }
+deletePieceJuridique:
+  url: /piece-juridique-delete
+  param: { module: referentielcomptable, action: deletePiece }
+suprimerFactureAchat:
+  url: /saisie-pieces-importe-delete
+  param: { module: importation, action: suprimerPiecedeFactureAchat }
+supprimerPiece:
+  url: /saisie-pieces-supprimer
+  param: { module: saisie_pieces, action: supprimer }
+showEditPiece:
+  url: /saisie-pieces-modifier
+  param: { module: saisie_pieces, action: showEdit }
+saveEditPiece:
+  url: /saisie-pieces-modifier-enregistrer
+  param: { module: saisie_pieces, action: saveEdit }
+
+
+#Tiers 
+listClient:
+  url: /liste-client
+  param: {module: tiers, action: listClient}
+showClient:
+  url: /afficher-client
+  param: {module: tiers, action: showClient}
+editClient:
+  url: /modifier-client
+  param: { module: tiers, action: editClient}
+updateClient:
+  url: /enregistrer-client
+  param: { module: tiers, action: updateClient }
+  
+listFournisseur:
+  url: /liste-fournisseur
+  param: {module: tiers, action: listFournisseur}
+etatFournisseur:
+  url: /etat-fournisseur
+  param: {module: tiers, action: etatFournisseur}
+etatClient:
+  url: /etat-client
+  param: {module: tiers, action: etatClient}
+showFournisseur:
+  url: /afficher-fournisseur
+  param: {module: tiers, action: showFournisseur}
+editFournisseur:
+  url: /modifier-fournisseur
+  param: { module: tiers, action: editFournisseur}
+updateFournisseur:
+  url: /enregistrer-fournisseur
+  param: { module: tiers, action: updateFournisseur }
+
+
+#Paramètre
+#Forme Juridique
+formeJuridique:
+  url: /forme-juridique
+  param: { module: parametre, action: listeFormeJuridique }
+ajouterForme:
+  url: /ajouter-forme-juridique
+  param: { module: parametre, action: ajouterForme }
+deleteForme:
+  url: /supprimer-forme-juridique
+  param: { module: parametre, action: deleteForme }
+editForme:
+  url: /afficher-forme-juridique
+  param: { module: parametre, action: editForme }
+updateForme:
+  url: /modifer-forme-juridique
+  param: { module: parametre, action: updateForme }
+
+#Type Journal
+typeJournal:
+  url: /type-journal
+  param: { module: parametre, action: listeTypeJournal }
+ajouterTypeJournal:
+  url: /ajouter-type-journal
+  param: { module: parametre, action: ajouterTypeJournal }
+deleteTypeJournal:
+  url: /supprimer-type-journal
+  param: { module: parametre, action: deleteTypeJournal }
+editTypeJournal:
+  url: /afficher-type-journal
+  param: { module: parametre, action: editTypeJournal }
+updateTypeJournal:
+  url: /modifer-type-journal
+  param: { module: parametre, action: updateTypeJournal }
+  
+#Type Pièce
+typePiece:
+  url: /type-piece
+  param: { module: parametre, action: listeTypePiece }
+ajouterTypePiece:
+  url: /ajouter-type-piece
+  param: { module: parametre, action: ajouterTypePiece }
+deleteTypePiece:
+  url: /supprimer-type-piece
+  param: { module: parametre, action: deleteTypePiece }
+editTypePiece:
+  url: /afficher-type-piece
+  param: { module: parametre, action: editTypePiece }
+updateTypePiece:
+  url: /modifer-type-piece
+  param: { module: parametre, action: updateTypePiece }
+  
+#Secteur Activité
+secteurActivite:
+  url: /secteur-activite
+  param: { module: parametre, action: listeSecteurActivite }
+ajouterAgents:
+  url: /ajouter-agent
+  param: { module: dossierexerciceutilisateur, action: ajouterAgents }
+ajouterSecteurActivite:
+  url: /ajouter-secteur-activite
+  param: { module: parametre, action: ajouterSecteurActivite }
+ajouterReferentiel:
+  url: /ajouter-referentiel
+  param: { module: referentielcomptable, action: ajouterReferentiel }
+
+ajouterdossier:
+  url: /ajouter-dossier
+  param: { module: referentielcomptable, action: ajouterdossier }
+deleteSecteurActivite:
+  url: /supprimer-secteur-activite
+  param: { module: parametre, action: deleteSecteurActivite }
+deleteReferentiel:
+  url: /supprimer-refernetiel
+  param: { module: referentielcomptable, action: deleteReferentiel }
+
+deleteClient:
+  url: /supprimer-client
+  param: { module: tiers, action: deleteClient }
+
+deleteFournisseur:
+  url: /supprimer-fournisseur
+  param: { module: tiers, action: deleteFournisseur }
+deleteDossier:
+  url: /supprimer-dossier
+  param: { module: referentielcomptable, action: deleteDossier }
+editSecteurActivite:
+  url: /afficher-secteur-activite
+  param: { module: parametre, action: editSecteurActivite }
+editReferentiel:
+  url: /afficher-referentiel
+  param: { module: referentielcomptable, action: editReferentiel }
+editPiecejuridique:
+  url: /afficher-piece-juridique
+  param: { module: referentielcomptable, action: editPiecejuridique }
+editDossier:
+  url: /afficher-dossier
+  param: { module: referentielcomptable, action: editDossier }
+updateSecteurActivite:
+  url: /modifer-secteur-activite
+  param: { module: parametre, action: updateSecteurActivite }
+updateReferentielcomptable:
+  url: /modifer-referentiel
+  param: { module: referentielcomptable, action: updateReferentiel}
+updatePiecejuridique:
+  url: /modifer-piece
+  param: { module: referentielcomptable, action: updatePiece}
+
+updateDossier:
+  url: /modifer-dossier
+  param: { module: referentielcomptable, action: updateDossier}
+#Activité Tier
+activite:
+  url: /activite-tier
+  param: { module: parametre, action: listeActivite }
+ajouterActivite:
+  url: /ajouter-activite-tier
+  param: { module: parametre, action: ajouterActivite }
+deleteActivite:
+  url: /supprimer-activite-tier
+  param: { module: parametre, action: deleteActivite }
+editActivite:
+  url: /afficher-activite-tier
+  param: { module: parametre, action: editActivite }
+updateActivite:
+  url: /modifer-activite-tier
+  param: { module: parametre, action: updateActivite }
+
+#Exercice
+exercice:
+  url: /exercice-comptable
+  param: { module: parametre, action: listeExercice }
+ajouterExercice:
+  url: /ajouter-exercice-comptable
+  param: { module: parametre, action: ajouterExercice }
+deleteExercice:
+  url: /supprimer-exercice-comptable
+  param: { module: parametre, action: deleteExercice }
+editExercice:
+  url: /afficher-exercice-comptable
+  param: { module: parametre, action: editExercice }
+updateExercice:
+  url: /modifer-exercice-comptable
+  param: { module: parametre, action: updateExercice }
+
+#T.V.A
+tva:
+  url: /tva
+  param: { module: parametre, action: listeTva }
+ajouterTva:
+  url: /ajouter-tva
+  param: { module: parametre, action: ajouterTva }
+deleteTva:
+  url: /supprimer-tva
+  param: { module: parametre, action: deleteTva }
+editTva:
+  url: /afficher-tva
+  param: { module: parametre, action: editTva }
+updateTva:
+  url: /modifer-tva
+  param: { module: parametre, action: updateTva }
+
+#Type Compte
+typeCompte:
+  url: /type-compte
+  param: { module: parametre, action: listeTypeCompte }
+ajouterTypeCompte:
+  url: /ajouter-type-compte
+  param: { module: parametre, action: ajouterTypeCompte }
+deleteTypeCompte:
+  url: /supprimer-type-compte
+  param: { module: parametre, action: deleteTypeCompte }
+editTypeCompte:
+  url: /afficher-type-compte
+  param: { module: parametre, action: editTypeCompte }
+updateTypeCompte:
+  url: /modifer-type-compte
+  param: { module: parametre, action: updateTypeCompte }
+RetourDossier:
+  url: /retour-dossier
+  param: { module: accueil, action: Retourdossier }
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

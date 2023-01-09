@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           categorietitre
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          categorietitre
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: { label: "Nom du catégorie"}
+      list:    
+          title: Liste des catégories des Titres Budget
+          display: [libelle]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour  fiche %%libelle%%
+      new:     
+          title: Nouvelle fiche 

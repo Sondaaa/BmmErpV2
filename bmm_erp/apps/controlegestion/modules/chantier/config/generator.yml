@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           chantier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          chantier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Libellé (الحظيرة)"}
+          
+          
+      list:   
+          title: Liste des Chantiers (الحظائر)
+          display: [libelle]
+      filter:  ~
+      form:    ~
+      edit:   
+          title: Mise a jour Fiche Chantier
+      new:     
+          title: Nouvelle Fiche Chantier

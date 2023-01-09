@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typemission
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typemission
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Type Mission"}
+      
+      list:   
+          title: Liste des Types Missions 
+          display: [libelle]
+      filter: ~
+          
+      form:    ~
+      edit:   
+          title: Mise a jour Fiche Type Mission  
+      new:     
+          title: Nouvelle Fiche Type Mission 

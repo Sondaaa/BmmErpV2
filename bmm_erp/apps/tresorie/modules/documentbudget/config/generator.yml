@@ -1,0 +1,42 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           documentbudget
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          documentbudget
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: {}
+      fields:  
+          id_type: { label: "Type Document"}
+          id_budget: { label: "Budget"}
+          typedocbudget: { label: "Type Document"}
+          ligprotitrub: { label: "Budget"}
+          numero: { label: "Fiche Numéro"}
+          datecreation: { label: "Date de Création"}
+          numerodocachat: { label: "Numéro"}
+          documentachat: { label: "Documents Achat"}
+      list:    
+          title: Liste des Fiches d'Engagements
+          display: [documentachat,numerodocachat,datecreation,typedocbudget,ligprotitrub]
+          actions: {} 
+          object_actions:                
+                _edit:      ~ 
+          batch_actions: {}
+          max_per_page: 5
+      filter:  
+          display: [numero,datecreation,id_type]
+      form:    
+          actions:
+            _list:   ~
+            _save:   ~
+      edit:    
+          title: Mise à jour fiche d'engagment %%numero%%
+      new:     
+          title: Nouvelle fiche d'engagement

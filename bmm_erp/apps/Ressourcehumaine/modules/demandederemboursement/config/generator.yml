@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           demandederemboursement
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          demandederemboursement
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+           id_agents : { label: "Agents"}
+           agents : { label: "Agents"}
+           id_posterh : { label: "Poste"}
+           posterh : { label: "Poste"}
+           date : { label: "Date"}
+           
+          
+           observation : { label: "Observation"}
+      list:    
+          title: Liste des Demandes de Remboursement  
+          display: [agents,date,hopital,posterh,observation]
+      filter:  
+          display: [id_agents]
+      form:    ~
+      edit:    
+          title: Mise a jour Demande de Remboursement 
+      new:     
+          title: Nouvelle Fiche Demande de Remboursement 

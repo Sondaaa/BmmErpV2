@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           naturebanque
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          naturebanque
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: { label: "Nature du compte"}
+      list:    
+          title: Liste des natures du compte
+          display: [libelle]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour %%libelle%%
+      new:     
+          title: Nouvelle fiche nature du compte 

@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ProcedureMarche
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          procedure_marche
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: {label: "Nouvelle fiche du procedure - الإجراءات-"}
+      fields:  
+          name: {label: "Nom du procedure"}
+          
+      list:    
+          title: Liste des Procedures des marches  - الإجراءات-
+          display: [name]
+         
+          max_per_page: 5
+      filter:  
+          display: [name]
+      form:    ~
+         
+      edit:
+          title: MODIFIER FICHE  %%name%%
+      new:     
+          title: NOUVELLE FICHE 

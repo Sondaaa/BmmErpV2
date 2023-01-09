@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class: magasin
+    theme: admin
+    non_verbose_templates: true
+    with_show: false
+    singular: ~
+    plural: ~
+    route_prefix: magasin
+    with_doctrine_route: true
+    actions_base_class: sfActions
+
+    config:
+      actions: ~
+      fields:
+        libelle: { label: "Magasin" }
+        code: { label: "Code Magasin" }
+        id_site: { label: "Site" }
+        id_etage: { label: "Sous Site" }
+        etage: { label: "Sous Site" }
+      list:
+        title: Liste des Magasins
+        display: [code, libelle, site, etage]
+      filter:
+        display: [code, libelle, id_site, id_etage]
+      form:
+        display: [code, libelle, id_site, id_etage]
+      edit:
+        title: Modifier Magasin
+      new:
+        title: Nouveau Magasin

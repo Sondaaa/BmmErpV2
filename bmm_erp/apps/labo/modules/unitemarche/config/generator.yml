@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           unitemarche
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          unitemarche
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: {label: Nouvelle fiche }
+      fields:  
+          libelle: { label: "Unité de mesure"}
+      list:    
+          title: Liste des unités de mesures
+          display: [libelle]
+          max_per_page: 10
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour fiche unité
+      new:     
+          title: Nouvelle fiche unité

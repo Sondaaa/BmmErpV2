@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typedoc
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typedoc
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: { label: "Nom du document"}
+          conditiontype: { label: "Condition"}
+          valeurcondition: { label: "Valeur"}
+          prefixetype: { label: "Préfixe en Type"}
+          prefixevaleur: { label: "Préfixe en valeur"}
+          
+      list:    
+          title: Liste des types documents
+          display: [libelle,conditiontype,prefixetype,prefixevaleur,valeurcondition]
+          max_per_page: 5
+      filter:  
+          display: [libelle]
+      form:    ~
+      edit:    
+          title: Mise à jour %%libelle%%
+      new:     
+          title: Nouveau type document

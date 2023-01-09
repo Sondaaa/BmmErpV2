@@ -1,0 +1,15 @@
+
+{
+    "name": "ourcodeworld/cbbc",
+    "type": "project",
+    "authors": [
+        {
+            "name": "sonda",
+            "email": "sonda.bahloul@formanet-tn.com"
+        }
+    ],
+    "require": {
+        
+    }
+}
+

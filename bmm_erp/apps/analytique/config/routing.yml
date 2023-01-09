@@ -1,0 +1,82 @@
+repartitioncharge:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                repartitioncharge
+    module:               repartitioncharge
+    prefix_path:          /repartitioncharge
+    column:               id
+    with_wildcard_routes: true
+
+fraisgeneraux:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                fraisgeneraux
+    module:               fraisgeneraux
+    prefix_path:          /fraisgeneraux
+    column:               id
+    with_wildcard_routes: true
+
+typerapport:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typerapport
+    module:               typerapport
+    prefix_path:          /typerapport
+    column:               id
+    with_wildcard_routes: true
+
+rapporttravaux:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                rapporttravaux
+    module:               rapporttravaux
+    prefix_path:          /rapporttravaux
+    column:               id
+    with_wildcard_routes: true
+
+repartitionsalaireouvrier:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                repartitionsalaireouvrier
+    module:               repartitionsalaireouvrier
+    prefix_path:          /repartitionsalaireouvrier
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: accueil, action: index }
+
+validerDossierCourant:
+  url: /valider-dossier-courant
+  param: { module: accueil, action: validerDossierCourant}
+
+#Exercice
+exercice:
+  url: /exercice-comptable
+  param: { module: parametre, action: listeExercice }
+ajouterExercice:
+  url: /ajouter-exercice-comptable
+  param: { module: parametre, action: ajouterExercice }
+deleteExercice:
+  url: /supprimer-exercice-comptable
+  param: { module: parametre, action: deleteExercice }
+editExercice:
+  url: /afficher-exercice-comptable
+  param: { module: parametre, action: editExercice }
+updateExercice:
+  url: /modifer-exercice-comptable
+  param: { module: parametre, action: updateExercice }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

@@ -1,0 +1,25 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           famexpdes
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          famexpdes
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+          title: Liste des familles
+          display: [famille]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour fiche %%famille%%
+      new:     
+          title: Nouvelle fiche famille tiers

@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           tableauxammortisement
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          tableauxammortisement
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id_immobilisation: {label: "Immobilisation"}
+        datetableux: {label: "Date"}
+        dotation1: {label: "Dotation"}
+        amrtinterieur1: {label: "Amortissement anterieur"}
+        amrtcumile1: {label: "Amortissement Cumulé "}
+        vcn1: {label: "Vcn"}
+        dateaquisition1: {label: "Date d'acquisition"}
+        
+      list:
+        title: Tableaux Amortissement /Liste des Immobilisations
+        display: [immobilisation,dateaquisition1,vorigine,	taux,dotation1,amrtinterieur1,	amrtcumile1,	vcn1]
+        hide: [id]
+      filter:
+        display: [id_immobilisation]
+      form:    ~
+      edit:    ~
+      new:     ~

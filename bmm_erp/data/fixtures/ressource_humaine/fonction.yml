@@ -1,0 +1,15 @@
+## YAML Template.
+---
+Fonction:
+  f1:
+    id: 1
+    description: "Directeur Général"
+  f2:
+    id: 3
+    description: "Sous Directeur"
+  f3:
+    id: 5
+    description: "Chef de Service"
+  f4:
+    id: 7
+    description: "Directeur"

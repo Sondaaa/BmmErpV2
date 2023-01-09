@@ -1,0 +1,37 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           demandepret
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          demandepret
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_agents : { label: "Agents"}
+          id_typepret : { label: "Type Prêt"}
+          pret : { label: "Type Prêt"}
+          id_sourcepret : { label: "Source Prêt"}
+          datedemande : { label: "Date Demande Prêt"}
+          annee : { label: "Année"}
+          sourcepret: { label: "Source Prêt"}
+          
+          montantpret: { label: "Montant Prêt"}
+          nbrmois : { label: "Nombre Mois"}
+          montantmentielle: { label: "Montant Mensuel "}
+      list:   
+          title: Liste des Demandes des Prêts
+          display: [agents,pret,sourcepret,montantpret,nbrmois,montantmentielle,datedemande,mois,annee]
+      filter:  
+           display: [id_agents,id_typepret,id_sourcepret,annee,mois]
+      form:    ~
+      edit:   
+          title: Mise à jour Fiche Demande de Prêt
+      new:     
+          title: Nouvelle Fiche Demande de Prêt

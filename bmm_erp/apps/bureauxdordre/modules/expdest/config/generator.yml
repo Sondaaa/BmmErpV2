@@ -1,0 +1,40 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           expdest
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          expdest
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          datecreation: {label: "Date de Création"}
+          maxdate: { label: "Date maxiumum de réponse"}
+          npresponsable: {label: "Nom Complet du responsable"}
+          rs: { label: "Raison Sociale"}
+          id_type: {label: "Type"}
+          id_famille: { label: "Famille"}
+          id_agent: { label: "Agent concerné"}
+          id_frs: { label: "Fournisseur"}
+          fournisseur: { label: "Fournisseur"}
+          typexpdes: { label: "Type Tiers"}
+          famexpdes: { label: "Famille Tiers"}
+          id_gouvernera: { label: "Gouvernorat"}
+          gouvernera: { label: "Gouvernorat"}
+      list:    
+          title: Liste des Tiers
+          display: [datecreation,famexpdes,rs,npresponsable,fournisseur,agents,npresponsable,gouvernera]
+          max_per_page: 10
+      filter:  
+          display: [rs,npresponsable,id_type,id_famille,id_frs,id_agent]
+      form:    ~
+      edit:    
+          title: Mise à jour - %%rs%% -
+      new:     
+          title: Nouvelle Fiche Tier

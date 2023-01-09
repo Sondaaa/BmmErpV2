@@ -1,0 +1,9 @@
+Formejuridique:
+  sarl:
+    libelle: S.A.R.L
+  sa:
+    libelle: S.A
+  suarl:
+    libelle: S.U.A.R.L
+  personne_physique:
+    libelle: Personne Physique

@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           demandeavance
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          demandeavance
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_agents : { label: "Agents"}
+          id_typeavance : { label: "Type"}
+          avance : { label: "Type Avance"}
+          montanttotal : { label: "Montant  Total"}
+          montantmensielle :  { label: "Montant Mensuel "}
+          annee :  { label: "Année  "}
+          
+      list:   
+          title: Liste des Demandes d'Avances
+          display: [agents,avance,montanttotal,montantmensielle,mois,annee]
+      filter:  
+           display: [id_agents,id_typeavance]
+      form:    ~
+      edit:   
+          title: Mise a jour Fiche Demande d'Avance
+      new:     
+          title: Nouvelle Fiche Demande d'Avance

@@ -1,0 +1,55 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Documentachat
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          documentachat_Achatdoc
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          reference: {label: "Référence"}
+          datecreation: { label: "Date de création"}
+          observation: { label: "Observation"}
+          chemindoc: { label: "Image"}
+          id_demandeur: { label: "Demandeur"}         
+          id_adresse: { label: "Adresse"}
+          id_lignedirectionsite: { label: "Direction par site"}
+          desiegnation: { label: "Désiegnation"}
+          id_objet: { label: "Objet"}
+          id_projet: { label: "Projet"}
+          mht: { label: "Mnt. HT"}
+          mnttva: { label: "Mnt. TVA"}
+          mntttc: { label: "Mnt. TTC"}
+          numerodocachat: { label: "Numéro" }
+          typeparnumero: { label: "Type"}
+          datecreationachat: { label: "Date création"}
+          etatdocument: {label: "Etat"}
+          id_etatdoc: { label: "Etat"}
+          id_frs: { label: "Fournisseur"}
+          id_typedoc:  { label: "Type document achat"}
+          agents: { label: "Demandeur"}
+          naturedocachat: { label: Nature document}
+      list:    
+          title: Liste des Bon Commandes Internes
+          display: [datecreationachat,numerodocachat,naturedocachat,reference,agents,etatdocument]
+          object_actions:
+            _edit:      ~
+          batch_actions: {}
+          max_per_page: 10
+      filter:  
+          display: [datecreation,reference,numero]
+      form:    
+          actions:
+             _list:   ~
+             _save:   ~
+      edit:
+          title: MODIFIER FICHE Demande Interne %%numerodocachat%%
+      new:     
+          title: NOUVELLE FICHE Demande Interne

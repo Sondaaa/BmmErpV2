@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           historiquemouvement
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          historiquemouvement
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        etatfrs: { label: "Situation Fiscale"}
+        id_frs: { label: "Fournisseur"}
+        id_lignemvt: { label: "Mouvement"}
+        datecreation: { label: "Date Création"}  
+        lignemouvementfacturation: { label: "N° Mouvement"}  
+        
+      list:
+        title: Liste des Historiques des Mouvements 
+        display: [fournisseur,lignemouvementfacturation,etatfrs,datecreation]
+        max_per_page: 5
+      filter:
+        display: [id_lignemvt,id_frs,etatfrs,datecreation]
+      form:    ~
+      edit:
+        title: Modifier 
+      new:
+        title: Nouveau

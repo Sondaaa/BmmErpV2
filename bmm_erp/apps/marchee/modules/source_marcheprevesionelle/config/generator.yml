@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           SourceMarcheprevesionelle
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          source_marcheprevesionelle
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: {label: "Nouvelle fiche"}
+      fields:  
+          name: {label: "Nom du source"}
+          
+      list:    
+          title: Sources des marches prévisionnelle  
+          display: [name]
+         
+          max_per_page: 5
+      filter:  
+          display: [name]
+      form:    ~
+         
+      edit:
+          title: MODIFIER FICHE  %%name%%
+      new:     
+          title: NOUVELLE FICHE 

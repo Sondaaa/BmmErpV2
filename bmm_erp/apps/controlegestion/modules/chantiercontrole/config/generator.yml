@@ -1,0 +1,39 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           chantiercontrole
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          chantiercontrole
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          datecreation: { label: "Date Création"}
+          reference: { label: "Référence"}
+          libelle: { label: "Chantier"}
+          objet: { label: "Objet"}
+          attributaire: { label: "Attributaire"}
+          id_lieuchantier: { label: "Lieu Chantier"}
+          lieuchantier: { label: "Lieu Chantier"}
+          dureeprobable: { label: "Durée Probable"}
+          datedemarrage: { label: "Date Démarrage"}
+          montant: { label: "Montant Global"}
+      list:
+          title: Liste des Chantiers          
+          display: [datecreation,reference,libelle,lieuchantier,datedemarrage]
+      filter:
+          display: [reference,libelle,id_lieuchantier]
+      form:
+          actions:
+            _list:   ~
+            _save:   ~
+      edit:
+          title: Mise à jour %%libelle%%
+      new:
+          title: Nouveau chantier

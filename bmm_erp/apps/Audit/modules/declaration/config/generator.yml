@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           declaration
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          declaration
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          libelle: { label: "Libellé"}
+          datedebut: { label: "Date Début"}
+          datefin: { label: "Date Fin"}
+          montant: { label: "Montant"}
+          etat: { label: "Etat"}
+          datecreation: { label: "Date Création"}
+          id_caissebanque: { label: "Compte Bancaire / CCP"}
+          caissesbanques: { label: "Compte Bancaire / CCP"}
+      list:
+          title: Liste des Déclarations
+          display: [datecreation,libelle,datedebut,datefin,montant,caissesbanques,etat]
+      filter:
+          display: [libelle,datedebut,datefin,id_caissebanque,etat]
+      form:    ~
+      edit:    ~
+      new:
+          title: Nouvelle Déclaration

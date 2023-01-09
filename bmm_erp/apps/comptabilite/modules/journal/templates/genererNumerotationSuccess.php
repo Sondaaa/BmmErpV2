@@ -1,0 +1,1 @@
+<?php include_partial("journal/liste_generer", array("numerotation" => $numerotation, "date_debut" => $date_debut, "date_fin" => $date_fin)) ?>

@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           niveauxage
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          niveauxage
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Libelle"}
+          intervaldebut: { label: "Interval debut"}
+          intervalfin: { label: "Interval Fin"}
+      list:    
+          title: Liste des niveaux d'âge
+          display: [libelle, intervaldebut,intervalfin]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour fiche
+      new:     
+          title: Nouvelle fiche 

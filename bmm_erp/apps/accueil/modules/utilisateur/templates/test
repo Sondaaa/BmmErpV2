@@ -1,0 +1,145 @@
+<?php $magasins = MagasinTable::getInstance()->findAll(); ?>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="widget-box">
+      <div class="widget-header widget-header-flat">
+        <h4 class="widget-title smaller">Fiche Utilisateur</h4>
+      </div>
+      <div class="widget-body">
+        <div class="widget-main" style="min-height: 200px;">
+          <form>
+            <fieldset id="sf_fieldset_none">
+              <table>
+                <tbody>
+                  <tr>
+                    <input type="hidden" value="<?php if ($utilisateur) echo $utilisateur->getId(); ?>" id="id">
+                    <td><label> Personnel </label></td>
+                    <td>
+                      <?php echo $form['id_parent']->renderError() ?>
+                      <?php echo $form['id_parent'] ?>
+                    </td>
+
+                    <td><label> Pseudo </label></td>
+                    <td>
+                      <?php echo $form['login']->renderError() ?>
+                      <?php echo $form['login'] ?>
+                    </td>
+                    <td><label> Mot de passe </label></td>
+                    <td>
+                      <?php echo $form['pwd']->renderError() ?>
+                      <?php echo $form['pwd'] ?>
+                    </td>
+                  </tr>
+                  <tr>
+
+
+                    <td><label> Profile </label></td>
+                    <div id="soussite" class="disabledbutton">
+                      <td>
+                        <?php echo $form['id_profil']->renderError() ?>
+                        <?php echo $form['id_profil'] ?>
+                      </td>
+                    </div>
+                    <td><label> Super administrateur </label></td>
+                    <td>
+                      <?php echo $form['is_admin']->renderError() ?>
+                      <?php echo $form['is_admin'] ?>
+                    </td>
+
+                    <td><label> Utilisateur Actif </label></td>
+                    <td>
+                      <?php echo $form['is_active']->renderError() ?>
+                      <?php echo $form['is_active'] ?>
+                    </td>
+                  </tr>
+                  <tr>
+                    
+                    <?php
+                    if ($utilisateur) :
+                      if ($utilisateur->getIdMagasin() != null && $utilisateur->getIdMagasin() != '') {
+                        $ids_magasin = $utilisateur->getIdMagasin();
+                        $list_mg = explode(';', $ids_magasin);
+                        $liste = json_encode($list_mg);
+                        if (sizeof($ids_magasin) >= 1) {
+                          $magasins_affecter = MagasinTable::getInstance()->getByUsr($list_mg);
+                        }
+                      }
+                    ?>
+                      <legend> Liste des Magasins</legend>
+                      <span>
+                        <?php if ($utilisateur) {
+                          if ($utilisateur->getIdMagasin() != null && $utilisateur->getIdMagasin() != '') {
+                            foreach ($magasins_affecter as $a) : ?>
+                              <?php echo  $a->getCode() . ' ' . $a->getLibelle(); ?>
+                        <?php endforeach;
+                          }
+                        } ?>
+                      </span>
+
+                      <div class="panel panel-default" id="list_magasin" style="display: none">
+                        <td colspan="6"><span>Liste des Magasin</span>
+                          <select multiple="multiple" size="12" name="utilisateur[id_magasin]" id="utilisateur_id_magasin">
+                            <option value=""></option>
+                            <?php foreach ($magasins as $a) : ?>
+                              <option value="<?php echo $a->getId(); ?>"><?php echo  $a->getCode() . ' ' . $a->getLibelle(); ?></option>
+                            <?php endforeach; ?>
+                          </select>
+                        </td>
+                      </div>
+                    <?php else : ?>
+                      <td>Magasin </td>
+                      <div class="panel panel-default" id="list_magasin" style="display: none">
+                        <td colspan="6"><span>Liste des Magasin</span>
+                          <select multiple="multiple" size="12" name="utilisateur[id_magasin]" id="utilisateur_id_magasin">
+                            <option value=""></option>
+                            <?php foreach ($magasins as $a) : ?>
+                              <option value="<?php echo $a->getId(); ?>"><?php echo  $a->getCode() . ' ' . $a->getLibelle(); ?></option>
+                            <?php endforeach; ?>
+                          </select>
+                        </td>
+                      </div>
+                    <?php endif; ?>
+
+                  </tr>
+                </tbody>
+              </table>
+            </fieldset>
+          </form>
+          <div class="form-actions center" style="margin-bottom: 0px; margin-top: 0px;">
+            <a href="<?php echo url_for('@utilisateur') ?>" class="btn btn-xs btn-success">Retour à la liste</a>
+            <input id="save_button" type="submit" class="btn btn-sm btn-success" ng-click="AjouterUser()">
+              Enregistrer
+              <i class="ace-icon fa fa-save icon-on-right bigger-110"></i>
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  // $('#list_magasin').hide();
+  // $('#seul_magaisn').hide();
+
+  function getMagasin() {
+    alert('dcs' + $('#test').val());
+    if ($('#test').val() == 1) {
+      $('#list_magasin').hide();
+      $('#seul_magaisn').show();
+      $('.chosen-container').attr('style', 'width:100%');
+      $('.chosen-container').trigger("chosen:updated");
+
+    } else if ($('#test').val() == 2) {
+      $('#list_magasin').show();
+      $('#seul_magaisn').hide();
+      $('.chosen-container').attr('style', 'width:100%');
+      $('.chosen-container').trigger("chosen:updated");
+    } else {
+      $('#list_magasin').hide();
+      $('#seul_magaisn').hide();
+    }
+  }
+</script>

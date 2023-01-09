@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typerapport
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typerapport
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          libelle: { label: "Libellé"}
+      list:
+          title: Liste des Types des Rapports des Travaux
+          display: [libelle]
+      filter:  ~
+      form:    ~
+      edit:
+          title: Modifier Type des Rapports des Travaux - %%libelle%%
+      new:
+          title: Nouveau Type des Rapports des Travaux

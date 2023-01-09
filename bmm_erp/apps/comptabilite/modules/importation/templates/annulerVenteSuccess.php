@@ -1,0 +1,1 @@
+<?php include_partial("importation/liste_vente", array("pager" => $pager, "page" => $page)) ?>

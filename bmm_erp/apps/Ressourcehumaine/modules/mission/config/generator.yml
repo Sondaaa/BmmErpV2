@@ -1,0 +1,35 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           mission
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          mission
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        
+          mission: {label: "Mission"}
+          id_agents: {label: "Agents"}
+          id_ouvrier: {label: "Ouvrier"}
+          lieutravail: {label: "Lieu "}
+          datesortie: {label: "Date de sortie "}
+          duree: {label: "Nbr.Jour "}
+          
+      list:    
+          title: Liste des Missions 
+          display: [mission,agents,ouvrier,lieutravail,datesortie,duree]
+      filter:  
+          
+          display: [id_agents,id_ouvrier,mission]
+      form:    ~
+      edit:   
+          title: Mise à jour fiche  Mission
+      new:     
+          title: Nouvelle fiche Mission

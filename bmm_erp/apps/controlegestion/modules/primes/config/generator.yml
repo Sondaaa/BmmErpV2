@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           primes
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          primes
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          description : { label: "Description"}
+          categorierh : {label: "Catégorie"}
+          montant : { label: "Montant"}
+          id_categorie : {label: "Catégorie"}
+          id_titreprime: {label: "Titre Prime"}
+      list:    
+          title: Liste des Primes
+          display: [titreprimes,categorierh,grade,montant]
+      filter: 
+          display: [montant]
+          
+      form:    ~
+      edit:    
+          title: Mise à jour fiche
+      new:     
+          title: Nouvelle fiche 

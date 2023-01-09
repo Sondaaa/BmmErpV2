@@ -1,0 +1,25 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           etatdocument
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          etatdocument
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          etatdocachat: { label: "Etat document achat"}
+      list:
+          title: Liste des états documents
+          display: [etatdocachat]
+          max_per_page: 5
+      filter:  ~
+      form:    ~
+      edit:    ~
+      new:     ~

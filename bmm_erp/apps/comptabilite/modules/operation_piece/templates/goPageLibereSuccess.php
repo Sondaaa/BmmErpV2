@@ -1,0 +1,1 @@
+<?php include_partial("operation_piece/liste_piece_libere", array("pager" => $pager, "page" => $page)) ?>

@@ -1,0 +1,40 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ligprotitrub
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ligprotitrub
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_titre: {label: "Titre"}
+       
+          id_rubrique: { label: "Rubrique"}
+        
+          mnt: {label: "Montant"}
+          mntengage: {label: "Montant engagé"}
+          mntdeponser: {label: "Montant dépensé"}
+          relicaengager: {label: "Relica engagé"}
+          relicadeponser: { label: "Relica dépensé"}
+        
+          orderbudget: {label: "Order"}
+          detailMontant: {label: "Détail Montant"}
+          order: {label: "Order / date"}
+      list:    
+          title: Liste du budgets
+          display: [order,detail,detailMontant]
+          max_per_page: 10
+      filter:  
+          display: [id_titre,id_rubrique]
+      form:    ~
+      edit:    
+          title: Mise à jour 
+      new:     
+          title: Nouveau budget

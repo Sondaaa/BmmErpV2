@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           familleartfrs
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          familleartfrs
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: { label: "Nom du famille"}
+      list:    
+          title: Liste des familles articles fournisseurs
+          display: [libelle]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour fiche famille 
+      new:     
+          title: Nouvelle fiche 

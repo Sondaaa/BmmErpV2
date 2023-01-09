@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           pret
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          pret
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Libellé"}
+          sourcepret : { label: "Source Prêt "}
+          id_source : { label: "Source Prêt "}
+          
+      list:   
+          title: Liste des Types Prêts 
+          display: [libelle,sourcepret]
+      filter:  
+           display: [id_source,libelle]
+      form:    ~
+      edit:   
+          title: Mise a jour Fiche de Type Prêt
+      new:     
+          title: Nouvelle Fiche de Type Prêt
+

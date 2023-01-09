@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           modalitedecalcul
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          modalitedecalcul
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+           
+           
+           libelle : { label: "Modalité de calcul"}
+           
+           id_sousrubrique : { label: " Sous Rubrique"}
+           
+         
+      list:    
+          title: Liste des Modalités de calcul
+          display: [sousrubrique,libelle]
+      filter:  
+          display: [id_sousrubrique,libelle]
+      form:    ~
+      edit:   
+          title: Mise à jour fiche
+      new: 
+          title: Nouvelle fiche 

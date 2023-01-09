@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           servicerh
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          servicerh
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Libellé"}
+          id_sousdirection: {label: "Sous Direction"}
+          sousdirection: {label: "Sous Direction"}
+      list:    
+          title: Liste des Services
+          display: [sousdirection,libelle]
+      filter: 
+          display: [libelle]
+          
+      form:    ~
+      edit:    
+          title: Mise à jour fiche Service
+      new:     
+          title: Nouvelle fiche Service

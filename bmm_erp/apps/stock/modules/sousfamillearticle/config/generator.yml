@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sousfamillearticle
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sousfamillearticle
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: { label: "Sous Famille"}
+          code: { label: "Code "}
+          id_famille: { label: "Famille"}
+      list:    
+          title: Listes des sous famille
+          display: [ code,libelle,famillearticle]
+      filter:  
+          display: [id_famille,code,libelle]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche s.famille %%libelle%%
+      new:     
+          title: Nouvelle fiche sous famille

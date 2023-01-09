@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           role
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          role
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        role: {lable: "Role"}
+
+      list:
+        title: Listes des Roles
+        display: [role]
+        max_per_page: 5
+      filter:  ~
+      form:    ~
+      edit:
+        title: Modifier %%role%%
+      new:
+        title: Nouveau Role Utilisateur

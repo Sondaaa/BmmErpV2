@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           banque
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          banque
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: 
+          libelle: { label: "Libellé"}
+      list:    
+          title: Liste des Banques
+          display: [libelle]
+      filter:  
+          display: [libelle]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche Banque - %%libelle%%
+      new:     
+          title: Nouvelle Fiche Banque
+      

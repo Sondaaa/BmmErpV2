@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           parametragetypedoc
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          parametragetypedoc
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        id_avis : {label: "Avis"}
+        id_visa : {label: "Visa"}
+        visaachat : {label: "Visa"}
+        id_typedoc : {label: "Type document"}
+        typedoc : {label: "Type document"}
+      list:    
+          title: Liste des paramètres par type de document
+          display: [ avis,visaachat,typedoc]
+      filter:  
+          display: [ id_avis,id_visa,id_typedoc]
+      form:    ~
+      edit:    
+          title: Mise à jour Pramètre
+      new:     
+          title: Nouveau parmètre

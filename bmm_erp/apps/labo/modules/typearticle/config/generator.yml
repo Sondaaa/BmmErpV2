@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Typearticle
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typearticle
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: {label: Nouvelle fiche }
+      fields:  
+          libelle: { label: "Libelle"}
+          prefixetype: {label: "PreFixe"}
+      list:    
+          title: Liste des types
+          display: [ libelle,prefixetype]
+          
+      filter:  
+        display: [ libelle]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche type - %%libelle%%
+      new:     
+          title: Nouvelle fiche 

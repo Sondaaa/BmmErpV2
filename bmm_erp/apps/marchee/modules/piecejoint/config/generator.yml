@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           piecejoint
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          piecejoint
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_typepiece: { label: "Type Pièce"}
+          objet: { label: "Object"}
+          typepiece: { label: "Type Pièce"}
+          id_courrier: { label: "Courrier"}
+          id_parcour: { label: "Courrier Transféré"}
+          sujet: { label: "Observation"}
+          ordredeservice: { label: "Ordre de service"}
+          id_ordreservice: { label: "Ordre de service"}
+      list:    
+          title: Liste des Pièces-Jointes
+          display: [objet,ordredeservice]
+      filter:  
+          display: [id_ordreservice]
+      form:    ~
+      edit:    
+          title: Mise à jour courrier - %%odredeservice%% -
+      new:     
+          title: Nouvelle Pièce

@@ -1,0 +1,1 @@
+<?php include_partial('saisie_pieces/form', array("maquettes" => $maquettes, "pager" => $pager, "page" => $page,'journals' => $journals, 'nature_pieces' => $nature_pieces, 'id_journal' => '', 'id_serie' => '', 'date' => '', 'serie' => '', 'numero' => '', 'num_externe' => '', 'reference' => '', 'id_nature_pieces' => '', 'libelle' => '')) ?>

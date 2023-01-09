@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           naturediscipline
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          naturediscipline
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          explication : { label: "Libelle"}
+          libelle : { label: "Libellé"}
+          id_agents : { label: "Agents"}
+          id_typediscipline : {label: "Type Discipline"}
+          typediscipline : {label: "Type Discipline"}
+      list:    
+          title: Liste des  Natures Disciplines 
+          display: [libelle , typediscipline]
+      filter: 
+          display: [libelle,id_typediscipline]
+          
+      form:    ~
+      edit:    
+          title: Mise à jour fiche
+      new:     
+          title: Nouvelle fiche 

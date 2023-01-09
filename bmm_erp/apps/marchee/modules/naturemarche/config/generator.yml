@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           naturemarche
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          naturemarche
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          libelle: { label: "Nature marché"}
+      list:
+          title: Liste des natures marchés
+          display: [libelle]
+      filter:
+          display: [libelle]
+      form:    ~
+      edit:
+          title: Mise à jour nature marché - %%libelle%%
+      new:
+          title: Nouvelle nature marché

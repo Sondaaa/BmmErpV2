@@ -1,0 +1,39 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           magasin
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          magasin
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_pay: { label: "Pays" }
+          id_gouvernera: {label: "Gouvernorat"}
+          id_emplacement: {label: "Emplacement"}
+          id_site: { label: "Site"}
+          id_mag: { label: "Magasin Principal"}
+          magasinlibelle: { label: "Magasin Principal"}
+          libelle: { label: "Magasin"}
+      list:    
+          title: Liste des Magasins
+          display: [code,libelle,site]
+          object_actions:
+            _edit:      ~
+          batch_actions: {}
+      filter:  
+          display: [libelle,id_site]
+      form:    
+          actions:
+             _list:   ~
+             _save:   ~
+      edit:    
+          title: Mise à jour %%libelle%%
+      new:     
+          title: Nouveau magasin

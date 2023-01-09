@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           activitetiers
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          activitetiers
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: {label: Nouvelle fiche activité fournisseur}
+      list:    
+          title: Liste des activités
+          display: [code,libelle]
+          max_per_page: 5
+      filter:  
+          display: [code,parent_id]
+        
+      form:    ~
+      edit:    
+          title: Mise à jour fiche %%libelle%%
+      new:     
+          title: Nouvelle fiche

@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           tva
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          tva
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          valeurtva: { label: "Valeur T.V.A"}
+          libelle: { label: "T.V.A"}
+      list:    
+          title: Liste des T.V.A
+          display: [libelle,valeurtva]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour Valeur T.V.A
+      new:     
+          title: Nouvelle Valeur T.V.A

@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           instrumentpaiment
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          instrumentpaiment
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: {label: "Instrument"}
+          refinstrument: {label: "Référence"}
+          
+      list:    
+          title: Liste des instruments
+          display: [libelle,refinstrument]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour fiche %%libelle%%
+      new:     
+          title: Nouvelle fiche instrument

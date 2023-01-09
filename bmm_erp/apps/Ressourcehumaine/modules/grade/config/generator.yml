@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           grade
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          grade
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    ~
+      fields:  
+          id_corpsdet: {label: "Corps"}
+          libelle: {label: "Libellé"}
+          id_categorie: {label: "Categorie"}
+          corpsdet: {label: "Corps"}
+      list:    
+          title: Liste des grades
+          display : [corpsdet,libelle]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour fiche
+      new:     
+          title: Nouvelle fiche

@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           parents
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          parents
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          nom: { label: "Nom"}
+          prenom: { label: "Prénom"}
+          datenaissance: { label: "Date Naissance"}
+          id_agents: { label: "Agent"}
+          agents: { label: "Agent"}
+          id_bureau: { label: "Bureau"}
+          bureaux: { label: "Bureau"}
+      list:
+          title: Liste des Affectations
+          display: [agents,bureaux]
+      filter:
+          display: [id_agents,id_bureau]
+      form:
+          display: [id_agents,nom,prenom,id_bureau]
+      edit:
+          title: Modifier Affectation %%agents%%
+      new:
+          title: Ajouter Affectation

@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           agents
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          agents
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        nomcomplet: {label: "Nom & Prénom"}
+        parent: {label : "Bureau"}
+        idrh : {label : "matricule"}
+      list:
+        title: Liste des Agents
+        display: [nomcomplet,cin,idrh]
+      filter:
+        display: [nomcomplet,cin,idrh]
+      form:    ~
+      edit:
+        title: Modifier %%nomcomplet%%
+      new:
+        title: Nouveau Agent

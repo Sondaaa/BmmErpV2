@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           prvelegedroit
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          prvelegedroit
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_role: { label: "Droit d'accès "}
+          id_prevelege: { label: "Privilèges" }
+          role: { label: "Droit d'accès"}
+          prevelege: { label: "Privilège"}
+      list:    
+          title: Liste des Privilèges par modules 
+          display: [role,prevelege]
+          max_per_page: 10
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Modifier %%id_role%%
+      new:     
+          title: Nouveau droit par prevelége

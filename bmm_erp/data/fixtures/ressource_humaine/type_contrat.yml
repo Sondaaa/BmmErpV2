@@ -1,0 +1,11 @@
+## YAML Template.
+---
+Typecontrat:
+  t1:
+    libelle: "Titulaire"
+  t2:
+    libelle: "Temporaire"
+  t3:
+    libelle: "Occasionnel"
+  t4:
+    libelle: "Contractuelle"

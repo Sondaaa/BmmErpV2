@@ -1,0 +1,41 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           titrebudjet
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          titrebudjet
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: { label: "Titre de budget"}
+          datecreation: { label : "Date de Création"}
+          id_projet: { label: " Projet"}
+          id_direction: { label: " Direction"}
+          id_source : { label: "Origine"}
+          sourcesbudget: { label: "Origine"}
+          projet: { label: "Projet"}
+          mntglobal: { label: "Mnt. global"}
+          typebudget: { label: "Type Budget"}
+          id_cat: { label: "Catégorie du budget"}
+          categorietitre: { label: "Catégorie du budget"}
+      list:    
+          title: Liste des budgets
+          display: [datecreation,libelle,categorietitre,sourcesbudget,projet,direction,mntglobal]
+          object_actions:
+            _edit:      ~
+          batch_actions: {}
+          max_per_page: 20
+      filter:  
+          display: [datecreation,libelle,id_projet,id_direction,id_source]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche budget - %%libelle%%
+      new:     
+          title: Nouvelle fiche budget

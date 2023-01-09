@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           MethodeConclusion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          methode_conclusion
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: {label: "Nouvelle fiche du methode du conclusion - طريقة الابرام-"}
+      fields:  
+          name: {label: "Nom du methode"}
+          
+      list:    
+          title: Methodes du conclusions - طريقة الابرام-
+          display: [name]
+         
+          max_per_page: 5
+      filter:  
+          display: [name]
+      form:    ~
+         
+      edit:
+          title: MODIFIER FICHE  %%name%%
+      new:     
+          title: NOUVELLE FICHE 

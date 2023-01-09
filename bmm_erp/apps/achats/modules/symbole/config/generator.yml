@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           symbole
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          symbole
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          codesymbole: { label: "Code"}
+          code: { label: "Code symbole"}
+      list:    
+          title: Liste des symboles
+          display: [codesymbole,code]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: mise à jour %%codesymbole%%
+      new:     
+          title: nouvelle fiche symbole

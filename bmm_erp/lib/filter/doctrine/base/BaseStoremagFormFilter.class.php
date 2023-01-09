@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * Storemag filter form base class.
+ *
+ * @package    BmmErpTest
+ * @subpackage filter
+ * @author     Your name here
+ * @version    SVN: $Id: sfDoctrineFormFilterGeneratedTemplate.php 29570 2010-05-21 14:49:47Z Kris.Wallsmith $
+ */
+abstract class BaseStoremagFormFilter extends BaseFormFilterDoctrine
+{
+  public function setup()
+  {
+    $this->setWidgets(array(
+      'libelle'   => new sfWidgetFormFilterInput(),
+      'id_mag'    => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Magasin'), 'add_empty' => true)),
+      'id_projet' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('Projet'), 'add_empty' => true)),
+    ));
+
+    $this->setValidators(array(
+      'libelle'   => new sfValidatorPass(array('required' => false)),
+      'id_mag'    => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Magasin'), 'column' => 'id')),
+      'id_projet' => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('Projet'), 'column' => 'id')),
+    ));
+
+    $this->widgetSchema->setNameFormat('storemag_filters[%s]');
+
+    $this->errorSchema = new sfValidatorErrorSchema($this->validatorSchema);
+
+    $this->setupInheritance();
+
+    parent::setup();
+  }
+
+  public function getModelName()
+  {
+    return 'Storemag';
+  }
+
+  public function getFields()
+  {
+    return array(
+      'id'        => 'Number',
+      'libelle'   => 'Text',
+      'id_mag'    => 'ForeignKey',
+      'id_projet' => 'ForeignKey',
+    );
+  }
+}

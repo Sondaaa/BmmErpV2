@@ -1,0 +1,41 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Documentbudget
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          documentbudget_Ordonnancement
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: {}
+      fields:  
+          id_type: { label: "Type Document"}
+          id_budget: { label: "Budget"}
+          typedocbudget: { label: "Type Document"}
+          ligprotitrub: { label: "Sous Rubrique"}
+          numero: { label: "Fiche Numéro"}
+          datecreation: { label: "Date de Création"}
+          numerodocachat: { label: "Numéro doc. budget"}
+          documentachat: { label: "Documents Achat"}          
+          mnt: { label: "Montant"}
+          titrebudget: {label: "Titre budget"}
+          rubriqueparent: {label: "Rubrique"}
+      list:    
+          title: Liste des Fiches d'ordonnancement
+          display: [datecreation,numerodocachat,documentachat,numerodocachat,titrebudget,rubriqueparent,ligprotitrub,mnt]
+          actions: {}
+          batch_actions: {}
+          max_per_page: 10
+      filter:  
+          display: [numero,datecreation]
+      form:    
+          actions: {}
+      edit:    
+          title: Fiche d'ordonnancement %%numero%%
+      new:     
+          title: Nouvelle fiche d'ordonnancement

@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           attestationdesalaire
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          attestationdesalaire
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+           id_agents : { label: "Agents"}
+           id_contrat : { label: "Contrat"}
+      list:    
+          title: Liste des Attestations de Salaire Annuel
+          display: [agents]
+      filter:  
+          display: [id_agents]
+      form:    ~
+      edit:    
+          title: Mise a jour Attestation de Salaire Annuel
+      new:     
+          title: Nouvelle Fiche Attestation de Salaire Annuel

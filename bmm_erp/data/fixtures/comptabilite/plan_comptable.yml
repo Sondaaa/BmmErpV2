@@ -1,0 +1,5493 @@
+Plancomptable:
+  
+ plan_comptable_1:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1
+  libelle: "CLASSE : COMPTES DE CAPITAUX PROPRES ET PASSIFS NON COURANTS"
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+
+ plan_comptable_2:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 10
+  libelle: CAPITAL
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_1
+
+ plan_comptable_3:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 101
+  libelle: CAPITAL SOCIAL
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_2
+
+ plan_comptable_4:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1011
+  libelle: CAPITAL SOUSCRIT - NON APPELE
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 
+  Compte: plan_comptable_3
+
+ plan_comptable_5:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1012
+  libelle: CAPITAL SOUSCRIT - APPELE, NON VERSE
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_3
+
+ plan_comptable_6:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1013
+  libelle: CAPITAL SOUSCRIT - APPELE, VERSE
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_3
+
+ plan_comptable_7:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 10131
+  libelle: CAPITAL NON AMORTI
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_6
+
+ plan_comptable_8:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 10132
+  libelle: CAPITAL AMORTI
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_6
+
+
+ plan_comptable_9:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1018
+  libelle: CAPITAL SOUSCRIT SOUMIS A UNE REGLEMENTATION PARTICULIERE
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_3
+
+
+ plan_comptable_10:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 105
+  libelle: FONDS DE DOTATION
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_2
+
+
+ plan_comptable_11:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 108
+  libelle: COMPTE DE L'EXPLOITANT
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_2
+
+
+ plan_comptable_12:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 109
+  libelle: ACTIONNAIRES, CAPITAL SOUSCRIT - NON APPELE
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_2
+
+
+ plan_comptable_13:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 11
+  libelle: RESERVES ET PRIMES LIEES AU CAPITAL
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_1
+
+
+ plan_comptable_14:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 111
+  libelle: RESERVE LEGALE
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_1
+  
+
+ plan_comptable_15:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 112
+  libelle: RESERVES STATUTAIRES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_1
+
+ plan_comptable_16:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 117
+  libelle: PRIMES LIEES AU CAPITAL
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_1
+
+ plan_comptable_17:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1171
+  libelle: PRIMES D'EMISSION
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_16
+
+ plan_comptable_18:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1172
+  libelle: PRIMES DE FUSION
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_16
+
+ plan_comptable_19:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1173
+  libelle: PRIMES D'APPORT
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_16
+
+ plan_comptable_20:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1174
+  libelle: PRIMES DE CONVERSION D'OBLIGATION
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_16
+
+ plan_comptable_21:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1178
+  libelle: AUTRES COMPLEMENTS D'APPORT
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_16
+
+ plan_comptable_22:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 118
+  libelle: AUTRES RESERVES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_1
+
+ plan_comptable_23:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1181
+  libelle: RESERVES POUR FONDS SOCIAL
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_23
+
+ plan_comptable_24:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 119
+  libelle: AVOIRS DES ACTIONNAIRES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_1
+
+ plan_comptable_25:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 12
+  libelle: RESULTATS REPORTES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_1
+
+ plan_comptable_26:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 121
+  libelle: RESULTATS REPORTES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_25
+
+ plan_comptable_27:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 128
+  libelle:  MODIFICATIONS COMPTABLES AFFECTANT LES RESULTATS REPORTES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_25
+
+ plan_comptable_28:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 13
+  libelle:  RESULTAT DE L'EXERCICE
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_1
+
+ plan_comptable_29:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 131
+  libelle:  RESULTAT BENEFICIAIRE
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_29
+
+ plan_comptable_30:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 135
+  libelle:  RESULTAT DEFICITAIRE
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_29
+
+ plan_comptable_31:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 14
+  libelle:  AUTRES CAPITAUX PROPRES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_1
+
+ plan_comptable_32:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 141
+  libelle:  TITRES SOUMIS A DES REGLEMENTATIONS PARTICULIERES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_31
+
+ plan_comptable_33:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 142
+  libelle:  RESERVES REGLEMENTEES & RESERVES SOUMISES A UN REGIME FISCAL PARTICULIER
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_31
+
+ plan_comptable_34:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1421
+  libelle:  RESERVES INDISPONIBLES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_33
+
+ plan_comptable_35:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 143
+  libelle:  AMORTISSEMENTS DEROGATOIRES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_31
+
+ plan_comptable_36:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 144
+  libelle:  RESERVE SPECIALE DE REEVALUATION
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_31
+
+ plan_comptable_37:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 145
+  libelle:  SUBVENTIONS D'INVESTISSEMENT
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_31
+
+ plan_comptable_38:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1451
+  libelle:  SUBVENTIONS D'INVESTISSEMENT
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_37
+
+ plan_comptable_39:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1458
+  libelle:  AUTRES SUBVENTIONS D'INVESTISSEMENT
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_37
+
+ plan_comptable_40:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1459
+  libelle:  SUBVENTIONS D'INVESTISSEMENT INSCRITES AUX COMPTES DE RESULTAT
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_37
+
+ plan_comptable_41:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 147
+  libelle:  COMPTE DU CONCEDANT
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_31
+
+ plan_comptable_42:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 15
+  libelle:  PROVISIONS POUR RISQUES & CHARGES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_1
+
+ plan_comptable_43:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 151
+  libelle:  PROVISIONS POUR RISQUES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_42
+
+ plan_comptable_44:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1511
+  libelle:  PROVISIONS POUR LITIGES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_43
+
+ plan_comptable_45:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1512
+  libelle:  PROVISIONS POUR GARANTIES DONNEES AUX CLIENTS
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_43
+
+ plan_comptable_46:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1513
+  libelle:  PROVISIONS POUR PERTES SUR MARCHES A ACHEVEMENT FUTUR
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_43
+
+ plan_comptable_47:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1514
+  libelle:  PROVISIONS POUR AMENDES & PENALITES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_43
+
+ plan_comptable_48:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1515
+  libelle:  PROVISIONS POUR PERTES DE CHANGE
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_43
+
+ plan_comptable_49:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1518
+  libelle:  AUTRES PROVISIONS POUR RISQUES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_43
+
+ plan_comptable_50:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 152
+  libelle:  PROVISIONS POUR CHARGES A REPARTIR SUR PLUSIEURS EXERCICES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_42
+
+
+ plan_comptable_51:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1522
+  libelle:  PROVISIONS POUR GROSSES REPARATIONS
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_50
+
+
+ plan_comptable_52:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 153
+  libelle:  PROVISIONS POUR RETRAITES ET OBLIGATIONS SIMILAIRES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_42
+
+ plan_comptable_53:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 154
+  libelle:  PROVISIONS D'ORIGINE REGLEMENTAIRE
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_42
+
+ plan_comptable_54:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 155
+  libelle:  PROVISIONS POUR IMPOTS
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_42
+
+ plan_comptable_55:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 156
+  libelle:  PROVISIONS POUR RENOUVELLEMENT DES IMMOBILISATIONS
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_42
+
+ plan_comptable_56:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 157
+  libelle:  PROVISIONS POUR AMORTISSEMENT
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_42
+
+ plan_comptable_57:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 158
+  libelle:  AUTRES PROVISIONS POUR CHARGES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_42
+
+ plan_comptable_58:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 16
+  libelle:  EMPRUNTS & DETTES ASSIMILEES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_1
+
+ plan_comptable_59:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 161
+  libelle:  EMPRUNTS OBLIGATAIRES (ASSORTIES DE SURETES)
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_58
+
+ plan_comptable_60:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1611
+  libelle:  EMPRUNTS OBLIGATAIRES CONVERTIBLES EN ACTIONS
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_59
+
+ plan_comptable_61:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1618
+  libelle:  AUTRES EMPRUNTS OBLIGATAIRES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_59
+
+ plan_comptable_62:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 162
+  libelle:  EMPRUNTS AUPRES DES ETABLISSEMENTS FINANCIERS (ASSORTIES DE SURETES)
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_58
+
+ plan_comptable_63:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1621
+  libelle:  EMPRUNTS BANCAIRES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_62
+
+ plan_comptable_64:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1626
+  libelle:  REFINANCEMENTS ACQUIS
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_62
+
+ plan_comptable_65:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 163
+  libelle:  EMPRUNTS AUPRES D'AUTRES ETABLISSEMENTS FINANCIERS (ASSORTIES DE SURETES)
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_58
+
+ plan_comptable_66:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 164
+  libelle:  EMPRUNTS ET DETTES ASSORTIES DE CONDITIONS PARTICULIERES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_58
+
+ plan_comptable_67:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1641
+  libelle:  AVANCES BLOQUEES POUR AUGMENTATION DU CAPITAL
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_66
+
+ plan_comptable_68:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1642
+  libelle:  AVANCES REÇUES ET COMPTES COURANTS DES ASSOCIES BLOQUES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_66
+
+ plan_comptable_69:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1644
+  libelle:  AVANCES CONDITIONNEES DE L'ETAT & ORGANISMES INTERNATIONAUX
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_66
+
+ plan_comptable_70:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 165
+  libelle:  EMPRUNTS NON ASSORTIES DE SURETES (A SUBDIVISER SELON L'ORDRE DES COMPTES DES EMPRUNTS)
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_58
+
+ plan_comptable_71:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 166
+  libelle:  DETTES RATTACHEES A DES PARTICIPATIONS
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_58
+
+ plan_comptable_72:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1661
+  libelle:  DETTES RATTACHEES A DES PARTICIPATIONS (GROUPE)
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_71
+
+ plan_comptable_73:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1662
+  libelle:  DETTES RATTACHEES A DES PARTICIPATIONS (HORS GROUPE)
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_71
+
+ plan_comptable_74:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1663
+  libelle:  DETTES RATTACHEES A DES SOCIETES EN PARTICIPATION
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_71
+
+ plan_comptable_75:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 167
+  libelle:  DEPOTS & CAUTIONNEMENTS REÇUS
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_58
+
+ plan_comptable_76:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 168
+  libelle:  AUTRES EMPRUNTS ET DETTES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_58
+
+ plan_comptable_77:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1681
+  libelle:  AUTRES EMPRUNTS
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_76
+
+ plan_comptable_78:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1685
+  libelle:  CREDIT FOURNISSEURS D'IMMOBILISATIONS
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_76
+
+ plan_comptable_79:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 1688
+  libelle:  AUTRES DETTES NON COURANTES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_76
+
+ plan_comptable_80:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 17
+  libelle:  COMPTES DE LIAISON DES ETABLISSEMENTS & SUCCURSALES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_1
+
+ plan_comptable_81:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 171
+  libelle:  COMPTES DES LIAISON DES ETABLISSEMENTS
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_80
+
+ plan_comptable_82:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 176
+  libelle:  BIENS & PRESTATIONS DE SERVICES ECHANGES ENTRE ETABLISSEMENTS (CHARGES)
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_80
+
+ plan_comptable_83:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 177
+  libelle:  BIENS & PRESTATIONS DE SERVICES ECHANGES ENTRE ETABLISSEMENTS (PRODUITS)
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_80
+
+ plan_comptable_84:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 18
+  libelle:  AUTRES PASSIFS NON COURANTS
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_1
+
+ plan_comptable_85:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 185
+  libelle:  ÉCARTS DE CONVERSION
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_84
+
+ plan_comptable_86:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 188
+  libelle:  AUTRES
+  Classecomptable: classe_1
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_84
+
+ plan_comptable_87:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2
+  libelle: "CLASSE :COMPTES D'ACTIFS NON COURANTS"
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+
+ plan_comptable_88:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 21
+  libelle:  IMMOBILISATIONS INCORPORELLES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_87
+
+ plan_comptable_89:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 211
+  libelle:  INVESTISSEMENTS DE RECHERCHE & DE DEVELOPPEMENT
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_88
+
+ plan_comptable_90:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 212
+  libelle:  CONCESSIONS DE MARQUES, BREVETS, LICENCES, MARQUES, PROCEDES & VALEURS SIMILAIRES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_88
+
+ plan_comptable_91:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 213
+  libelle:  LOGICIELS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_88
+
+ plan_comptable_92:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 214
+  libelle:  FONDS COMMERCIAL
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_88
+
+ plan_comptable_93:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 216
+  libelle:  DROIT AU BAIL
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_88
+
+ plan_comptable_94:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 218
+  libelle:  AUTRES IMMOBILISATIONS INCORPORELLES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_88
+
+ plan_comptable_95:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 22
+  libelle:  IMMOBILISATIONS CORPORELLES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_87
+
+ plan_comptable_96:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 221
+  libelle:  TERRAINS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_95
+
+ plan_comptable_97:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2213
+  libelle:  TERRAINS NUS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_96
+
+ plan_comptable_98:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2214
+  libelle:  TERRAINS AMENAGES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_96
+
+ plan_comptable_99:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2215
+  libelle:  TERRAINS BATIS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_96
+
+ plan_comptable_100:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2216
+  libelle:  AGENCEMENTS & AMENAGEMENTS DES TERRAINS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_96
+
+ plan_comptable_101:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 222
+  libelle:  CONSTRUCTIONS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_95
+
+ plan_comptable_102:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2221
+  libelle:  BATIMENTS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_101
+
+ plan_comptable_103:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2225
+  libelle:  INSTALLATIONS GENERALES, AGENCEMENTS & AMENAGEMENTS DES CONSTRUCTIONS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_101
+
+ plan_comptable_104:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2226
+  libelle:  OUVRAGES D'INFRASTRUCTURE
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_101
+
+ plan_comptable_105:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2227
+  libelle:  CONSTRUCTIONS SUR SOL D'AUTRUI
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_101
+
+ plan_comptable_106:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 223
+  libelle:  INSTALLATIONS TECHNIQUES, MATERIEL ET OUTILLAGE INDUSTRIELS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_95
+
+ plan_comptable_107:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2231
+  libelle:  INSTALLATIONS TECHNIQUES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_106
+
+ plan_comptable_108:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2234
+  libelle:  MATERIEL INDUSTRIEL
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_106
+
+ plan_comptable_109:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2235
+  libelle:  OUTILLAGE INDUSTRIEL
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_106
+
+ plan_comptable_110:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2237
+  libelle:  AGENCEMENTS & AMENAGEMENTS DU MATERIEL & OUTILLAGE INDUSTRIELS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_106
+
+ plan_comptable_111:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 224
+  libelle:  MATERIEL DE TRANSPORT
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_95
+
+ plan_comptable_112:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2241
+  libelle:  MATERIEL DE TRANSPORT DE BIENS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_111
+
+ plan_comptable_113:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2244
+  libelle:  MATERIEL DE TRANSPORT DE PERSONNES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_111
+
+ plan_comptable_114:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 228
+  libelle:  AUTRES IMMOBILISATIONS CORPORELLES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_95
+
+ plan_comptable_115:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2281
+  libelle:  INSTALLATIONS GENERALES, AGENCEMENTS ET AMENAGEMENTS DIVERS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_114
+
+ plan_comptable_116:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2282
+  libelle:  ÉQUIPEMENT DE BUREAU
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_114
+
+ plan_comptable_117:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2286
+  libelle:  EMBALLAGES RECUPERABLES IDENTIFIABLES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_114
+
+ plan_comptable_118:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 23
+  libelle:  IMMOBILISATIONS EN COURS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_87
+
+ plan_comptable_119:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 231
+  libelle:  IMMOBILISATIONS INCORPORELLES EN COURS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_118
+
+ plan_comptable_120:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 232
+  libelle:  IMMOBILISATIONS CORPORELLES EN COURS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_118
+
+ plan_comptable_121:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 237
+  libelle:  AVANCES & ACOMPTES VERSES SUR IMMOBILISATIONS INCORPORELLES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_118
+
+ plan_comptable_122:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 238
+  libelle:  AVANCES & ACOMPTES VERSES SUR COMMANDES D'IMMOBILISATIONS CORPORELLES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_118
+
+ plan_comptable_123:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 24
+  libelle:  IMMOBILISATIONS A STATUT JURIDIQUE PARTICULIER
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_87
+
+ plan_comptable_124:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 25
+  libelle:  PARTICIPATIONS & CREANCES LIEES A DES PARTICIPATIONS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_87
+
+ plan_comptable_125:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 251
+  libelle:  TITRES DE PARTICIPATION
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_124
+
+ plan_comptable_126:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2511
+  libelle:  ACTIONS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_125
+
+ plan_comptable_127:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2518
+  libelle:  AUTRES TITRES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_125
+
+ plan_comptable_128:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 256
+  libelle:  AUTRES FORMES DE PARTICIPATION
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_124
+
+ plan_comptable_129:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 257
+  libelle:  CREANCES RATTACHEES A DES PARTICIPATIONS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_124
+
+ plan_comptable_130:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2571
+  libelle:  CREANCES RATTACHEES A DES PARTICIPATIONS (GROUPE)
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_129
+
+ plan_comptable_131:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2574
+  libelle:  CREANCES RATTACHEES A DES PARTICIPATIONS (HORS GROUPE)
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_129
+
+ plan_comptable_132:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2575
+  libelle:  VERSEMENTS REPRESENTATIFS D'APPORTS NON CAPITALISES (APPEL DE FONDS)
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_129
+
+ plan_comptable_133:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2576
+  libelle:  AVANCES CONSOLIDABLES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_129
+
+ plan_comptable_134:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2577
+  libelle:  AUTRES CREANCES RATTACHEES A DES PARTICIPATIONS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_129
+
+ plan_comptable_135:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 258
+  libelle:  CREANCES RATTACHEES A DES SOCIETES EN PARTICIPATION
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_124
+
+ plan_comptable_136:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 259
+  libelle:  VERSEMENTS RESTANT A EFFECTUER SUR TITRES DE PARTICIPATION NON LIBERES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_124
+
+ plan_comptable_137:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 26
+  libelle:  AUTRES IMMOBILISATIONS FINANCIERES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_87
+
+ plan_comptable_138:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 261
+  libelle:  TITRES IMMOBILISES (DROIT DE PROPRIETE)
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_137
+
+ plan_comptable_139:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2611
+  libelle:  ACTIONS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_138
+
+ plan_comptable_140:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2618
+  libelle:  AUTRES TITRES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_138
+
+ plan_comptable_141:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 262
+  libelle:  TITRES IMMOBILISES (DROIT DE CREANCE)
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_137
+
+ plan_comptable_142:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2621
+  libelle:  OBLIGATIONS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_141
+
+ plan_comptable_143:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2622
+  libelle:  BONS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_141
+
+ plan_comptable_144:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 264
+  libelle:  PRETS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_137
+
+ plan_comptable_145:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2641
+  libelle:  PRETS PARTICIPATIFS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_144
+
+ plan_comptable_146:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2642
+  libelle:  PRETS AUX ASSOCIES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_144
+
+ plan_comptable_147:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2643
+  libelle:  PRETS AU PERSONNEL
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_144
+
+ plan_comptable_148:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2645
+  libelle:  PRETS ASSORTIS DE SURETES (A SUBDIVISER)
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_144
+
+ plan_comptable_149:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2648
+  libelle:  AUTRES PRETS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_144
+
+ plan_comptable_150:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 265
+  libelle:  DEPOTS ET CAUTIONNEMENTS VERSES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_137
+
+ plan_comptable_151:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2651
+  Classecomptable: classe_2
+  libelle:  DEPOTS
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_150
+
+ plan_comptable_152:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2655
+  libelle:  CAUTIONNEMENTS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_150
+
+ plan_comptable_153:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2656
+  libelle:  DEPOTS BANCAIRES NON COURANTS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_150
+
+ plan_comptable_154:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2658
+  Classecomptable: classe_2
+  libelle:  AUTRES
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_150
+
+ plan_comptable_155:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 266
+  libelle:  AUTRES CREANCES IMMOBILISEES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_137
+
+ plan_comptable_156:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2661
+  libelle:  CREANCES IMMOBILISEES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_155
+
+ plan_comptable_157:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2667
+  libelle:  CREANCES DIVERSES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_155
+
+ plan_comptable_158:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 2668
+  libelle:  AUTRES CREANCES NON COURANTES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_155
+
+ plan_comptable_159:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 269
+  libelle:  VERSEMENTS RESTANT A EFFECTUER SUR TITRES IMMOBILISES NON LIBERES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_137
+
+ plan_comptable_160:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 27
+  libelle:  AUTRES ACTIFS NON COURANTS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_87
+
+ plan_comptable_161:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 271
+  libelle:  FRAIS PRELIMINAIRES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_160
+
+ plan_comptable_162:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 272
+  libelle:  CHARGES A REPARTIR
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_160
+
+ plan_comptable_163:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 273
+  libelle:  FRAIS D'EMISSION ET PRIMES DE REMBOURSEMENT DES EMPRUNTS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_160
+
+ plan_comptable_164:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 275
+  libelle:  ÉCARTS DE CONVERSION
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_160
+
+ plan_comptable_165:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 278
+  libelle:  AUTRES
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_160
+
+ plan_comptable_166:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 28
+  libelle:  AMORTISSEMENTS DES IMMOBILISATIONS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_87
+
+ plan_comptable_167:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 281
+  libelle:  AMORTISSEMENTS DES IMMOBILISATIONS INCORPORELLES (MEME VENTILATION QUE CELLE DU COMPTE 21)
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_166
+
+ plan_comptable_168:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 282
+  libelle:  AMORTISSEMENTS DES IMMOBILISATIONS CORPORELLES (MEME VENTILATION QUE CELLE DU COMPTE 22)
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_166
+
+ plan_comptable_169:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 284
+  libelle:  AMORTISSEMENTS DES IMMOBILISATIONS A STATUT JURIDIQUE PARTICULIER
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_166
+
+ plan_comptable_170:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 29
+  libelle:  PROVISIONS POUR DEPRECIATION DES IMMOBILISATIONS
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_87
+
+ plan_comptable_171:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 291
+  libelle:  PROVISIONS POUR DEPRECIATION DES IMMOBILISATIONS INCORPORELLES (MEME VENTILATION QUE CELLE DU  COMPTE 21)
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_170
+
+ plan_comptable_172:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 292
+  libelle:  PROVISIONS POUR DEPRECIATION DES IMMOBILISATIONS CORPORELLES (MEME VENTILATION QUE CELLE DU COMPTE 22)
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_170
+
+ plan_comptable_173:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 293
+  libelle:  PROVISIONS POUR DEPRECIATION DES IMMOBILISATIONS EN COURS (MEME VENTILATION QUE CELLE DU COMPTE 23)
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_170
+
+ plan_comptable_174:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 294
+  libelle:  PROVISIONS POUR DEPRECIATION DES IMMOBILISATIONS A STATUT JURIDIQUE PARTICULIER
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_170
+
+ plan_comptable_175:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 295
+  libelle:  PROVISIONS POUR DEPRECIATION DES PARTICIPATIONS ET DES CREANCES LIEES A DES PARTICIPATIONS  (MEME VENTILATION QUE CELLE DU COMPTE 25)
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_170
+
+ plan_comptable_176:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 297
+  libelle:  PROVISIONS POUR DEPRECIATION DES AUTRES IMMOBILISATIONS FINANCIERES (MEME VENTILATIONQUE CELLE DU COMPTE 26 )
+  Classecomptable: classe_2
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_170
+
+ plan_comptable_177:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 3
+  libelle: "CLASSE : COMPTES DE STOCKS"
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+
+ plan_comptable_178:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 31
+  libelle:  MATIERES PREMIERES & FOURNITURES LIEES
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_177
+
+ plan_comptable_179:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 311
+  libelle:  MATIERES PREMIERES
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_178
+
+ plan_comptable_180:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 313
+  libelle:  FOURNITURES
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_178
+
+ plan_comptable_181:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 317
+  libelle:  AUTRES
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_178
+
+ plan_comptable_182:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 32
+  libelle:  AUTRES APPROVISIONNEMENTS
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_177
+
+ plan_comptable_183:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 321
+  libelle:  MATIERES CONSOMMABLES
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_182
+
+ plan_comptable_184:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 322
+  libelle:  FOURNITURES CONSOMMABLES
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_182
+
+ plan_comptable_185:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 326
+  libelle:  EMBALLAGES
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_182
+
+ plan_comptable_186:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 327
+  libelle:  AUTRES
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_182
+
+ plan_comptable_187:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 33
+  libelle:  EN-COURS DE PRODUCTION DE BIENS
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_177
+
+ plan_comptable_188:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 331
+  libelle:  PRODUITS EN COURS
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_187
+
+ plan_comptable_189:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 335
+  libelle:  TRAVAUX EN COURS
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_187
+
+ plan_comptable_190:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 34
+  libelle:  EN-COURS DE PRODUCTION DE SERVICES
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_177
+
+ plan_comptable_191:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 341
+  libelle:  ÉTUDES EN COURS
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_190
+
+ plan_comptable_192:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 345
+  libelle:  PRESTATIONS DE SERVICES EN COURS
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_190
+
+ plan_comptable_193:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 35
+  libelle:  STOCKS DE PRODUITS
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_177
+
+ plan_comptable_194:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 351
+  libelle:  PRODUITS INTERMEDIAIRES
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_193
+
+ plan_comptable_195:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 355
+  libelle:  PRODUITS FINIS
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_193
+
+ plan_comptable_196:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 357
+  libelle:  PRODUITS RESIDUELS
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_193
+
+ plan_comptable_197:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 37
+  libelle:  STOCKS DE MARCHANDISES
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_177
+
+ plan_comptable_198:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 39
+  libelle:  PROVISIONS POUR DEPRECIATION DES STOCKS (A VENTILER SELON LA NOMENCLATURE DE CETTE CLASSE)
+  Classecomptable: classe_3
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_177
+
+ plan_comptable_199:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4
+  libelle: "CLASSE : COMPTES DE TIERS"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+
+ plan_comptable_200:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 40
+  libelle:  FOURNISSEURS & COMPTES RATTACHES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_199
+
+ plan_comptable_201:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 401
+  libelle:  FOURNISSEURS D'EXPLOITATION
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_200
+
+ plan_comptable_202:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4011
+  libelle:  FOURNISSEURS - ACHATS DE BIENS OU DE PRESTATIONS DE SERVICES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_201
+
+ plan_comptable_203:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4017
+  libelle:  FOURNISSEURS - RETENUES DE GARANTIE
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_201
+
+ plan_comptable_204:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 403
+  libelle:  "FOURNISSEURS D'EXPLOITATION - EFFETS A PAYER"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_200
+
+ plan_comptable_205:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 404
+  libelle:  "FOURNISSEURS D'IMMOBILISATIONS"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_200
+
+ plan_comptable_206:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4041
+  libelle:  "FOURNISSEURS - ACHATS D'IMMOBILISATIONS"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_205
+
+ plan_comptable_207:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4047
+  libelle:  "FOURNISSEURS D'IMMOBILISATIONS - RETENUES DE GARANTIE"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_205
+
+ plan_comptable_208:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 405
+  libelle:  "FOURNISSEURS D'IMMOBILISATIONS - EFFETS A PAYER"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_200
+
+ plan_comptable_209:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 408
+  libelle:  FOURNISSEURS - FACTURES NON PARVENUES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_200
+
+ plan_comptable_210:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4081
+  libelle:  "FOURNISSEURS D'EXPLOITATION"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_209
+
+ plan_comptable_211:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4084
+  libelle:  "FOURNISSEURS D'IMMOBILISATIONS"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_209
+
+ plan_comptable_212:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4088
+  libelle:  FOURNISSEURS - INTERETS COURUS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_209
+
+ plan_comptable_213:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 409
+  libelle:  FOURNISSEURS DEBITEURS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_200
+
+ plan_comptable_214:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4091
+  libelle:  FOURNISSEURS - AVANCES ET ACOMPTES VERSES SUR COMMANDES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_213
+
+ plan_comptable_215:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4096
+  libelle:  FOURNISSEURS - CREANCES POUR EMBALLAGES ET MATERIEL A RENDRE
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_213
+
+ plan_comptable_216:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4097
+  libelle:  FOURNISSEURS - AUTRES AVOIRS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_213
+
+ plan_comptable_217:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 40971
+  libelle:  "FOURNISSEURS D'EXPLOITATION"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_216
+
+ plan_comptable_218:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 40974
+  libelle:  "FOURNISSEURS D'IMMOBILISATIONS"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_216
+
+ plan_comptable_219:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4098
+  libelle:  RABAIS, REMISES, RISTOURNES A OBTENIR ET AUTRES AVOIRS NON ENCORE REÇUS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_213
+
+ plan_comptable_220:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 41
+  libelle:  CLIENTS & COMPTES RATTACHES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_199
+
+ plan_comptable_221:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 411
+  libelle:  CLIENTS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_220
+
+ plan_comptable_222:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4111
+  libelle:  CLIENTS - VENTES DE BIENS OU DE PRESTATIONS DE SERVICES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_221
+
+ plan_comptable_223:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4117
+  libelle:  CLIENTS - RETENUES DE GARANTIE
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_221
+
+ plan_comptable_224:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 413
+  libelle:  CLIENTS - EFFETS A RECEVOIR
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_220
+
+ plan_comptable_225:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 416
+  libelle:  CLIENTS DOUTEUX OU LITIGIEUX
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_220
+
+ plan_comptable_226:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 417
+  libelle:  CREANCES SUR TRAVAUX NON ENCORE FACTURABLES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_220
+
+ plan_comptable_227:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 418
+  libelle:  CLIENTS - PRODUITS NON ENCORE FACTURES (PRODUITS A RECEVOIR)
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_220
+
+ plan_comptable_228:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4181
+  libelle:  FACTURES A ETABLIR
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_227
+
+ plan_comptable_229:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4188
+  libelle:  INTERETS COURUS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_227
+
+ plan_comptable_230:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 419
+  libelle:  CLIENTS CREDITEURS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_220
+
+ plan_comptable_231:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4191
+  libelle:  CLIENTS - AVANCES ET ACOMPTES REÇUS SUR COMMANDES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_230
+
+ plan_comptable_232:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4196
+  libelle:  CLIENTS - DETTES POUR EMBALLAGES ET MATERIEL CONSIGNES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_230
+
+ plan_comptable_233:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4197
+  libelle:  CLIENTS - AUTRES AVOIRS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_230
+
+ plan_comptable_234:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4198
+  libelle:  RABAIS, REMISES, RISTOURNES A ACCORDER ET AUTRES AVOIRS A ETABLIR
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_230
+
+ plan_comptable_235:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 42
+  libelle:  PERSONNEL ET COMPTES RATTACHES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_199
+
+ plan_comptable_236:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 421
+  libelle:  PERSONNEL - AVANCES ET ACOMPTES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_235
+
+ plan_comptable_237:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 422
+  libelle:  "COMITES D'ENTREPRISES ET AUTRES ORGANES REPRESENTATIFS DU PERSONNEL"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_235
+
+ plan_comptable_238:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 423
+  libelle:  PERSONNEL, OEUVRES SOCIALES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_235
+
+ plan_comptable_239:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 425
+  libelle:  PERSONNEL - REMUNERATIONS DUES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_235
+
+ plan_comptable_240:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 426
+  libelle:  PERSONNEL - DEPOTS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_235
+
+ plan_comptable_241:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 427
+  libelle:  PERSONNEL - OPPOSITIONS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_235
+
+ plan_comptable_242:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 428
+  libelle:  PERSONNEL - CHARGES A PAYER & PRODUITS A RECEVOIR
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_235
+
+ plan_comptable_243:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4282
+  libelle:  DETTES PROVISIONNEES POUR CONGES A PAYER
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_242
+
+ plan_comptable_244:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4286
+  libelle:  AUTRES CHARGES A PAYER
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_242
+
+ plan_comptable_245:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4287
+  libelle:  PRODUITS A RECEVOIR
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_242
+
+ plan_comptable_246:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 43
+  libelle:  ETAT ET COLLECTIVITES PUBLIQUES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_199
+
+ plan_comptable_247:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 431
+  libelle:  ETAT - SUBVENTIONS A RECEVOIR
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_246
+
+ plan_comptable_248:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 432
+  libelle:  ETAT, IMPOTS ET TAXES RETENUS A LA SOURCE
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_246
+
+ plan_comptable_249:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 433
+  libelle:  "OPERATIONS PARTICULIERES AVEC L'ETAT, LES COLLECTIVITES PUBLIQUES, LES ORGANISMES INTERNATIONAUX"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_246
+
+ plan_comptable_250:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 434
+  libelle:  ETAT - IMPOTS SUR LES BENEFICES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_246
+
+ plan_comptable_251:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4341
+  libelle:  RETENUE A LA SOURCE
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_250
+
+ plan_comptable_252:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4342
+  libelle:  ACOMPTES PROVISIONNELS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_250
+
+ plan_comptable_253:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4343
+  libelle:  IMPOT A LIQUIDER
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_250
+
+ plan_comptable_254:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4349
+  libelle:  IMPOTS DIFFERES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_250
+
+ plan_comptable_255:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 435
+  libelle:  OBLIGATIONS CAUTIONNEES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_246
+
+ plan_comptable_256:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 436
+  libelle:  "ETAT - TAXES SUR LE CHIFFRE D'AFFAIRES"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_246
+
+ plan_comptable_257:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4365
+  libelle:  "TAXES SUR LE CHIFFRE D'AFFAIRES A DECAISSER"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_256
+
+ plan_comptable_258:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 43651
+  libelle:  TVA A PAYER
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_257
+
+ plan_comptable_259:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 43658
+  libelle:  "AUTRES TAXES SUR LE CHIFFRE D'AFFAIRES"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_257
+
+ plan_comptable_260:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4366
+  libelle:  "TAXES SUR LE CHIFFRE D'AFFAIRES DEDUCTIBLES"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_256
+
+ plan_comptable_261:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 43662
+  libelle:  TVA SUR IMMOBILISATIONS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_260
+
+ plan_comptable_262:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 43663
+  libelle:  "TVA TRANSFEREE PAR D'AUTRES ENTREPRISES"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_260
+
+ plan_comptable_263:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 43666
+  libelle:  TVA SUR AUTRES BIENS ET SERVICES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_260
+
+ plan_comptable_264:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 43667
+  libelle:  CREDIT DE TVA A REPORTER
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_260
+
+ plan_comptable_265:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 43668
+  libelle:  "AUTRES TAXES SUR LE CHIFFRE D'AFFAIRES"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_260
+
+ plan_comptable_266:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4367
+  libelle:  "TAXES SUR LE CHIFFRE D'AFFAIRES COLLECTEES PAR L'ENTREPRISE"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_256
+
+ plan_comptable_267:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 43671
+  libelle:  TVA COLLECTEE
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_266
+
+ plan_comptable_268:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 436711
+  libelle:  TVA COLLECTEE SUR LES DEBITS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_267
+
+ plan_comptable_269:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 436712
+  libelle:  TVA COLLECTEE SUR LES ENCAISSEMENTS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_267
+
+ plan_comptable_270:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 43678
+  libelle:  "AUTRES TAXES SUR LE CHIFFRE D'AFFAIRES"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_266
+
+ plan_comptable_271:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4368
+  libelle:  "TAXES SUR LE CHIFFRE D'AFFAIRES A REGULARISER OU EN ATTENTE"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_256
+
+ plan_comptable_272:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 437
+  libelle:  AUTRES IMPOTS, TAXES ET VERSEMENTS ASSIMILES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_246
+
+ plan_comptable_273:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 438
+  libelle:  ETAT - CHARGES A PAYER ET PRODUITS A RECEVOIR
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_246
+
+ plan_comptable_274:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4382
+  libelle:  CHARGES FISCALES SUR CONGES A PAYER
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_273
+
+ plan_comptable_275:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4386
+  libelle:  AUTRES CHARGES A PAYER
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_273
+
+ plan_comptable_276:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4387
+  libelle:  PRODUITS A RECEVOIR
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_273
+
+ plan_comptable_277:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 44
+  libelle:  SOCIETES DU GROUPE & ASSOCIES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_199
+
+ plan_comptable_278:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 441
+  libelle:  GROUPE
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_277
+
+ plan_comptable_279:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4411
+  libelle:  CREANCES ET INTERETS COURUS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_278
+
+ plan_comptable_280:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4412
+  libelle:  DETTES ET INTERETS A PAYER
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_278
+
+ plan_comptable_281:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 442
+  libelle:  ASSOCIES - COMPTES COURANTS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_277
+
+ plan_comptable_282:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4421
+  libelle:  PRINCIPAL
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_281
+
+ plan_comptable_283:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4428
+  libelle:  INTERETS COURUS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_281
+
+ plan_comptable_284:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 446
+  libelle:  ASSOCIES - OPERATIONS SUR LE CAPITAL
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_277
+
+ plan_comptable_285:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 447
+  libelle:  ASSOCIES - DIVIDENDES A PAYER
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_277
+
+ plan_comptable_286:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 448
+  libelle:  ASSOCIES - OPERATIONS FAITES EN COMMUN
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_277
+
+ plan_comptable_287:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4481
+  libelle:  OPERATIONS COURANTES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_286
+
+ plan_comptable_288:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4488
+  libelle:  INTERETS COURUS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_286
+
+ plan_comptable_289:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 45
+  libelle:  DEBITEURS DIVERS ET CREDITEURS DIVERS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_199
+
+ plan_comptable_290:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 452
+  libelle:  "CREANCES SUR CESSIONS D'IMMOBILISATIONS"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_289
+
+ plan_comptable_291:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 453
+  libelle:  SECURITE SOCIALE ET AUTRES ORGANISMES SOCIAUX
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_289
+
+ plan_comptable_292:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4531
+  libelle:  ORGANISMES SOCIAUX
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_291
+
+ plan_comptable_293:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 45311
+  libelle:  CNSS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_292
+
+ plan_comptable_294:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 45318
+  libelle:  AUTRES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_292
+
+ plan_comptable_295:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4538
+  libelle:  ORGANISMES SOCIAUX - CHARGES A PAYER ET PRODUITS A RECEVOIR
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_291
+
+ plan_comptable_296:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 45382
+  libelle:  CHARGES SOCIALES SUR CONGES A PAYER
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_295
+
+ plan_comptable_297:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 45386
+  libelle:  AUTRES CHARGES A PAYER
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_295
+
+ plan_comptable_298:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 45387
+  libelle:  PRODUITS A RECEVOIR
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_295
+
+ plan_comptable_299:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 454
+  libelle:  DETTES SUR ACQUISITIONS DE VALEURS MOBILIERES DE PLACEMENT
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+
+ plan_comptable_300:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 455
+  libelle:  CREANCES SUR CESSIONS DE VALEURS MOBILIERES DE PLACEMENT
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_289
+
+ plan_comptable_301:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 457
+  libelle:  AUTRES COMPTES DEBITEURS OU CREDITEURS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_289
+
+ plan_comptable_302:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 458
+  libelle:  DIVERSES CHARGES A PAYER ET PRODUITS A RECEVOIR
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_289
+
+ plan_comptable_303:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4586
+  libelle:  CHARGES A PAYER
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_302
+
+ plan_comptable_304:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4587
+  libelle:  PRODUITS A RECEVOIR
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_302
+
+ plan_comptable_305:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 46
+  libelle:  "COMPTES TRANSITOIRES OU D'ATTENTE"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_199
+
+ plan_comptable_306:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 461
+  libelle:  "COMPTE D'ATTENTE"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_305
+
+ plan_comptable_307:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 465
+  libelle:  DIFFERENCE DE CONVERSION SUR ELEMENTS COURANTS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_305
+
+ plan_comptable_308:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4651
+  libelle:  DIFFERENCES DE CONVERSION ACTIF
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_307
+
+ plan_comptable_309:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4652
+  libelle:  DIFFERENCES DE CONVERSION PASSIF
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_307
+
+ plan_comptable_310:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 468
+  libelle:  AUTRES COMPTES TRANSITOIRES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_305
+
+ plan_comptable_311:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 47
+  libelle:  COMPTES DE REGULARISATION
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_199
+
+ plan_comptable_312:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 471
+  libelle:  "CHARGES CONSTATEES D'AVANCE"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_311
+
+ plan_comptable_313:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 472
+  libelle:  "PRODUITS CONSTATES D'AVANCE"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_311
+
+ plan_comptable_314:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 478
+  libelle:  COMPTES DE REPARTITION PERIODIQUE DE CHARGES ET PRODUITS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_311
+
+ plan_comptable_315:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4786
+  libelle:  CHARGES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_314
+
+ plan_comptable_316:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4787
+  libelle:  PRODUITS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_314
+
+ plan_comptable_317:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 48
+  libelle:  PROVISIONS COURANTES POUR RISQUES ET CHARGES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_199
+
+ plan_comptable_318:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 49
+  libelle:  PROVISIONS POUR DEPRECIATION DES COMPTES DE TIERS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_199
+
+ plan_comptable_319:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 491
+  libelle:  PROVISIONS POUR DEPRECIATION DES COMPTES CLIENTS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_318
+
+ plan_comptable_320:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 495
+  libelle:  PROVISIONS POUR DEPRECIATION DES COMPTES DE GROUPE ET ASSOCIES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_318
+
+ plan_comptable_321:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4951
+  libelle:  COMPTES DU GROUPE
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_320
+
+ plan_comptable_322:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4952
+  libelle:  COMPTES COURANTS DES ASSOCIES
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_320
+
+ plan_comptable_323:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4958
+  libelle:  OPERATIONS FAITES EN COMMUN
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_320
+
+ plan_comptable_324:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 496
+  libelle:  PROVISIONS POUR DEPRECIATION DES COMPTES DE DEBITEURS DIVERS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_318
+
+ plan_comptable_325:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4962
+  libelle:  "CREANCES SUR CESSION D'IMMOBILISATION"
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_324
+
+ plan_comptable_326:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4965
+  libelle:  CREANCES SUR CESSION DES VALEURS MOBILIERES DE PLACEMENT
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_324
+
+ plan_comptable_327:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 4967
+  libelle:  AUTRES COMPTES DEBITEURS
+  Classecomptable: classe_4
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_324
+
+ plan_comptable_328:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5
+  libelle: CLASSE :COMPTES FINANCIERS
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+
+ plan_comptable_329:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 50
+  libelle:  EMPRUNTS ET AUTRES DETTES FINANCIERES COURANTS
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_328
+
+ plan_comptable_330:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 501
+  libelle:  "EMPRUNTS COURANTS LIES AU CYCLE D'EXPLOITATION"
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_329
+
+ plan_comptable_331:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 505
+  libelle:  "ÉCHEANCES A MOINS D'UN AN SUR EMPRUNTS NON COURANTS"
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_329
+
+ plan_comptable_332:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 506
+  libelle:  CONCOURS BANCAIRES COURANTS
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_329
+
+ plan_comptable_333:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5061
+  libelle:  CREDIT DE MOBILISATION DE CREANCES COMMERCIALES
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_332
+
+ plan_comptable_334:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5063
+  libelle:  "MOBILISATION DE CREANCES NEES A L'ETRANGER"
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_332
+
+ plan_comptable_335:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5067
+  libelle:  AUTRES CONCOURS BANCAIRES
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_332
+
+ plan_comptable_336:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 507
+  libelle:  EMPRUNTS ECHUS ET IMPAYES
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_329
+
+ plan_comptable_337:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 508
+  libelle:  INTERETS COURUS (A SUBDIVISER SELON LA MEME VENTILATION QUE LE COMPTE 50 )
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_329
+
+ plan_comptable_338:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 51
+  libelle:  PRETS ET AUTRES CREANCES FINANCIERES COURANTS
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_328
+
+ plan_comptable_339:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 511
+  libelle:  "PRETS COURANTS LIES AU CYCLE D'EXPLOITATION"
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_338
+
+ plan_comptable_340:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 516
+  libelle:  "ÉCHEANCES A MOINS D'UN AN SUR PRETS NON COURANTS"
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_338
+
+ plan_comptable_341:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 517
+  libelle:  "ÉCHEANCES A MOINS D'UN AN SUR AUTRES CREANCES FINANCIERES"
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_338
+
+ plan_comptable_342:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 518
+  libelle:  INTERETS COURUS
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_338
+
+ plan_comptable_343:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 52
+  libelle:  PLACEMENTS COURANTS
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_328
+
+ plan_comptable_344:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 523
+  libelle:  ACTIONS
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_343
+
+ plan_comptable_345:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5231
+  libelle:  TITRES COTES
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_344
+
+ plan_comptable_346:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5235
+  libelle:  TITRES NON COTES
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_344
+
+ plan_comptable_347:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 524
+  libelle:  AUTRES TITRES CONFERANT UN DROIT DE PROPRIETE
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_343
+
+ plan_comptable_348:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 525
+  libelle:  OBLIGATIONS ET BONS EMIS PAR LA SOCIETE ET RACHETES PAR ELLE
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_343
+
+ plan_comptable_349:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 526
+  libelle:  OBLIGATIONS
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_343
+
+ plan_comptable_350:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5261
+  libelle:  TITRES COTES
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_349
+
+ plan_comptable_351:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5265
+  libelle:  TITRES NON COTES
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_349
+
+ plan_comptable_352:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5266
+  libelle:  "ÉCHEANCES A MOINS D'UN AN SUR LES OBLIGATIONS IMMOBILISEES"
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_349
+
+ plan_comptable_353:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 527
+  libelle:  BONS DU TRESOR ET BONS DE CAISSE A COURT TERME
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_343
+
+ plan_comptable_354:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 528
+  libelle:  AUTRES PLACEMENTS COURANTS ET CREANCES ASSIMILEES
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_343
+
+ plan_comptable_355:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5281
+  libelle:  AUTRES VALEURS MOBILIERES
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_354
+
+ plan_comptable_356:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5288
+  libelle:  INTERETS COURUS SUR OBLIGATIONS, BONS ET VALEURS ASSIMILEES
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_354
+
+ plan_comptable_357:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 529
+  libelle:  VERSEMENTS RESTANT A EFFECTUER SUR VALEURS MOBILIERES DE PLACEMENT NON LIBEREES
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_343
+
+ plan_comptable_358:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 53
+  libelle:  BANQUES, ETABLISSEMENTS FINANCIERS ET ASSIMILES
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_328
+
+ plan_comptable_359:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 531
+  libelle:  "VALEURS A L'ENCAISSEMENT"
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_358
+
+ plan_comptable_360:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5311
+  libelle:  "COUPONS ECHUS A L'ENCAISSEMENT"
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_359
+
+ plan_comptable_361:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5312
+  libelle:  CHEQUES A ENCAISSER
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_359
+
+ plan_comptable_362:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5313
+  libelle:  "EFFETS A L'ENCAISSEMENT"
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_359
+
+ plan_comptable_363:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5314
+  libelle:  "EFFETS A L'ESCOMPTE"
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_359
+
+ plan_comptable_364:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 532
+  libelle:  BANQUES
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_358
+
+ plan_comptable_365:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5321
+  libelle:  COMPTES EN DINARS
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_364
+
+ plan_comptable_366:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5324
+  libelle:  COMPTES EN DEVISES
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_364
+
+ plan_comptable_367:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 534
+  libelle:  CCP
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_358
+
+ plan_comptable_368:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 535
+  libelle:  COMPTES AU TRESOR
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_358
+
+ plan_comptable_369:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 537
+  libelle:  AUTRES ORGANISMES FINANCIERS
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_358
+
+ plan_comptable_370:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 54
+  libelle:  CAISSE
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_328
+
+ plan_comptable_371:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 541
+  libelle:  CAISSE SIEGE SOCIAL
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_370
+
+ plan_comptable_372:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5411
+  libelle:  CAISSE EN DINARS
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_371
+
+ plan_comptable_373:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 5414
+  libelle:  CAISSE EN DEVISES
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_371
+
+ plan_comptable_374:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 542
+  libelle:  CAISSES SUCCURSALES
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_370
+
+ plan_comptable_375:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 55
+  libelle:  "REGIES D'AVANCES ET ACCREDITIFS"
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_328
+
+ plan_comptable_376:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 58
+  libelle:  VIREMENTS INTERNES
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_328
+
+ plan_comptable_377:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 59
+  libelle:  PROVISIONS POUR DEPRECIATION DES COMPTES FINANCIERS(MEME VENTILATION QUE LES COMPTES DE LA CLASSE 5 )
+  Classecomptable: classe_5
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_328
+
+ plan_comptable_378:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6
+  libelle: CLASSE :COMPTES DE CHARGES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+
+ plan_comptable_379:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 60
+  libelle:  ACHATS (SAUF 603 (1) )
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_378
+
+ plan_comptable_380:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 601
+  libelle:  ACHATS STOCKES - MATIERES PREMIERES ET FOURNITURES LIEES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_379
+
+ plan_comptable_381:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 602
+  libelle:  ACHATS STOCKES - AUTRES APPROVISIONNEMENTS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_379
+
+ plan_comptable_382:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6021
+  libelle:  MATIERES CONSOMMABLES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_381
+
+ plan_comptable_383:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6022
+  libelle:  FOURNITURES CONSOMMABLES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_381
+
+ plan_comptable_384:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6026
+  libelle:  EMBALLAGES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_381
+
+ plan_comptable_385:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 604
+  libelle:  "ACHATS D’ETUDES ET DE PRESTATIONS DE SERVICES (Y COMPRIS ACHAT DE SOUS-TRAITANCE DE PRODUCTION)"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_379
+
+ plan_comptable_386:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 605
+  libelle:  ACHATS DE MATERIEL, EQUIPEMENTS ET TRAVAUX
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_379
+
+ plan_comptable_387:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 606
+  libelle:  ACHATS NON STOCKES DE MATIERES ET FOURNITURES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_379
+
+ plan_comptable_388:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 607
+  libelle:  ACHATS DE MARCHANDISES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_379
+
+ plan_comptable_389:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 608
+  libelle:  "ACHATS LIES A UNE MODIFICATION COMPTABLE A PRENDRE EN COMPTE DANS LE RESULTAT DE L'EXERCICE OU A UNE ACTIVITE ABANDONNEE"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_379
+
+ plan_comptable_390:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 609
+  libelle:  RABAIS, REMISES ET RISTOURNES OBTENUS SUR ACHATS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_379
+
+ plan_comptable_391:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6098
+  libelle:  "LIES A UNE MODIFICATION COMPTABLE A PRENDRE EN COMPTE DANS LE RESULTAT DE L'EXERCICE OU A UNE ACTIVITE ABANDONNEE"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_390
+
+ plan_comptable_392:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 603
+  libelle: VARIATION DES STOCKS (APPROVISIONNEMENT ET MARCHANDISES)
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_379
+
+ plan_comptable_393:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6031
+  libelle: VARIATION DES STOCKS DE MATIERES PREMIERES FOURNITURES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_392
+
+ plan_comptable_394:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6032
+  libelle: VARIATION DES STOCKS DES AUTRES APPROVISIONNEMENTS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_392
+
+ plan_comptable_395:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6037
+  libelle: VARIATION DES STOCKS DE MARCHANDISES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_392
+
+ plan_comptable_396:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 61
+  libelle:  SERVICES EXTERIEURS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_378
+
+ plan_comptable_397:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 611
+  libelle:  SOUS-TRAITANCE GENERALE
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_396
+
+ plan_comptable_398:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 612
+  libelle:  "REDEVANCES POUR UTILISATION D'IMMOBILISATIONS CONCEDEES"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_396
+
+ plan_comptable_399:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 613
+  libelle:  LOCATIONS (Y COMPRIS MALIS SUR EMBALLAGES)
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_396
+
+ plan_comptable_400:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 614
+  libelle:  CHARGES LOCATIVES ET DE COPROPRIETE
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_396
+
+ plan_comptable_401:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 615
+  libelle:  ENTRETIEN ET REPARATIONS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_396
+
+ plan_comptable_402:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 616
+  libelle:  "PRIMES D'ASSURANCES"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_396
+
+ plan_comptable_403:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 617
+  libelle:  "ÉTUDES, RECHERCHES ET DIVERS SERVICES EXTERIEURS"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_396
+
+ plan_comptable_404:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 618
+  libelle:  "AUTRES CHARGES LIEES A UNE MODIFICATION COMPTABLE A PRENDRE EN COMPTE DANS LE RESULTAT DE L'EXERCICE OU A UNE ACTIVITE ABANDONNEE"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_396
+
+ plan_comptable_405:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 619
+  libelle:  RABAIS, REMISES ET RISTOURNES OBTENUS SUR SERVICES EXTERIEURS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_396
+
+ plan_comptable_406:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 62
+  libelle:  AUTRES SERVICES EXTERIEURS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_378
+
+ plan_comptable_407:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 621
+  libelle:  "PERSONNEL EXTERIEUR A L'ENTREPRISE"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_406
+
+ plan_comptable_408:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 622
+  libelle:  "REMUNERATION D'INTERMEDIAIRES ET HONORAIRES"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_406
+
+ plan_comptable_409:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 623
+  libelle:  PUBLICITE, PUBLICATIONS, RELATIONS PUBLIQUES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_406
+
+ plan_comptable_410:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 624
+  libelle:  TRANSPORTS DE BIENS ET TRANSPORTS COLLECTIFS DU PERSONNEL
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_406
+
+ plan_comptable_411:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6241
+  libelle:  TRANSPORTS SUR ACHATS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_410
+
+ plan_comptable_412:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6242
+  libelle:  TRANSPORTS SUR VENTES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_410
+
+ plan_comptable_413:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6244
+  libelle:  TRANSPORTS ADMINISTRATIFS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_410
+
+ plan_comptable_414:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6247
+  libelle:  TRANSPORTS COLLECTIFS DU PERSONNEL
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_410
+
+ plan_comptable_415:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6248
+  libelle:  DIVERS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_410
+
+ plan_comptable_416:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 625
+  libelle:  DEPLACEMENTS, MISSIONS ET RECEPTIONS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_406
+
+ plan_comptable_417:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6251
+  libelle:  VOYAGES ET DEPLACEMENTS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_416
+
+ plan_comptable_418:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6255
+  libelle:  FRAIS DE DEMENAGEMENT
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_416
+
+ plan_comptable_419:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6256
+  libelle:  MISSIONS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_418
+ 
+ plan_comptable_420:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6257
+  libelle:  RECEPTIONS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_418
+
+ plan_comptable_421:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 626
+  libelle:  FRAIS POSTAUX ET FRAIS DE TELECOMMUNICATIONS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_406
+
+ plan_comptable_422:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 627
+  libelle:  SERVICES BANCAIRES ET ASSIMILES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_406
+
+ plan_comptable_423:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6271
+  libelle:  FRAIS SUR TITRES (ACHATS, VENTE, GARDE)
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_422
+
+ plan_comptable_424:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6272
+  libelle:  "COMMISSIONS ET FRAIS SUR EMISSION D'EMPRUNTS"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_422
+
+ plan_comptable_425:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6275
+  libelle:  FRAIS SUR EFFETS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_422
+
+ plan_comptable_426:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6276
+  libelle:  LOCATION DE COFFRES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_422
+
+ plan_comptable_427:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6278
+  libelle:  AUTRES FRAIS ET COMMISSIONS SUR PRESTATIONS DE SERVICES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_422
+
+ plan_comptable_428:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 628
+  libelle:  "AUTRES SERVICES EXTERIEURS LIES A UNE MODIFICATION COMPTABLE A PRENDRE EN COMPTE DANS LE RESULTAT DE L'EXERCICE OU A UNE ACTIVITE ABANDONNEE"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_406
+
+ plan_comptable_429:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 629
+  libelle:  RABAIS, REMISES ET RISTOURNES OBTENUS SUR AUTRES SERVICES EXTERIEURS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_406
+
+ plan_comptable_430:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 63
+  libelle:  CHARGES DIVERSES ORDINAIRES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_378
+
+ plan_comptable_431:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 631
+  libelle:  REDEVANCES POUR CONCESSIONS DE MARQUES, BREVETS, LICENCES, PROCEDES, DROITS ET VALEURS SIMILAIRES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_430
+
+ plan_comptable_432:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 633
+  libelle:  JETONS DE PRESENCE
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_430
+
+ plan_comptable_433:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 634
+  libelle:  PERTES SUR CREANCES IRRECOUVRABLES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_430
+
+ plan_comptable_434:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6341
+  libelle:  "CREANCES DE L'EXERCICE"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_433
+
+ plan_comptable_435:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6344
+  libelle:  CREANCES DES EXERCICES ANTERIEURS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_433
+
+ plan_comptable_436:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 635
+  libelle:  QUOTES-PARTS DE RESULTAT SUR OPERATIONS FAITES EN COMMUN
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_430
+
+ plan_comptable_437:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6351
+  libelle:  QUOTE-PART DE BENEFICE TRANSFEREE (COMPTABILITE DU GERANT)
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_346
+
+ plan_comptable_438:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6355
+  libelle:  QUOTE-PART DE PERTE SUPPORTEE (COMPTABILITE DES ASSOCIES NON GERANTS)
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_436
+
+ plan_comptable_439:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 636
+  libelle:  "CHARGES NETTES SUR CESSIONS D'IMMOBILISATIONS ET AUTRES PERTES SUR ELEMENTS NON RECURRENTS OU EXCEPTIONNELS"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_430
+
+ plan_comptable_440:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 637
+  libelle:  REDUCTION DE VALEUR
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_430
+
+ plan_comptable_441:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 638
+  libelle:  "CHARGES DIVERSES ORDINAIRES LIEES A UNE MODIFICATION COMPTABLE A PRENDRE EN COMPTE DANS LE RESULTAT DE L'EXERCICE OU A UNE ACTIVITE ABANDONNEE"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_430
+
+ plan_comptable_442:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 64
+  libelle:  CHARGES DE PERSONNEL
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_378
+
+ plan_comptable_443:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 640
+  libelle:  SALAIRES ET COMPLEMENTS DE SALAIRES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_442
+
+ plan_comptable_444:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6400
+  libelle:  SALAIRES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_443
+
+ plan_comptable_445:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6401
+  libelle:  HEURES SUPPLEMENTAIRES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_443
+  
+
+ plan_comptable_446:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6402
+  libelle:  PRIMES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_443
+
+ plan_comptable_447:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6403
+  libelle:  GRATIFICATIONS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_443
+
+ plan_comptable_448:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6404
+  libelle:  AVANTAGES EN NATURE
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_443
+
+ plan_comptable_449:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6409
+  libelle:  AUTRES COMPLEMENTS DE SALAIRES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_443
+
+ plan_comptable_450:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 642
+  libelle:  "APPOINTEMENTS ET COMPLEMENTS D'APPOINTEMENTS"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_442
+
+ plan_comptable_451:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6420
+  libelle:  APPOINTEMENTS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_450
+
+ plan_comptable_452:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6421
+  libelle:  HEURES SUPPLEMENTAIRES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_450
+
+ plan_comptable_453:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6422
+  libelle:  PRIMES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_450
+
+ plan_comptable_454:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6423
+  libelle:  GRATIFICATIONS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_450
+
+ plan_comptable_455:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6424
+  libelle:  AVANTAGES EN NATURE
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_450
+
+ plan_comptable_456:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6429
+  libelle:  "AUTRES COMPLEMENTS D'APPOINTEMENTS"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_450
+
+ plan_comptable_457:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 643
+  libelle:  INDEMNITES REPRESENTATIVES DE FRAIS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_442
+
+ plan_comptable_458:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 644
+  libelle:  COMMISSIONS AU PERSONNEL
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_442
+
+ plan_comptable_459:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6440
+  libelle:  COMMISSIONS SUR ACHATS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_458
+
+ plan_comptable_460:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6441
+  libelle:  COMMISSIONS SUR VENTES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_458
+
+ plan_comptable_461:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 645
+  libelle:  REMUNERATIONS DES ADMINISTRATEURS, GERANTS ET ASSOCIES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_442
+
+ plan_comptable_462:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 646
+  libelle:  CHARGES CONNEXES AUX SALAIRES, APPOINTEMENTS, COMMISSIONS ET REMUNERATIONS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_442
+
+ plan_comptable_463:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6460
+  libelle:  CHARGES CONNEXES AUX SALAIRES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_462
+
+ plan_comptable_464:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 64600
+  libelle:  CONGES PAYES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_463
+
+ plan_comptable_465:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 64602
+  libelle:  INDEMNITES DE PREAVIS ET DE LICENCIEMENTS (GRATIFICATION DE FIN DE SERVICE)
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_463
+
+ plan_comptable_466:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 64604
+  libelle:  SUPPLEMENT FAMILIAL
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_463
+
+ plan_comptable_467:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6462
+  libelle:  CHARGES CONNEXES AUX APPOINTEMENTS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_462
+
+ plan_comptable_468:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 64620
+  libelle:  CONGES PAYES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_467
+
+ plan_comptable_469:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 64622
+  libelle:  INDEMNITES DE PREAVIS ET DE LICENCIEMENT (GRATIFICATION DE FIN DE SERVICE)
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_467
+
+ plan_comptable_470:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 64624
+  libelle:  SUPPLEMENT FAMILIAL
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_467
+
+ plan_comptable_471:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6464
+  libelle:  CHARGES CONNEXES AUX COMMISSIONS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_462
+
+ plan_comptable_472:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 64640
+  libelle:  CONGES PAYES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_471
+
+ plan_comptable_473:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 64642
+  libelle:  INDEMNITES DE PREAVIS ET DE LICENCIEMENT (GRATIFICATION DE FIN DE SERVICE)
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_471
+
+ plan_comptable_474:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 64644
+  libelle:  SUPPLEMENT FAMILIAL
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_471
+
+ plan_comptable_475:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6465
+  libelle:  CHARGES CONNEXES AUX REMUNERATIONS DES ADMINISTRATEURS ET GERANTS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_462
+
+ plan_comptable_476:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 64650
+  libelle:  CONGES PAYES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_475
+
+ plan_comptable_477:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 64652
+  libelle:  INDEMNITES DE PREAVIS ET DE LICENCIEMENT
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_475
+
+ plan_comptable_478:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 64654
+  libelle:  SUPPLEMENT FAMILIAL
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_475
+
+ plan_comptable_479:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 647
+  libelle:  CHARGES SOCIALES LEGALES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_442
+
+ plan_comptable_480:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6470
+  libelle:  COTISATIONS DE SECURITE SOCIALE SUR SALAIRES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_479
+
+ plan_comptable_481:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6472
+  libelle:  COTISATIONS DE SECURITE SOCIALE SUR APPOINTEMENTS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_479
+
+ plan_comptable_482:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6474
+  libelle:  COTISATIONS DE SECURITE SOCIALE SUR COMMISSIONS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_479
+
+ plan_comptable_483:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6475
+  libelle:  COTISATIONS DE SECURITE SOCIALE SUR REMUNERATIONS DES ADMINISTRATEURS ET GERANTS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_479
+
+ plan_comptable_484:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6476
+  libelle:  PRESTATIONS DIRECTES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_479
+
+ plan_comptable_485:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 648
+  libelle:  "CHARGES DE PERSONNEL LIEES A UNE MODIFICATION COMPTABLE A IMPUTER AU RESULTAT DE L'EXERCICE OU A UNE ACTIVITE ABANDONNEE"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_442
+
+ plan_comptable_486:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 649
+  libelle:  AUTRES CHARGES DE PERSONNEL ET AUTRES CHARGES SOCIALES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_442
+
+ plan_comptable_487:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6490
+  libelle:  AUTRES CHARGES DE PERSONNEL
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_486
+
+ plan_comptable_488:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6495
+  libelle:  AU TRES CHARGES SOCIALES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_486
+
+ plan_comptable_489:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 65
+  libelle:  CHARGES FINANCIERES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_378
+
+ plan_comptable_490:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 651
+  libelle:  "CHARGES D'INTERETS"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_489
+
+ plan_comptable_491:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6511
+  libelle:  INTERETS DES EMPRUNTS ET DETTES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_490
+
+ plan_comptable_492:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 65116
+  libelle:  DES EMPRUNTS ET DETTES ASSIMILEES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_491
+
+ plan_comptable_493:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 65117
+  libelle:  DES DETTES RATTACHEES A DES PARTICIPATIONS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_491
+
+ plan_comptable_494:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6515
+  libelle:  INTERETS DES COMPTES COURANTS ET DES DEPOTS CREDITEURS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_490
+
+ plan_comptable_495:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6516
+  libelle:  INTERETS BANCAIRES ET SUR OPERATIONS DE FINANCEMENT
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_490
+
+ plan_comptable_496:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6517
+  libelle:  INTERETS DES OBLIGATIONS CAUTIONNEES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_490
+
+ plan_comptable_497:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6518
+  libelle:  INTERETS DES AUTRES DETTES (Y COMPRIS LES PENALITES ET INTERETS DE RETARD SUR EMPRUNTS)
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_490
+
+ plan_comptable_498:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 653
+  libelle:  PERTES SUR CREANCES LIEES A DES PARTICIPATIONS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_489
+
+ plan_comptable_499:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 654
+  libelle:  ESCOMPTES ACCORDES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_489
+
+ plan_comptable_500:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 655
+  libelle:  PERTES DE CHANGE
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_489
+
+ plan_comptable_501:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 656
+  libelle:  CHARGES NETTES SUR CESSIONS DE VALEURS MOBILIERES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_489
+
+ plan_comptable_502:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 657
+  libelle:  AUTRES CHARGES FINANCIERES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_489
+
+ plan_comptable_503:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 658
+  libelle:  "CHARGES FINANCIERES LIEES A UNE MODIFICATION COMPTABLE A IMPUTER AU RESULTAT DE L'EXERCICE OU A UNE ACTIVITE ABANDONNEE"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_489
+
+ plan_comptable_504:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 66
+  libelle:  IMPOTS, TAXES ET VERSEMENTS ASSIMILES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_378
+
+ plan_comptable_505:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 661
+  libelle:  IMPOTS, TAXES ET VERSEMENTS ASSIMILES SUR REMUNERATIONS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_504
+
+ plan_comptable_506:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6611
+  libelle:  TFP
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_505
+
+ plan_comptable_507:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6612
+  libelle:  FOPROLOS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_505
+
+ plan_comptable_508:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6618
+  libelle:  AUTRES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_505
+
+ plan_comptable_509:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 665
+  libelle:  AUTRES IMPOTS, TAXES ET VERSEMENTS ASSIMILES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_504
+
+ plan_comptable_510:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6651
+  libelle:  IMPOTS ET TAXES DIVERS (SAUF IMPOTS SUR LES BENEFICES)
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_509
+
+ plan_comptable_511:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6652
+  libelle:  "TAXES SUR LE CHIFFRE D'AFFAIRES NON RECUPERABLES"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_509
+
+ plan_comptable_512:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6654
+  libelle:  "DROITS D'ENREGISTREMENT ET DE TIMBRE"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_509
+
+ plan_comptable_513:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6655
+  libelle:  TAXES SUR LES VEHICULES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_509
+
+ plan_comptable_514:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6658
+  libelle:  AUTRES DROITS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_509
+
+ plan_comptable_515:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 668
+  libelle:  "IMPOTS ET TAXES LIES A UNE MODIFICATION COMPTABLE A IMPUTER AU RESULTAT DE L'EXERCICE OU A UNE ACTIVITE ABANDONNEE"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_504
+
+ plan_comptable_516:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 67
+  libelle:  PERTES EXTRAORDINAIRES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_378
+
+ plan_comptable_517:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 68
+  libelle:  DOTATIONS AUX AMORTISSEMENTS ET AUX PROVISIONS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_378
+
+ plan_comptable_518:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 681
+  libelle:  DOTATIONS AUX AMORTISSEMENTS ET AUX PROVISIONS - CHARGES ORDINAIRES (AUTRES QUE FINANCIERES)
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_517
+
+ plan_comptable_519:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6811
+  libelle:  DOTATIONS AUX AMORTISSEMENTS DES IMMOBILISATIONS INCORPORELLES ET CORPORELLES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_518
+
+ plan_comptable_520:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 68111
+  libelle:  IMMOBILISATIONS INCORPORELLES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_519
+
+ plan_comptable_521:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 68112
+  libelle:  IMMOBILISATIONS CORPORELLES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_519
+
+ plan_comptable_522:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6812
+  libelle:  DOTATIONS AUX RESORPTIONS DES CHARGES REPORTEES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_518
+
+ plan_comptable_523:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6815
+  libelle:  "DOTATIONS AUX PROVISIONS POUR RISQUES ET CHARGES D'EXPLOITATION"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_518
+
+ plan_comptable_524:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6816
+  libelle:  DOTATIONS AUX PROVISIONS POUR DEPRECIATION DES IMMOBILISATIONS INCORPORELLES ET CORPORELLES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_518
+
+ plan_comptable_525:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 68161
+  libelle:  IMMOBILISATIONS INCORPORELLES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_524
+
+ plan_comptable_526:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 68162
+  libelle:  IMMOBILISATIONS CORPORELLES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_524
+
+ plan_comptable_527:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6817
+  libelle:  DOTATIONS AUX PROVISIONS POUR DEPRECIATION DES ACTIFS COURANTS (AUTRES QUE LES VALEURS MOBILIERES DE PLACEMENT ET LES EQUIVALENTS DE LIQUIDITES)
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_518
+
+ plan_comptable_528:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 68173
+  libelle:  STOCKS ET EN-COURS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_527
+
+ plan_comptable_529:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 68174
+  Classecomptable: classe_6
+  libelle:  CREANCES
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_527
+
+ plan_comptable_530:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6818
+  libelle:  "DOTATIONS AUX AMORTISSEMENTS ET AUX PROVISIONS LIEES A UNE MODIFICATION COMPTABLE A IMPUTER AU RESULTAT DE L'EXERCICE OU A UNE ACTIVITE ABANDONNEE"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_518
+
+ plan_comptable_531:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 686
+  libelle:  DOTATIONS AUX AMORTISSEMENTS ET AUX PROVISIONS - CHARGES FINANCIERES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_517
+
+ plan_comptable_532:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6861
+  libelle:  DOTATIONS AUX AMORTISSEMENTS DES PRIMES DE REMBOURSEMENT DES OBLIGATIONS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_531
+
+ plan_comptable_533:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6865
+  libelle:  DOTATIONS AUX PROVISIONS POUR RISQUES ET CHARGES FINANCIERES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_531
+
+ plan_comptable_534:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6866
+  libelle:  DOTATIONS AUX PROVISIONS POUR DEPRECIATION DES ELEMENTS FINANCIERS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_531
+
+ plan_comptable_535:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 68662
+  libelle:  IMMOBILISATIONS FINANCIERES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_534
+
+ plan_comptable_536:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 68665
+  libelle:  PLACEMENTS ET PRETS COURANTS
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_534
+
+ plan_comptable_537:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 6868
+  libelle:  "DOTATIONS AUX AMORTISSEMENTS ET AUX PROVISIONS LIEES A UNE MODIFICATION COMPTABLE INSCRITE DANS LE RESULTAT DE L'EXERCICE OU A UNE ACTIVITE ABANDONNEE(CHARGES FINANCIERES)"
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_531
+
+ plan_comptable_538:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 69
+  libelle:  IMPOTS SUR LES BENEFICES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_378
+
+ plan_comptable_539:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 691
+  libelle:  IMPOTS SUR LES BENEFICES CALCULES SUR LE RESULTAT DES ACTIVITES ORDINAIRES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_539
+
+ plan_comptable_540:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 695
+  libelle:  AUTRES IMPOTS SUR LES BENEFICES (REGIMES PARTICULIERS)
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_539
+
+ plan_comptable_541:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 697
+  libelle:  IMPOTS SUR LES BENEFICES CALCULES SUR LES ELEMENTS EXTRAORDINAIRES
+  Classecomptable: classe_6
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_539
+
+ plan_comptable_542:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7
+  libelle: "CLASSE : COMPTES DE PRODUITS"
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+
+ plan_comptable_543:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 70
+  libelle:  VENTES DE PRODUITS FABRIQUES, PRESTATIONS DE SERVICES, MARCHANDISES (A VENTILER EN VENTES AUX TIERS ET VENTES AUX FILIALES ET ENTREPRISES ASSOCIEES, EN VENTES EN DINARS ET  VENTES EN DEVISES)
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_542
+
+ plan_comptable_544:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 701
+  libelle:  VENTES DE PRODUITS FINIS
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_543
+
+ plan_comptable_545:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7011
+  libelle:  PRODUITS FINIS ACHEVES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_544
+
+ plan_comptable_546:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7012
+  libelle:  PRODUITS FINIS NON ACHEVES (CONTRAT DE LONGUE DUREE)
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_544
+
+ plan_comptable_547:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 702
+  libelle:  VENTES DE PRODUITS INTERMEDIAIRES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_543
+
+ plan_comptable_548:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 703
+  libelle:  VENTES DE PRODUITS RESIDUELS
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_543
+
+ plan_comptable_549:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 704
+  libelle: TRAVAUX
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_543
+
+ plan_comptable_550:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 705
+  libelle:  ÉTUDES ET PRESTATIONS DE SERVICES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_543
+
+ plan_comptable_551:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 706
+  libelle:  PRODUITS DES ACTIVITES ANNEXES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_543
+
+ plan_comptable_552:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 707
+  libelle:  VENTES DE MARCHANDISES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_543
+
+ plan_comptable_553:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 708
+  libelle:  "VENTES LIEES A UNE MODIFICATION COMPTABLE A IMPUTER AU RESULTAT DE L'EXERCICE OU A UNE ACTIVITE ABANDONNEE"
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_543
+
+ plan_comptable_554:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 709
+  libelle:  "RABAIS, REMISES ET RISTOURNES ACCORDES PAR L'ENTREPRISE"
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_543
+
+ plan_comptable_555:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7091
+  libelle:  SUR VENTES DE PRODUITS FINIS
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_554
+
+ plan_comptable_556:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7092
+  libelle:  SUR VENTES DE PRODUITS INTERMEDIAIRES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_554
+
+ plan_comptable_557:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7094
+  libelle:  SUR TRAVAUX
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_554
+
+ plan_comptable_558:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7095
+  libelle:  SUR ETUDES ET PRESTATIONS DE SERVICES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_554
+
+ plan_comptable_559:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7096
+  libelle:  SUR ACTIVITES ANNEXES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_554
+
+ plan_comptable_560:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7097
+  libelle:  SUR VENTES DE MARCHANDISES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_554
+
+ plan_comptable_561:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7098
+  libelle:  "SUR VENTES LIEES A UNE MODIFICATION COMPTABLE A IMPUTER AU RESULTAT DE L'EXERCICE OU A UNE ACTIVITE ABANDONNEE"
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_554
+
+ plan_comptable_562:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 71
+  libelle:  PRODUCTION STOCKEE (OU DESTOCKAGE)
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_542
+
+ plan_comptable_563:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 713
+  libelle:  VARIATION DES STOCKS (EN-COURS DE PRODUCTION, PRODUITS)
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_562
+
+ plan_comptable_564:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7133
+  libelle:  VARIATIONS DES EN-COURS DE PRODUCTION DE BIENS
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_563
+
+ plan_comptable_565:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7134
+  libelle:  VARIATION DES EN-COURS DE PRODUCTION DE SERVICES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_563
+
+ plan_comptable_566:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7135
+  libelle:  VARIATION DES STOCKS DE PRODUITS
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_563
+
+ plan_comptable_567:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 72
+  libelle:  PRODUCTION IMMOBILISEE
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_542
+
+ plan_comptable_568:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 721
+  libelle:  IMMOBILISATIONS INCORPORELLES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_567
+
+ plan_comptable_569:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 722
+  libelle:  IMMOBILISATIONS CORPORELLES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_567
+
+ plan_comptable_570:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 728
+  libelle:  "PRODUCTION IMMOBILISEE LIEE A UNE MODIFICATION COMPTABLE A IMPUTER AU RESULTAT DE L'EXERCICE OU A UNE MODIFICATION COMPTABLE"
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_567
+
+ plan_comptable_571:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 73
+  libelle:  PRODUITS DIVERS ORDINAIRES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_542
+
+ plan_comptable_572:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 731
+  libelle:  REDEVANCES POUR CONCESSIONS, BREVETS, LICENCES, MARQUES, PROCEDES, DROITS ET VALEURS SIMILAIRES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_571
+
+ plan_comptable_573:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 732
+  libelle:  REVENUS DES IMMEUBLES NON AFFECTES AUX ACTIVITES PROFESSIONNELLES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_571
+
+ plan_comptable_574:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 733
+  libelle:  "JETONS DE PRESENCE ET REMUNERATIONS D'ADMINISTRATEURS, GERANTS"
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_571
+
+ plan_comptable_575:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 734
+  libelle:  RISTOURNES PERÇUES DES COOPERATIVES (PROVENANT DES EXCEDENTS)
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_571
+
+ plan_comptable_576:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 735
+  libelle:  QUOTES-PARTS DE RESULTAT SUR OPERATIONS FAITES EN COMMUN
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_571
+
+ plan_comptable_577:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 736
+  libelle:  "PRODUITS NETS SUR CESSIONS D'IMMOBILISATIONS ET AUTRES GAINS SUR ELEMENTS NON RECURRENTS OU EXCEPTIONNELS"
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_571
+
+ plan_comptable_578:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 738
+  libelle:  "PRODUITS DIVERS ORDINAIRES LIES A UNE MODIFICATION COMPTABLE A IMPUTER AU RESULTAT DE L'EXERCICE OU A UNE ACTIVITE ABANDONNEE"
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_571
+
+ plan_comptable_579:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 739
+  libelle:  "QUOTES-PARTS DES SUBVENTIONS D'INVESTISSEMENT INSCRITES AU RESULTAT DE L'EXERCICE"
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_571
+
+ plan_comptable_580:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 74
+  libelle:  "SUBVENTIONS D'EXPLOITATION ET D'EQUILIBRE"
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_542
+
+ plan_comptable_581:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 741
+  libelle:  "SUBVENTIONS D'EXPLOITATION"
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_580
+
+ plan_comptable_582:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 745
+  libelle:  "SUBVENTIONS D'EQUILIBRE"
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_580
+
+ plan_comptable_583:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 748
+  libelle:  "SUBVENTIONS LIEES A UNE MODIFICATION COMPTABLE A IMPUTER AU RESULTAT DE L'EXERCICE OU A UNE ACTIVITE ABANDONNEE"
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_580
+
+ plan_comptable_584:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 75
+  libelle:  PRODUITS FINANCIERS
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_542
+
+ plan_comptable_585:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 751
+  libelle:  PRODUITS DES PARTICIPATIONS
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_584
+
+ plan_comptable_586:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 752
+  libelle:  PRODUITS DES AUTRES IMMOBILISATIONS FINANCIERES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_584
+
+ plan_comptable_587:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 753
+  libelle:  REVENUS DES AUTRES CREANCES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_584
+
+ plan_comptable_588:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 754
+  libelle:  REVENUS DES VALEURS MOBILIERES DE PLACEMENT
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_584
+
+ plan_comptable_589:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 755
+  libelle:  ESCOMPTES OBTENUS
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_584
+
+ plan_comptable_590:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 756
+  libelle:  GAINS DE CHANGE
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_584
+
+ plan_comptable_591:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 757
+  libelle:  PRODUITS NETS SUR CESSIONS DE VALEURS MOBILIERES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_584
+
+ plan_comptable_592:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 758
+  libelle:  "PRODUITS FINANCIERS LIES A UNE MODIFICATION COMPTABLE A IMPUTER AU RESULTAT DE L'EXERCICE OU A UNE ACTIVITE ABANDONNEE"
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_584
+
+ plan_comptable_593:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 78
+  libelle:  REPRISES SUR AMORTISSEMENTS ET PROVISIONS
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_542
+
+ plan_comptable_594:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 781
+  libelle:  REPRISES SUR AMORTISSEMENTS ET PROVISIONS (A INSCRIRE DANS LES PRODUITS ORDINAIRES)
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_593
+
+ plan_comptable_595:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7811
+  libelle:  REPRISES SUR AMORTISSEMENTS DES IMMOBILISATIONS INCORPORELLES ET CORPORELLES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_594
+
+ plan_comptable_596:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 78111
+  libelle:  IMMOBILISATIONS INCORPORELLES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_595
+
+ plan_comptable_597:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7815
+  libelle:  REPRISES SUR PROVISIONS POUR RISQUES ET CHARGES D'EXPLOITATION
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_594
+
+ plan_comptable_598:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7816
+  libelle:  REPRISES SUR PROVISIONS POUR DEPRECIATION DES IMMOBILISATIONS INCORPORELLES ET CORPORELLES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_594
+
+ plan_comptable_599:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 78161
+  libelle:  IMMOBILISATIONS INCORPORELLES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_598
+
+ plan_comptable_600:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 78162
+  libelle:  IMMOBILISATIONS CORPORELLES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_598
+
+ plan_comptable_601:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7817
+  libelle:  REPRISES SUR PROVISIONS POUR DEPRECIATION DES ACTIFS COURANTS (AUTRES QUE LES VALEURS MOBILIERES DE PLACEMENT ET LES EQUIVALENTS DE LIQUIDITES)
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_594
+
+ plan_comptable_602:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 78173
+  libelle:  STOCKS ET EN-COURS
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_601
+
+ plan_comptable_603:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 78174
+  libelle:  CREANCES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_601
+
+ plan_comptable_604:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7818
+  libelle:  REPRISES SUR PROVISIONS LIEES A UNE MODIFICATION COMPTABLE INSCRITE AUX RESULTATS OU A UNE ACTIVITE ABANDONNEE
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_594
+
+ plan_comptable_605:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 786
+  libelle:  REPRISES SUR PROVISIONS (A INSCRIRE DANS LES PRODUITS FINANCIERS)
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_593
+
+ plan_comptable_606:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7865
+  libelle:  REPRISES SUR PROVISIONS POUR RISQUE ET CHARGES FINANCIERES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_605
+
+ plan_comptable_607:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7866
+  libelle:  REPRISES SUR PROVISIONS POUR DEPRECIATION DES ELEMENTS FINANCIERS
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_605
+
+ plan_comptable_608:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 7868
+  libelle:  REPRISES SUR PROVISIONS (A INSCRIRE DANS LES PRODUITS FINANCIERS) LIEES A UNE MODIFICATION COMPTABLE INSCRITE AUX RESULTATS DE OU A UNE ACTIVITE ABANDONNEE
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_605
+
+ plan_comptable_609:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 79
+  libelle:  TRANSFERTS DE CHARGES (A VENTILER EN FONCTION DES COMPTES OU ONT ETE IMPUTEES LES CHARGES A TRANSFERER) 
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_542
+
+ plan_comptable_610:
+  date: '<?php echo date('Y-m-d'); ?>'
+  numerocompte: 77
+  libelle: GAINS EXTRAORDINAIRES
+  Classecomptable: classe_7
+  lettrage: 0
+  typesolde: 3
+  Compte: plan_comptable_542

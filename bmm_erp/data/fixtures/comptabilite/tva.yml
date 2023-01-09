@@ -1,0 +1,13 @@
+Tva:
+  tv1:
+    libelle: "0%"
+    valeurtva: 0.00
+  tv2:
+    libelle: "7%"
+    valeurtva: 7.00
+  tv3:
+    libelle: "13%"
+    valeurtva: 13.00 
+  tv4:
+    libelle: "19%"
+    valeurtva: 19.00

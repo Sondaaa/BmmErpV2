@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           retraite
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          retraite
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Libellé"} 
+          nbreanne : { label: "Nombre Année "}
+      list:    
+          title: Liste des Retraites 
+          display: [libelle,nbreanne]
+      filter:  
+            display: [nbreanne]
+      form:    ~
+      edit:    
+          title: Mise a jour Fiche
+      new:     
+          title: Nouveau Fiche 
+

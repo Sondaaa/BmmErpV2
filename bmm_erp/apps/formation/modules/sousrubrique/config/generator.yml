@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sousrubrique
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sousrubrique
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          
+           code : { label: "Code "}
+           libelle : { label: "Sous Rubrique "}
+           id_rubrique : {label: " Rubrique "}
+           rubriqueformation : {label: " Rubrique "}
+           
+       
+      list:    
+          title: Liste des Sous Rubriques
+          display: [rubriqueformation,code,libelle]
+      filter:  
+          display: [id_rubrique,libelle]
+      form:    ~
+      edit:   
+          title: Mise à jour fiche
+      new: 
+          title: Nouvelle fiche 

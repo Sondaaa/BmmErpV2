@@ -1,0 +1,53 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           marches
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          marches
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          datecreation: { label: "Date création"}
+          delai: { label: "Délail"}
+          mrpme: { label: "Marché Résevé au PME"}
+          nbrelot: { label: "Nombre de LOTS"}
+          titulaire: { label: "Titulaire du marché"}
+          nbrebinificaire: { label: "Nombre de bénéficiaires"}
+          mntttc: { label: " Montant Global TTC"}
+          retenuegaraentie: { label: "Retenue de garantie"}
+          cautionement: { label: "Cautionnement définitif"}
+          avance: { label: "Avance"}
+          penalite: { label: "Pénalité de RETARD"}
+          id_passaction: { label: "Procédure de passation"}          
+          id_nature: { label: "Nature du marché"}
+          id_user: { label: "Utilisateur"}
+          id_documentachat: { label: "Bons des commnades internes MP"}
+          id_frs: { label: "Fournisseurs"}
+          utilisateur: { label: "Utilisateur"}
+          documentachat: { label: "Bon de commande interne MP(Système)"}
+          projet: { label: "Projet"}
+          id_projet: { label: "Projet"}
+          numeromarches: { label: "Numéro Marché"}
+          numero: { label: "Numéro"}
+      list:    
+          title: Liste des marchés publics
+          display: [utilisateur,projet,datecreation,numeromarches,documentachat,mntttc]
+          max_per_page: 5
+          batch_actions:  {}    
+          actions: {}    
+          object_actions:                
+                _edit:      ~ 
+      filter:  
+          display: [datecreation,numero,id_documentachat,id_projet,id_nature,id_user,id_frs]
+      form:    ~
+      edit:
+          title: Mise à jour fiche marché
+      new:     
+          title: Nouvelle fiche marché

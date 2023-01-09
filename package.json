@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-table": "^1.18.3",
+    "fontawesome-free": "^1.0.4",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  }
+}

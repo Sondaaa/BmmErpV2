@@ -1,0 +1,23 @@
+## YAML Template.
+---
+Regimehoraire:
+  r1:
+    id: 1
+    description: "Régime 28 heures"
+    nbheure: 28
+  r2:
+    id: 2
+    description: "Régime 32 heures"
+    nbheure: 32
+  r3:
+    id: 3
+    description: "Régime 35 heures"
+    nbheure: 35
+  r4:
+    id: 4
+    description: "Régime 40 heures"
+    nbheure: 40
+  r5:
+    id: 5
+    description: "Régime 48 heures"
+    nbheure: 48

@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           situationadminouvrier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          situationadminouvrier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Libellé ( الوضع الإداري )"}
+          montant : { label: "Montant ( الأجر )"}
+         
+          
+      list:   
+          title: Liste des Situations administratives ( الوضع الإداري )
+          display: [libelle,montant]
+      filter:  
+          display: [libelle]
+      form:    ~
+      edit:   
+          title: Mise a jour Fiche Situation Administrattif
+      new:     
+          title: Nouvelle Fiche Situation Administrattif

@@ -1,0 +1,87 @@
+ligprotitrub:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ligprotitrub
+    module:               ligprotitrub
+    prefix_path:          /ligprotitrub
+    column:               id
+    with_wildcard_routes: true
+
+bureaux:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                bureaux
+    module:               bureaux
+    prefix_path:          /bureaux
+    column:               id
+    with_wildcard_routes: true
+
+immobilisation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                immobilisation
+    module:               immobilisation
+    prefix_path:          /immobilisation
+    column:               id
+    with_wildcard_routes: true
+
+titrebudjet:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                titrebudjet
+    module:               titrebudjet
+    prefix_path:          /titrebudjet
+    column:               id
+    with_wildcard_routes: true
+
+demandeur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Demandeur
+    module:               demandeur
+    prefix_path:          /demandeur
+    column:               id
+    with_wildcard_routes: true
+
+documentachat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                documentachat
+    module:               documentachat
+    prefix_path:          /documentachat
+    column:               id
+    with_wildcard_routes: true
+article:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                article
+    module:               article
+    prefix_path:          /article
+    column:               id
+    with_wildcard_routes: true
+stock:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                stock
+    module:               stock
+    prefix_path:          /stock
+    column:               id
+    with_wildcard_routes: true
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: documentachat, action: index }
+Imprimercb:
+  url: /Imprimercb
+  param: { module: immobilisation, action: imprimercb }
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

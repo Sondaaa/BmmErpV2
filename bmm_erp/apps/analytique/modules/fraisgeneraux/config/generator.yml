@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           fraisgeneraux
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          fraisgeneraux
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          date: { label: "Date Création (Génération)"}
+          annee: { label: "Année"}
+          montantcharge: { label: "Total Charges"}
+          montantproduit: { label: "Total Produits"}
+          montant: { label: "Carges à Répartir"}
+      list:
+          title: Liste des Rapports des Frais Généraux
+          display: [date,annee,montantcharge,montantproduit,montant]
+      filter:
+          display: [date,annee]
+      form:    ~
+      edit:
+          title: Modifier Rapport des Frais Généraux - %%annee%%
+      new:
+          title: Nouveau Rapport des Frais Généraux

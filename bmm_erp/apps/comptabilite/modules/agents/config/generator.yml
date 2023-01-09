@@ -1,0 +1,35 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           agents
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          agents
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          nomcomplet : { label: "Nom "}
+          datenaissance: {label: "Date de naissance"}
+          cin: {label: "CIN"}
+          gsm: {label: "GSM"}
+          prenom: {label: "Prénom"}
+          idrh: {label: "Matricule"}
+          regroupementagents: {label: "Regroupement Agents"}
+          id_regrouppement: {label: "Regroupement Agents"}
+      list:    
+          title: Liste du personnel
+          display: [idrh,nomcomplet,prenom,cin,regroupementagents]
+      filter:  
+          
+          display: [idrh,nomcomplet,prenom,id_regrouppement]
+      form:    ~
+      edit:   
+          title: Mise à jour fiche Personnelle 
+      new:     
+          title: Nouvelle fiche Personnelle

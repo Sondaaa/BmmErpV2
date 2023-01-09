@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="dainternebci" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="880b228f-64f8-494a-96c1-9fd98379f145">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="cbbc17102022"/>
+	<subDataset name="Dataset1" uuid="1b1f3ecd-239d-4c00-a262-fbe2e35afb60">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="cbbc17102022"/>
+		<parameter name="requette" class="java.lang.String">
+			<defaultValueExpression><![CDATA[$P{requette}]]></defaultValueExpression>
+		</parameter>
+		<queryString language="SQL">
+			<![CDATA[select 
+        concat(article.codeart, article.designation) as
+         deseignation,qtelignedoc.qtedemander, qtelignedoc.qtees ,
+          lignedocachat.observation, lignedocachat.nordre as nordre
+           from lignedocachat inner join article  on lignedocachat.id_articlestock=article.id 
+          inner join qtelignedoc on lignedocachat.id=qtelignedoc.id_lignedocachat 
+          inner join documentachat on documentachat.id=lignedocachat.id_doc 
+          where documentachat.id= 1265]]>
+		</queryString>
+		<field name="deseignation" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="deseignation"/>
+			<property name="com.jaspersoft.studio.field.label" value="deseignation"/>
+		</field>
+		<field name="qtedemander" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.name" value="qtedemander"/>
+			<property name="com.jaspersoft.studio.field.label" value="qtedemander"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="qtelignedoc"/>
+		</field>
+		<field name="qtees" class="java.math.BigDecimal">
+			<property name="com.jaspersoft.studio.field.name" value="qtees"/>
+			<property name="com.jaspersoft.studio.field.label" value="qtees"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="qtelignedoc"/>
+		</field>
+		<field name="observation" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="observation"/>
+			<property name="com.jaspersoft.studio.field.label" value="observation"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+		</field>
+		<field name="nordre" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="nordre"/>
+			<property name="com.jaspersoft.studio.field.label" value="nordre"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+		</field>
+	</subDataset>
+	<parameter name="logo" class="java.lang.String"/>
+	<parameter name="etablisement" class="java.lang.String"/>
+	<parameter name="numero_dim" class="java.lang.String"/>
+	<parameter name="email" class="java.lang.String"/>
+	<parameter name="NomPrenom" class="java.lang.String"/>
+	<parameter name="requette" class="java.lang.String"/>
+	<parameter name="specialite" class="java.lang.String"/>
+	<parameter name="departement" class="java.lang.String"/>
+	<parameter name="telephone" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="Parameter2" class="java.lang.String"/>
+	<parameter name="naturedoc" class="java.lang.String"/>
+	<parameter name="projet" class="java.lang.String"/>
+	<parameter name="annee" class="java.lang.String"/>
+	<parameter name="labo" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[$P!{requette}]]>
+	</queryString>
+	<field name="deseignation" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="deseignation"/>
+		<property name="com.jaspersoft.studio.field.label" value="deseignation"/>
+	</field>
+	<field name="qtedemander" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="qtedemander"/>
+		<property name="com.jaspersoft.studio.field.label" value="qtedemander"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="qtelignedoc"/>
+	</field>
+	<field name="qtees" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="qtees"/>
+		<property name="com.jaspersoft.studio.field.label" value="qtees"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="qtelignedoc"/>
+	</field>
+	<field name="observation" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="observation"/>
+		<property name="com.jaspersoft.studio.field.label" value="observation"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+	</field>
+	<field name="nordre" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="nordre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nordre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="-15" y="5" width="155" height="50" uuid="7b6a9bff-a878-4b30-92d1-4bf57a42ff0a"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="140" y="5" width="395" height="50" uuid="afe4cf61-bfbc-45ee-a988-e27141808d08"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Book Antiqua" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{etablisement}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-20" y="60" width="595" height="1" uuid="fbcb4660-5c5d-4d46-8ebf-9f35b1dca9c8"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="111" splitType="Stretch">
+			<staticText>
+				<reportElement x="170" y="-18" width="160" height="26" uuid="ff9d1abf-b8eb-4923-87a2-63258808d926"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="22" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[مطلب شراء ]]></text>
+			</staticText>
+			<frame>
+				<reportElement x="1" y="13" width="550" height="49" uuid="73cf1dc3-df90-4814-8d2e-858d26a8f49e"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="411" y="1" width="120" height="20" uuid="b2b514c6-0cdb-46cd-b0e0-2d518522cb91"/>
+					<textElement>
+						<font fontName="Arial" size="12"/>
+					</textElement>
+					<text><![CDATA[الهيكل الاداري التقدم بالطلب : ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="456" y="22" width="74" height="21" uuid="d9bc08e3-731e-4e66-830b-28c0a7e0cc28"/>
+					<textElement>
+						<font fontName="Arial" size="12"/>
+					</textElement>
+					<text><![CDATA[موضوع الطلب : ]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="32" y="3" width="368" height="20" uuid="7a8c7af2-dc15-4eea-86d9-036a40ea946e"/>
+					<textElement textAlignment="Right">
+						<font fontName="Arial" size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{NomPrenom}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="31" y="25" width="368" height="20" uuid="51ce08d4-8a06-4bbe-b6bd-5c3753771d24"/>
+					<textElement textAlignment="Right">
+						<font fontName="Arial" size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{naturedoc}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame>
+				<reportElement x="2" y="67" width="550" height="34" uuid="1fc8e5b5-d247-4898-8877-f92fe1c5953f"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="448" y="14" width="89" height="20" uuid="b8521e29-e69a-4977-a5e2-f437e57cb44f"/>
+					<textElement>
+						<font fontName="Arial" size="12"/>
+					</textElement>
+					<text><![CDATA[العنوان أو المشروع : ]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="308" y="12" width="130" height="20" uuid="48a63392-7642-4f59-b904-673edb835065"/>
+					<textElement textAlignment="Center">
+						<font fontName="Arial" size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{projet}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="151" y="11" width="147" height="20" uuid="0545ea4e-084b-49db-99b3-1247bfc64971"/>
+					<textElement>
+						<font fontName="Arial" size="12"/>
+					</textElement>
+					<text><![CDATA[العنوان الثاني: عقد برنامج    ]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="56" y="10" width="89" height="20" uuid="b3135c1c-d51a-402f-910a-1a824d3a82e5"/>
+					<textElement textAlignment="Center">
+						<font fontName="Arial" size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{annee}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="284" y="15" width="80" height="30" uuid="d7800e55-0cbf-4141-8662-d5c983b461d7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9d5aee0e-bd2b-4738-bc26-295c262cc3c5"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="14"/>
+				</textElement>
+				<text><![CDATA[الكمية ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="15" width="100" height="30" uuid="b373fa2c-7929-4246-8b6d-ddff3780df2a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3125c6f0-aaa9-4727-9e5d-786c74aab12a"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="14"/>
+				</textElement>
+				<text><![CDATA[بيان المطلوب]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="15" width="80" height="30" uuid="68967643-7abe-4d12-9707-ba4a570afe1e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7bf7613e-9823-4d02-ad73-1c3448b437af"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="14"/>
+				</textElement>
+				<text><![CDATA[العدد الرتبي:  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="20" width="150" height="30" uuid="478d56e0-fb11-4486-a3ce-d7d22bd4ae67">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9d5aee0e-bd2b-4738-bc26-295c262cc3c5"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="14"/>
+				</textElement>
+				<text><![CDATA[الخاصيات الفنية المطلوبة ]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="470" y="1" width="85" height="30" uuid="fb52fa96-90ea-4735-ba0a-f27723e23402">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7798c41d-537d-4e6c-ad03-49d93d765b8f"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{nordre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="368" y="1" width="97" height="30" uuid="633d13a6-100d-47ac-a39a-3e2a852a0a01">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c641abdd-3227-4d21-b29e-ea1ff2f3b494"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{deseignation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="287" y="2" width="78" height="30" uuid="7a647d69-aa8f-4bc3-92a9-5a9afcff39f4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0d0a247d-bd9a-4422-b583-55ec7f44aee6"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{qtedemander}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="2" width="167" height="30" uuid="797d994a-4328-4cc3-b929-e375c92b47da">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4eda4df5-9511-4a58-8281-451598cf7d88"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{observation}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="142" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="72" width="139" height="23" uuid="e14d5fe1-d4af-4c3d-8316-c2770cbe2e7c"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[المدير العام للمركز : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="170" y="68" width="139" height="23" uuid="8acd5dc4-e706-4169-8717-aa51b1fbe20a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[إسم وإمضاء الطالب : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="450" y="69" width="100" height="20" uuid="2b7299dc-9ead-4021-b3f6-12e8f1ce9eed"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[برج السدرية في  : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="96" width="139" height="23" uuid="815c8682-87dc-4c67-afee-f88da42b2b74"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[إمضاء رئيس الهيكل و  ختمه :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="381" y="119" width="139" height="23" uuid="d0328175-15df-4129-8a2b-ce0265da6c22"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[إمضاء صاحب المشروع : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="170" y="94" width="139" height="20" uuid="21d20b40-472b-4d64-ba5f-6b365d480c72"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NomPrenom}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="119" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="77" width="56" height="20" uuid="66983a6b-0224-4abd-9f5a-ecf80bf69487"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Adresse:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="56" width="70" height="20" uuid="7ca959c7-b993-48cc-953f-a8099b5e4ce8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Téléphonne:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="76" y="57" width="92" height="18" uuid="87d3ef78-8d86-43b4-9f70-3abd73233f63"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{telephone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="202" y="58" width="200" height="18" uuid="7e602237-b0c6-4ba8-8332-82e7c892b3e7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{email}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="159" y="57" width="36" height="20" uuid="aa856671-4e15-481d-b894-805e4452cf8e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Email:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="57" y="76" width="497" height="22" uuid="35d41f86-ddc1-41e3-8d05-704b273f9e03"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{adresse}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-10" y="54" width="595" height="1" uuid="d1a8d0b4-6233-47ad-ab9c-84a748c0426c"/>
+			</line>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

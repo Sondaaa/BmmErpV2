@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           conjoints
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          conjoints
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          etattravail : { label: "Etat de travail"}
+          prenom : { label: "Prenom"}
+          nom : { label: "Nom"}
+          id_agents : {label: "Agents"}
+      list:    
+          title: Liste des conjoints
+          display: [nom,prenom,etattravail]
+      filter: 
+          display: [nom,prenom,etattravail]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche conjoint
+      new:     
+          title: Nouvelle fiche conjoints

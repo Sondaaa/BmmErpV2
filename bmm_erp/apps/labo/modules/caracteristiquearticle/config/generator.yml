@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           caracteristiquearticle
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          caracteristiquearticle
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: {label: Nouvelle fiche }
+      fields:
+          libelle: { label: "Caractéristique"}
+      list:    
+          title: Liste des caractéristiques des articles
+          display: [libelle,code]
+      filter:  
+          display: [libelle,code]
+      form:    ~
+      edit:    
+          title: Mise à jour caractéristique - %%libelle%%
+      new:     
+          title: Nouvelle caractéristique 

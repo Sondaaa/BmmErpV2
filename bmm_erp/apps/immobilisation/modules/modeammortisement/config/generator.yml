@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           modeammortisement
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          modeammortisement
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        modeammortisement: {label: "Mode d'ammortissement"}
+      list:
+        title: Liste des Modes d'ammortissement
+        display: [modeammortisement]
+        max_per_page: 5
+      filter:  ~
+      form:    ~
+      edit:
+        title: Modifier %%modeammortissement%%
+      new:
+        title: Nouveau mode d'ammortissement

@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           aidesociale
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          aidesociale
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_agents : { label: "Agents"}    
+          id_typeaide : { label: "Type d'aide"}
+          typeaide: { label: "Type d'aide"}
+          date : { label: "Date d'aide"}
+          gouvernera: { label: "Gouvernerat"}
+          origine : { label: "Origine"}
+          montant : { label: "Montant"}
+          observation : { label: "Observation"}
+      list:   
+          title: Liste des Aides Sociales
+          display: [agents,typeaide,date,origine,montant,observation]
+      filter:  
+           display: [id_agents, date]
+      form:    ~
+      edit:   
+          title: Mise à jour Fiche Aide Sociale
+      new:     
+          title: Nouvelle Fiche Aide Sociale

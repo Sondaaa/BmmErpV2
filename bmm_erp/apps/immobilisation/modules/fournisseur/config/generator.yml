@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           fournisseur
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          fournisseur
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        rs: {label: "Raisson Social"}
+      list:
+        title: Listes des Fournisseurs
+        display: [nom,prenom,rs,mail,gsm]
+      filter:
+        display: [nom,prenom,rs]
+      form:    ~
+      edit:
+        title: Modifier %%rs%%
+      new:
+        title: Noveau Fornisseur

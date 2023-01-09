@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd" >
+<xliff version="1.0">
+  <file original="global" source-language="en_US" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>Methode de conclusion</source>
+        <target>Methode de conclusion</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Procedure marches</source>
+        <target>Procedure marches</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Sources du marches</source>
+        <target>Sources du marches</target>
+      </trans-unit>
+      
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,240 @@
+ribbancaire:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ribbancaire
+    module:               ribbancaire
+    prefix_path:          /ribbancaire
+    column:               id
+    with_wildcard_routes: true
+
+banque:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                banque
+    module:               banque
+    prefix_path:          /banque
+    column:               id
+    with_wildcard_routes: true
+
+alimentationcompte:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                alimentationcompte
+    module:               alimentationcompte
+    prefix_path:          /alimentationcompte
+    column:               id
+    with_wildcard_routes: true
+
+declaration:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                declaration
+    module:               declaration
+    prefix_path:          /declaration
+    column:               id
+    with_wildcard_routes: true
+
+certificatretenue:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                certificatretenue
+    module:               certificatretenue
+    prefix_path:          /certificatretenue
+    column:               id
+    with_wildcard_routes: true
+
+documentbudget:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                documentbudget
+    module:               documentbudget
+    prefix_path:          /documentbudget
+    column:               id
+    with_wildcard_routes: true
+
+bordereauvirement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                bordereauvirement
+    module:               bordereauvirement
+    prefix_path:          /bordereauvirement
+    column:               id
+    with_wildcard_routes: true
+
+papierordrepostal:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                papierordrepostal
+    module:               papierordrepostal
+    prefix_path:          /papierordrepostal
+    column:               id
+    with_wildcard_routes: true
+
+carnetordrepostal:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                carnetordrepostal
+    module:               carnetordrepostal
+    prefix_path:          /carnetordrepostal
+    column:               id
+    with_wildcard_routes: true
+
+fournisseur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                fournisseur
+    module:               fournisseur
+    prefix_path:          /fournisseur
+    column:               id
+    with_wildcard_routes: true
+
+mouvementbanciare:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                mouvementbanciare
+    module:               mouvementbanciare
+    prefix_path:          /mouvementbanciare
+    column:               id
+    with_wildcard_routes: true
+
+instrumentpaiment:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                instrumentpaiment
+    module:               instrumentpaiment
+    prefix_path:          /instrumentpaiment
+    column:               id
+    with_wildcard_routes: true
+
+objetreglement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                objetreglement
+    module:               objetreglement
+    prefix_path:          /objetreglement
+    column:               id
+    with_wildcard_routes: true
+
+papiercheque:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                papiercheque
+    module:               papiercheque
+    prefix_path:          /papiercheque
+    column:               id
+    with_wildcard_routes: true
+
+carnetcheque:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                carnetcheque
+    module:               carnetcheque
+    prefix_path:          /carnetcheque
+    column:               id
+    with_wildcard_routes: true
+
+lignebanquecaisse:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                lignebanquecaisse
+    module:               lignebanquecaisse
+    prefix_path:          /lignebanquecaisse
+    column:               id
+    with_wildcard_routes: true
+
+naturebanque:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                naturebanque
+    module:               naturebanque
+    prefix_path:          /naturebanque
+    column:               id
+    with_wildcard_routes: true
+
+ligneoperationcaisse:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ligneoperationcaisse
+    module:               ligneoperationcaisse
+    prefix_path:          /ligneoperationcaisse
+    column:               id
+    with_wildcard_routes: true
+
+demarcheur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                demarcheur
+    module:               demarcheur
+    prefix_path:          /demarcheur
+    column:               id
+    with_wildcard_routes: true
+
+caissesbanques:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                caissesbanques
+    module:               caissesbanques
+    prefix_path:          /caissesbanques
+    column:               id
+    with_wildcard_routes: true
+
+typecaisse:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typecaisse
+    module:               typecaisse
+    prefix_path:          /typecaisse
+    column:               id
+    with_wildcard_routes: true
+
+categorieoperation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                categorieoperation
+    module:               categorieoperation
+    prefix_path:          /categorieoperation
+    column:               id
+    with_wildcard_routes: true
+
+typeoperation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeoperation
+    module:               typeoperation
+    prefix_path:          /typeoperation
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+documentachat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                documentachat
+    module:               documentachat
+    prefix_path:          /documentachat
+    column:               id
+    with_wildcard_routes: true
+homepage:
+  url:   /
+  param: { module: caissesbanques, action: index }
+goPageMouvement:
+  url:   /go-page
+  param: { module: mouvementbanciare, action: goPage }
+getBordereau:
+  url:   /get-bordereau
+  param: { module: mouvementbanciare, action: getBordereau }
+getFinalBordereau:
+  url:   /get-final-bordereau
+  param: { module: mouvementbanciare, action: getFinalBordereau }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

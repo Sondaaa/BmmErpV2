@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           applicationmodule
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          applicationmodule
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          libelle: {label: "Libellé"}
+          id_application: {label: "Application"}
+      list:
+          title: Liste des Sous Modules E.R.P
+          display: [libelle,Application]
+          max_per_page: 10
+      filter:
+          display: [libelle,id_application]
+      form:    ~
+      edit:
+          title: Modifier %%libelle%%
+      new:
+          title: Nouveau Sous Module E.R.P

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BonCommandeInterneDacaisse" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="763939cb-ef31-4051-b97e-401d656a2353">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="cbbc17102022"/>
+	<parameter name="logo" class="java.lang.String"/>
+	<parameter name="etablisement" class="java.lang.String"/>
+	<parameter name="NomPrenom" class="java.lang.String"/>
+	<parameter name="req" class="java.lang.String"/>
+	<parameter name="numero" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[select 
+        concat(article.codeart, article.designation) as
+         deseignation,qtelignedoc.qtedemander, qtelignedoc.qtees ,
+          lignedocachat.observation, lignedocachat.nordre as nordre
+           from lignedocachat inner join article  on lignedocachat.id_articlestock=article.id 
+          inner join qtelignedoc on lignedocachat.id=qtelignedoc.id_lignedocachat 
+          inner join documentachat on documentachat.id=lignedocachat.id_doc 
+          where documentachat.id=1243]]>
+	</queryString>
+	<field name="deseignation" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="deseignation"/>
+		<property name="com.jaspersoft.studio.field.label" value="deseignation"/>
+	</field>
+	<field name="qtedemander" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="qtedemander"/>
+		<property name="com.jaspersoft.studio.field.label" value="qtedemander"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="qtelignedoc"/>
+	</field>
+	<field name="qtees" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="qtees"/>
+		<property name="com.jaspersoft.studio.field.label" value="qtees"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="qtelignedoc"/>
+	</field>
+	<field name="observation" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="observation"/>
+		<property name="com.jaspersoft.studio.field.label" value="observation"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+	</field>
+	<field name="nordre" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="nordre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nordre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="90" splitType="Stretch">
+			<textField>
+				<reportElement x="140" y="10" width="395" height="50" uuid="82f337a7-c3f9-4195-9191-22e6433fe5f5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Book Antiqua" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{etablisement}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="-15" y="5" width="139" height="50" uuid="4a96b921-f1e5-4b3f-b682-b889f3635e1a"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="-20" y="60" width="595" height="1" uuid="9a5dc62e-8020-4597-9bd9-0f65ea716013"/>
+			</line>
+			<textField>
+				<reportElement x="10" y="69" width="120" height="20" uuid="6cada11a-fe9b-4e77-8c02-cea0a2252a23"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{numero}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="85" splitType="Stretch">
+			<staticText>
+				<reportElement x="100" y="-21" width="285" height="26" uuid="a3aae8d0-6c2b-4673-af43-5f44609fd78f"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="15" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[مطلب إقتناء مواد عن طريق الخزينة عدد  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="20" width="120" height="20" uuid="3d1510c2-e89e-4fc6-bef8-f207f3424e94"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[الاسم واللقب :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="50" width="120" height="20" uuid="28ef5b5b-f628-42cf-b3cd-d279308a150e"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[المصلحة : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="25" width="120" height="20" uuid="e641c5a5-c627-422f-9173-014a9b7b911a"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[الامضاء  : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="300" y="25" width="120" height="20" uuid="a36a78ee-d71b-43bb-8f54-8000c8e3a6ff"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NomPrenom}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

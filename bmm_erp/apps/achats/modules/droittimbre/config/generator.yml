@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           droittimbre
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          droittimbre
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          libelle: {label: "Libellé"}
+          valeur: {label: "Valeur Droit Timbre"}
+      list:    
+          title: Liste des Droits de Timbre
+          display: [libelle,valeur]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Modifier Valeur Droit de Timbre %%libelle%%
+      new:     
+          title: Nouvelle Valeur Droit de Timbre

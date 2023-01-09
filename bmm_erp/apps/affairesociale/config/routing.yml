@@ -1,0 +1,187 @@
+destinatonvisitemedicale:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                destinatonvisitemedicale
+    module:               destinatonvisitemedicale
+    prefix_path:          /destinatonvisitemedicale
+    column:               id
+    with_wildcard_routes: true
+
+typetenue:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typetenue
+    module:               typetenue
+    prefix_path:          /typetenue
+    column:               id
+    with_wildcard_routes: true
+
+typemission:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typemission
+    module:               typemission
+    prefix_path:          /typemission
+    column:               id
+    with_wildcard_routes: true
+
+typeaide:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeaide
+    module:               typeaide
+    prefix_path:          /typeaide
+    column:               id
+    with_wildcard_routes: true
+
+accidents:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                accidents
+    module:               accidents
+    prefix_path:          /accidents
+    column:               id
+    with_wildcard_routes: true
+
+aidesociale:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                aidesociale
+    module:               aidesociale
+    prefix_path:          /aidesociale
+    column:               id
+    with_wildcard_routes: true
+
+tenues:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                tenues
+    module:               tenues
+    prefix_path:          /tenues
+    column:               id
+    with_wildcard_routes: true
+
+visitemedicale:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                visitemedicale
+    module:               visitemedicale
+    prefix_path:          /visitemedicale
+    column:               id
+    with_wildcard_routes: true
+
+fournisseur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                fournisseur
+    module:               fournisseur
+    prefix_path:          /fournisseur
+    column:               id
+    with_wildcard_routes: true
+
+historiqueretenue:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                historiqueretenue
+    module:               historiqueretenue
+    prefix_path:          /historiqueretenue
+    column:               id
+    with_wildcard_routes: true
+
+retenuesursalaire:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                retenuesursalaire
+    module:               retenuesursalaire
+    prefix_path:          /retenuesursalaire
+    column:               id
+    with_wildcard_routes: true
+
+sourcepret:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sourcepret
+    module:               sourcepret
+    prefix_path:          /sourcepret
+    column:               id
+    with_wildcard_routes: true
+
+demandepret:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                demandepret
+    module:               demandepret
+    prefix_path:          /demandepret
+    column:               id
+    with_wildcard_routes: true
+
+demandeavance:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                demandeavance
+    module:               demandeavance
+    prefix_path:          /demandeavance
+    column:               id
+    with_wildcard_routes: true
+
+retenue:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                retenue
+    module:               retenue
+    prefix_path:          /retenue
+    column:               id
+    with_wildcard_routes: true
+
+pret:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                pret
+    module:               pret
+    prefix_path:          /pret
+    column:               id
+    with_wildcard_routes: true
+
+avance:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                avance
+    module:               avance
+    prefix_path:          /avance
+    column:               id
+    with_wildcard_routes: true
+
+demandeavancepret:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                demandeavancepret
+    module:               demandeavancepret
+    prefix_path:          /demandeavancepret
+    column:               id
+    with_wildcard_routes: true
+
+typeavancepret:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                typeavancepret
+    module:               typeavancepret
+    prefix_path:          /typeavancepret
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: avance, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

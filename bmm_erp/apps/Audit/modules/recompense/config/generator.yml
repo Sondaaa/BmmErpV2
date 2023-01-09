@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           recompense
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          recompense
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          explication : { label: "Motif"}
+       
+          id_agents : { label: "Agents"}
+          id_typerecompense : {label: "Type Récompense"}
+      list:    
+          title: Liste des Médailles & Récompenses
+          display: [agents,typerecompense,explication]
+      filter: 
+          display: [explication]
+          
+      form:    ~
+      edit:    
+          title: Mise à jour fiche de Médaille & Récompense
+      new:     
+          title: Nouvelle fiche de Médaille & Récompense

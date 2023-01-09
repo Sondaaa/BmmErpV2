@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typecaisse
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typecaisse
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: { label: "Nom de type"}
+      list:    
+          title: Listes des Types  de trésorerie 
+          display: [libelle]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour fiche Type de trésorerie
+      new:     
+          title: Nouvelle fiche type de trésorerie

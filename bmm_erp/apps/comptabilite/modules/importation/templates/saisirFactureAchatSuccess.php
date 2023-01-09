@@ -1,0 +1,1 @@
+<?php include_partial("importation/liste_achat", array("pager" => $pager, "page" => $page, "total" => $total, "ref" => $ref, "dossier" => $dossier, "fournisseur" => $fournisseur, "etranger" => $etranger)) ?>

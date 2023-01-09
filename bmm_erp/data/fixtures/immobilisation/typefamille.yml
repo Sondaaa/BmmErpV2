@@ -1,0 +1,22 @@
+Typefamille:
+  Typefamille_1:
+    code: null
+    libelle: "213 LOGICIELS\r\n"
+  Typefamille_2:
+    code: null
+    libelle: "221 TERRAINS\r\n"
+  Typefamille_3:
+    code: null
+    libelle: "222 CONSTRUCTIONS\r\n"
+  Typefamille_4:
+    code: null
+    libelle: "223 MATERIEL ET OUTILLAGE\r\n"
+  Typefamille_5:
+    code: null
+    libelle: "224 MATERIELROULANT\r\n"
+  Typefamille_6:
+    code: null
+    libelle: "225 ANIMAUX ET PLANTATIONS\r\n"
+  Typefamille_7:
+    code: null
+    libelle: "228 EQUIPEMENTS\r\n"

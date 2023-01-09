@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           objetreglement
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          objetreglement
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: {label: "Objet de réglement"}
+          
+      list:    
+          title: Liste des objets de réglements
+          display: [libelle]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour fiche %%libelle%%
+      new:     
+          title: Nouvelle fiche objet de réglement

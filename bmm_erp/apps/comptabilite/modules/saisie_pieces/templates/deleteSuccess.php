@@ -1,0 +1,1 @@
+<?php include_partial("saisie_pieces/liste", array("pager" => $pager, "page" => $page)) ?>

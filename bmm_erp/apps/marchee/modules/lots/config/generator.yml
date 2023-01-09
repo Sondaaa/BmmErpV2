@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           lots
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          lots
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_frs: { label: "Fournisseurs"}
+          id_marche: { label: "Marchés"}
+          ttcnet: { label: "TTC.NET"}
+          ttc: { label : "TTC.NET"}
+          nordre: { label : "N° Ordre"}
+          marches: { label : "Marché"}
+      list:    
+          title: Liste des bénéficiaires
+          display: [nordre,marches,fournisseur,ttc]
+      filter:  
+          display: [id_marche,id_frs]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche bénéficiaire
+      new:     ~

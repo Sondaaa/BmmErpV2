@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           famillearticle
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          famillearticle
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: { label: "Famille"}
+      list:    
+          title: Liste des familles
+          display: [ libelle,code]
+          
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour fiche famille article - %%libelle%%
+      new:     
+          title: Nouvelle famille 

@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           fabricant
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          fabricant
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          fabricant: { label: "Nom du fabricant"}
+          reference: { label: "Référence"}
+          
+      list:    
+          title: Liste des fabricants
+          display: [ fabricant,reference]
+          max_per_page: 5
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour fiche fabricant
+      new:     
+          title: Nouvelle fiche fabricant

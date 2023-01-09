@@ -1,0 +1,41 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class: stock
+    theme: admin
+    non_verbose_templates: true
+    with_show: false
+    singular: ~
+    plural: ~
+    route_prefix: stock
+    with_doctrine_route: true
+    actions_base_class: sfActions
+
+    config:
+      actions:
+        _new:{label: Nouvelle fiche de stock}
+      fields:
+        id_article: { label: "Article" }
+        id_mag: { label: "Magasin" }
+        magasin: { label: "Magasin" }
+        id_store: { label: "Store" }
+        qtereel: { label: "Qte Réel" }
+        qtetheorique: { label: "Qte Théorique" }
+      list:
+        title: Liste des articles par Magasin
+        display: [article, qtereel, qtetheorique, magasin]
+        object_actions:
+          _edit: ~
+        batch_actions: {}
+        actions: {}
+        max_per_page: 10
+      filter:
+        display: [id_article, id_mag]
+      form:
+        actions:
+          _list: ~
+          _save: ~
+      edit:
+        title: Mise à jour %%id_article%%
+      new:
+        title: Nouveau article stock

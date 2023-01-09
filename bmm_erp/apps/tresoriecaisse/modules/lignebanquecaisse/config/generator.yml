@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           lignebanquecaisse
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          lignebanquecaisse
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_caissebanque: { label: "Banque"}
+          id_budget: { label: " Budget et Rubrique"}
+          caissesbanques: { label: "Banque"}
+          ligprotitrub: { label: "Budget et Rubrique"}
+      list:    
+          title: Liste des Attributions du banques aux interfaces budget 
+          display: [caissesbanques,ligprotitrub]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour fiche
+      new:     
+          title: Nouveau Paramétrage Rubrique Budgétaire / Compte Bancaire

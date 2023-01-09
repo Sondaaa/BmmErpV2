@@ -1,0 +1,37 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           caissesbanques
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          caissesbanques
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: { label: "Nom"}
+          codecb: { label: "Code CAI."}
+          referencecb: { label: "Référence CAI."}
+          mntouverture: { label: "Mnt. Global"}
+          mntprov: { label: "Mnt. Provisoire"}
+          mntdefini: { label: "Mnt. Définitif"}
+          dateouvert: { label: "Date D'Ouverture"}
+          rib: { label: "RIB"}
+          id_typecb: { label: "Type CAI."}
+          libellebanque: { label: "Nom du Banque"}
+      list:    
+          title: Liste des Caisses
+          display: [codecb,libelle,libellebanque,referencecb,dateouvert,mntouverture]
+      filter:  
+          display: [codecb,libelle,referencecb,dateouvert,rib]
+      form:    
+          display: [dateouvert,id_typecb,codecb,libelle,libellebanque,referencecb,adresse,rib,mntouverture,description]
+      edit:    
+          title: Mise à Jour Fiche CAI. %%libelle%%
+      new:     
+          title: Nouvelle Fiche Caisse

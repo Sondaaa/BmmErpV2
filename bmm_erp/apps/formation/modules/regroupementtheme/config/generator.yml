@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           regroupementtheme
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          regroupementtheme
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Thèmes de Formation"}
+       
+      list:    
+          title: Liste des Regroupements des Thèmes de formation 
+          display: [libelle]
+      filter:  
+          display: [libelle]
+      form:    ~
+      edit:   
+          title: Mise à jour fiche
+      new: 
+          title: Nouvelle fiche 

@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typecourrier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typecourrier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          coul: { label: "Couleur du Text"}
+          couleurtext: { label: "Couleur du Text"}
+          prefix: { label: "Préfixe"}
+      list:    
+          title: Liste des Types de courrier
+          display: [type,prefix,couleurtext]
+      filter:  ~
+      form:    ~
+      edit:
+          title: Modifier %%type%%
+      new:
+          title: Nouveau type de courrier

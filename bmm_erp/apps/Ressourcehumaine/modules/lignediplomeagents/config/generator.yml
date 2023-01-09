@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           lignediplomeagents
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          lignediplomeagents
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Libelle"}
+       
+          id_agents : { label: "Agents"}
+          id_deplome : {label: "Diplome"}
+      list:    
+          title: Liste des Diplomes
+          display: [libelle,id_agents,id_diplome]
+      filter: 
+          display: [libelle,id_agents]
+          
+      form:    ~
+      edit:    
+          title: Mise à jour fiche
+      new:     
+          title: Nouvelle fiche 

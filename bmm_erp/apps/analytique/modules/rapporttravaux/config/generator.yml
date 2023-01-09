@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           rapporttravaux
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          rapporttravaux
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          date: { label: "Date Création"}
+          libelle: { label: "Libellé"}
+          annee: { label: "Année"}
+          typerapport: { label: "Service"}
+          id_type: { label: "Service"}
+          montant: { label: "Montant Total"}
+      list:
+          title: Liste des Rapports des Travaux
+          display: [date,annee,libelle,typerapport,montant]
+      filter:
+          display: [date,annee,id_type]
+      form:    ~
+      edit:
+          title: Modifier Rapport des Travaux - %%libelle%%
+      new:
+          title: Nouveau Rapport des Travaux

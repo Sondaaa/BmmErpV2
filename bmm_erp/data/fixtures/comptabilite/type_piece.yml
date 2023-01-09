@@ -1,0 +1,23 @@
+## YAML Template.
+---
+Naturepiece:
+  n1:
+    libelle: "ESPECE"
+  n2:
+    libelle: "CHEQUE"
+  n3:
+    libelle: "EFFET"
+  n4:
+    libelle: "VIREMENT"
+  n5:
+    libelle: "AGIO"
+  n6:
+    libelle: "FRAIS"
+  n7:
+    libelle: "FACTURE"
+  n8:
+    libelle: "AVOIR"
+  n9:
+    libelle: "IMPAYE"
+  n10:
+    libelle: "RAN"

@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typeaffectationimmo
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typeaffectationimmo
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          libelle: {label: "Libellé"}
+      list:
+          title: Liste des Types Affectations Immobilisations
+          display: [libelle,affectation]
+          max_per_page: 5
+      filter:
+          display: [libelle]
+      form:    ~
+      edit:
+          title: Modifier %%libelle%%
+      new:
+          title: Nouveau Type Affectation Immobilisation

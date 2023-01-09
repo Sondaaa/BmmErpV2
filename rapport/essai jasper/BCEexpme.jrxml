@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BCEexpme" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a7e1b772-d926-499c-a386-ddc02dd6bc66">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="CBBC"/>
+	<parameter name="requette" class="java.lang.String"/>
+	<parameter name="iddoc" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT l.id AS l__id, l.designationarticle AS l__designationarticle, 
+l.qte AS l__qte, l.observation AS l__observation, l.nordre 
+AS l__nordre, l.pu AS l__pu, l.mntht AS l__mntht 
+FROM lignedocachat l, documentachat d WHERE (l.id_doc =
+	  $P{iddoc} 
+	AND l.id_doc = d.id
+)]]>
+	</queryString>
+	<field name="l__designationarticle" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="l__designationarticle"/>
+		<property name="com.jaspersoft.studio.field.label" value="l__designationarticle"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+	</field>
+	<field name="l__qte" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="l__qte"/>
+		<property name="com.jaspersoft.studio.field.label" value="l__qte"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+	</field>
+	<field name="l__pu" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="l__pu"/>
+		<property name="com.jaspersoft.studio.field.label" value="l__pu"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+	</field>
+	<field name="l__mntht" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="l__mntht"/>
+		<property name="com.jaspersoft.studio.field.label" value="l__mntht"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="lignedocachat"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="141" height="30" uuid="65473ed9-90c8-4385-bbf9-31fbebbf2466">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="42ed132c-f907-4fda-8481-6eb5b5e89de7"/>
+				</reportElement>
+				<text><![CDATA[l__designationarticle]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="141" y="0" width="138" height="30" uuid="b271a029-1e45-45ba-ade3-6c79c2a0eeb5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a4d76ac-17a0-4090-a0df-00b503a33210"/>
+				</reportElement>
+				<text><![CDATA[l__qte]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="138" height="30" uuid="12eb6376-f5e6-4fbc-bc64-e8ce0b914936">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6cbbb5b7-3f0a-4c23-a1a4-beaa8c661126"/>
+				</reportElement>
+				<text><![CDATA[l__pu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="138" height="30" uuid="f397e6da-f6f4-4949-9572-1f752eb3610b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a09b0e8d-3e0e-4422-bf24-84a7af3c1707"/>
+				</reportElement>
+				<text><![CDATA[l__mntht]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="141" height="30" uuid="c634435f-614b-461a-9165-93c5cb966554">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="42ed132c-f907-4fda-8481-6eb5b5e89de7"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{l__designationarticle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="0" width="138" height="30" uuid="7f0bf870-02e1-43d7-a002-3bda38833fa3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a4d76ac-17a0-4090-a0df-00b503a33210"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{l__qte}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="138" height="30" uuid="222f7e26-4506-4752-b128-21bb4c0cdbca">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6cbbb5b7-3f0a-4c23-a1a4-beaa8c661126"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{l__pu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="138" height="30" uuid="19699dcf-ce25-4bf2-811a-5577d136cf15">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a09b0e8d-3e0e-4422-bf24-84a7af3c1707"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{l__mntht}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           naturetravaux
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          naturetravaux
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          libelle: { label: "Nature Travaux"}
+      list:
+          title: Liste des natures travaux          
+          display: [libelle]
+      filter:  ~
+      form:
+          actions:
+            _list:   ~
+            _save:   ~
+      edit:
+          title: Mise à jour %%libelle%%
+      new:
+          title: Nouvelle nature travaux

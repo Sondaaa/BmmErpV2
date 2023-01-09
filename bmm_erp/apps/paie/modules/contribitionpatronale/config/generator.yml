@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           contribitionpatronale
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          contribitionpatronale
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          code : { label: "Code"}
+          libelle : { label: "Libellé"}
+          taux : { label: "Taux de contribution"}
+          
+      list:    
+          title: Liste des Contributions Patronales
+          display: [code,libelle]
+      filter: 
+          display: [code,libelle]
+          
+      form:    ~
+      edit:    
+          title: Mise à jour fiche Contribition Patronale
+      new:     
+          title: Nouvelle fiche Contribition Patronale

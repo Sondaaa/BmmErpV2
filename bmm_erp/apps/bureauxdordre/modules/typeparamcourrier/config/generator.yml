@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typeparamcourrier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typeparamcourrier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+          title: Liste des types d'envois
+          display: [libelle]
+      filter:  
+          display: [libelle]
+      form:    ~
+      edit:    
+          title: Mise à jour type d'envoi du courrier
+      new:     
+          title: Nouvelle fiche d'envoi

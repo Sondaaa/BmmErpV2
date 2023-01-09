@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="codeabrrefinal" pageWidth="188" pageHeight="113" columnWidth="188" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e8dac633-6584-4c7b-906a-a0001245aef0">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="cbbc05122022"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="requette" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{requette}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="logo" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[$P{requette}]]>
+	</queryString>
+	<field name="b__id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="b__id"/>
+		<property name="com.jaspersoft.studio.field.label" value="b__id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bureaux"/>
+	</field>
+	<field name="b__code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="b__code"/>
+		<property name="com.jaspersoft.studio.field.label" value="b__code"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bureaux"/>
+	</field>
+	<field name="b__bureau" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="b__bureau"/>
+		<property name="com.jaspersoft.studio.field.label" value="b__bureau"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="bureaux"/>
+	</field>
+	<field name="COLUMN_6" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="s__0"/>
+		<property name="com.jaspersoft.studio.field.label" value="s__0"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="113" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="0" y="64" width="188" height="13" uuid="1ef7934d-d594-4998-9bca-f04a30bea690">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{b__bureau}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="50" width="188" height="13" uuid="f194a4dd-31d1-42f6-a504-ffd351c02dc4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{b__code}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="16" y="2" width="170" height="27" uuid="66b552d4-f381-4043-9bc8-ef6b607cdc15">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+			<componentElement>
+				<reportElement x="29" y="30" width="126" height="20" uuid="cd9a7802-4188-4a59-bf32-9f0dbc8c8cdb">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA["1234"]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<staticText>
+				<reportElement x="0" y="78" width="188" height="13" uuid="f1bc4dc4-c604-4d76-8dea-286ec693e04e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Emplacement]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="139" y="98" width="46" height="13" uuid="a0fc5000-9b48-4215-8377-4fb13a55f7c3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="93" width="188" height="13" uuid="be73c747-4f9d-4110-87c4-c1fcbaf27d75">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_6}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

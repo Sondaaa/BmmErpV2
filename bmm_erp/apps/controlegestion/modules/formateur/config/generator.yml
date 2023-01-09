@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           formateur
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          formateur
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          
+           
+           nom : { label: "Nom Formateur "}
+           prenom : {label: " Prénom Formateur  "}
+           cin : {label: " CIN   "}
+       
+      list:    
+          title: Liste des Formateurs
+          display: [nom,prenom,cin]
+      filter:  
+          display: [nom,prenom,cin]
+      form:    ~
+      edit:   
+          title: Mise à jour fiche
+      new: 
+          title: Nouvelle fiche 
+

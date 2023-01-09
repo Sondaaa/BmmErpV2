@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typeaide
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typeaide
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Type d'Aide"}
+      
+      list:   
+          title: Liste des Types d'Aides Sociales  
+          display: [libelle]
+      filter: ~
+          
+      form:    ~
+      edit:   
+          title: Mise a jour Fiche Type d'Aide Sociale  
+      new:     
+          title: Nouvelle Fiche Type d'Aide Sociale  

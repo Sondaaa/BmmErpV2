@@ -1,0 +1,144 @@
+<div class="row" ng-controller="CtrlMouvement">
+    <div class="col-xs-12">
+        <div class="clearfix">
+            <div class="pull-right tableTools-container"></div>
+        </div>
+        <div class="table-header">
+            Résultat de recherche
+            <a target="_blanc" href="<?php //echo url_for('mouvementbanciare/ImprimerJournalMouvementCaisse?date_debut=' . $date_debut . '&date_fin=' . $date_fin . '&id_banque=' . $id_banque . '&type=' . $type) ?>" class="btn btn-sm btn-success" style="float: right; padding: 5px 9px;">
+                <i class="ace-icon fa fa-print bigger-110"></i>
+                <span class="bigger-110 no-text-shadow">Imprimer</span>
+            </a>
+        </div>
+        <div>
+            <form>
+                <div class="sf_admin_list" >
+                    <table id="list_mouvements" class="table table-bordered table-hover" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th style="width: 2%">N°</th>
+                                <th style="width: 9%">Date Paiement</th>
+                                <!-- <th style="width: 9%">B. de dépenses au comptant</th>
+                                <th style="width: 9%">Ordonnance de Paiement</th> -->
+                                <th style="width: 20%">Libellé</th>
+                                <!-- <th style="width: 15%">Bénéficiaire</th> -->
+                                <th style="width: 12%">Recette<br>(Crédit)</th>
+                                <th style="width: 12%">Dépense<br>(Dédit)</th>
+                                <th style="width: 12%">Solde</th>
+                                <th style="width: 20%">Détail Pièce Monnaie</th>
+                            </tr>
+                        </thead>
+                        <tfoot></tfoot>
+                        <tbody>
+                            <?php if ($mouvements->count() == 0): ?>
+                                <tr>
+                                    <td style="text-align:center; font-weight: bold; font-size: 16px !important;" colspan="9">Pas de mouvements</td>
+                                </tr>
+                            <?php else: ?>
+
+                                <?php $solde_initiale = $mouvements->getFirst(); ?>
+                                <tr>
+                                    <td> - </td>
+                                    <td style="text-align: center;"><?php echo date('d/m/Y', strtotime($solde_initiale->getDateoperation() . ' - 1 days')); ?></td>
+                                    <!-- <td></td>
+                                    <td></td> -->
+                                    <td>Solde au <span style="float: right;"><?php echo date('d/m/Y', strtotime($solde_initiale->getDateoperation() . ' - 1 days')); ?></span></td>
+                                    <td colspan="2"></td>
+                                    <td style="text-align: right;">
+                                        <?php if ($solde_initiale->getCredit() != null): ?>
+                                            <?php echo number_format($solde_initiale->getSolde() - $solde_initiale->getCredit(), 3, '.', ' '); ?>
+                                        <?php else: ?>
+                                            <?php echo number_format($solde_initiale->getSolde() + $solde_initiale->getDebit(), 3, '.', ' '); ?>
+                                        <?php endif; ?>
+                                    </td>
+                                </tr>
+                                <?php foreach ($mouvements as $mvt): ?>
+                                    <?php
+                                    $document_achat = $mvt->getDocumentachat();
+                                    if ($document_achat->getId()) {
+                                        $ordonnance = Doctrine_Query::create()
+                                                        ->select("*")
+                                                        ->from('documentbudget d')
+                                                        ->leftJoin('d.Piecejointbudget p')
+                                                        ->where("id_type=2")
+                                                        ->andwhere("p.id_docachat=" . $document_achat->getId())
+                                                        ->execute()->getFirst();
+                                    } else {
+                                        $ordonnance = null;
+                                    }
+                                    ?>
+                                    <tr>
+                                        <td><?php echo $mvt->getNumero(); ?></td>
+                                        <td style="text-align: center;"><?php echo date('d/m/Y', strtotime($mvt->getDateoperation())); ?></td>
+                                        <!-- <td style="text-align: center;"><?php //echo $mvt->getReford(); ?></td> -->
+                                        <!-- <td style="text-align: center;">
+                                            <?php  //if ($ordonnance): ?>
+                                                <a target="_blank" href="<?php //echo url_for('mouvementbanciare/etatordonnance?id=' . $ordonnance->getId()) ?>">
+                                                    <?php //echo $ordonnance->getNumero(); ?>
+                                                </a>
+                                            <?php //endif; ?>
+                                        </td> -->
+                                        <td><?php echo $mvt->getNomoperation(); ?></td>
+                                        <!-- <td><?php //echo $mvt->getRefbenifi(); ?></td> -->
+                                        <td style="text-align: right;">
+                                            <?php if ($mvt->getCredit() != null): ?>
+                                                <?php echo number_format($mvt->getCredit(), 3, '.', ' '); ?>
+                                            <?php endif; ?>
+                                        </td>
+                                        <td style="text-align: right;">
+                                            <?php if ($mvt->getDebit() != null): ?>
+                                                <?php echo number_format($mvt->getDebit(), 3, '.', ' '); ?>
+                                            <?php endif; ?>
+                                        </td>
+                                        <td style="text-align: right;"><?php echo number_format($mvt->getSolde(), 3, '.', ' '); ?></td>
+                  
+                <?php $detail_piece=CaiseepiecemonnaieTable::getInstance()->findByIdMouvement($mvt->getId()); 
+               ?>  
+                   <td>
+                   <?php if(count($detail_piece)==0 ):?>      
+                   <a target="_blanc" href="<?php echo url_for('mouvementbanciare/saisidetailPieceCaisse') . '?id=' . $mvt->getId() ?>" 
+                                role="button" class="btn btn-sm btn-warning" data-toggle="modal" ng-controller="CtrlMouvement" ng-click="initialiserpoup()">
+                                    Détail Monnaie
+                                </a>
+                      <?php endif;?>      
+                      <?php if(count($detail_piece)>0 ):?>  
+                                <a  target="_blanc" class="btn btn-sm btn-success"
+                                href="<?php echo url_for('mouvementbanciare/detailPieceCaisse') . '?id=' . $mvt->getId() ?>">Détail & Exporter Pdf
+                            </a> 
+                            <?php endif;?>
+                    </td>
+              </tr>
+                                <?php // endforeach; ?>                            
+                                            <?php endforeach; ?>
+                            <?php endif; ?>
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="my-modal" class="modal fade" tabindex="-1" ng-controller="CtrlMouvement">
+<div class="modal-dialog" style="width: 90%">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="smaller lighter blue no-margin">Détail Monnaie</h3>
+                    </div>
+                    <div class="modal-body" >
+                        <?php
+                        $formapiece = new CaiseepiecemonnaieForm();
+                        $caissepiecemon = new Caiseepiecemonnaie();
+                        ?>
+                        <?php include_partial('mouvementbanciare/formpetit', array('caissepiecemon' => $caissepiecemon, 'form' => $formapiece)) ?>
+                    </div>
+                    <div class="modal-footer" >
+                        <button style="margin-left: 10px;" class="btn btn-sm btn-danger pull-right" data-dismiss="modal">
+                            <i class="ace-icon fa fa-times"></i>
+                            fermer
+                        </button>
+                        
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+ </div>
+                                            </div>

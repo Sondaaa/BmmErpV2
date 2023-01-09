@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typeimmobilsation
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typeimmobilsation
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        typeimmo: { label: "Type D'immobilisation"}
+      list:
+        title: Liste des Types D'immobilsations
+        display: [typeimmo]
+      filter:  ~
+      form:    ~
+      edit:
+        title: Modifier %%typeimmo%%
+      new:
+        title: Nouveau Type Immobilisation

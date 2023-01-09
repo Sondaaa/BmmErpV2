@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           categoerie
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          categoerie
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        categorie: {label: "Catégorie"}
+        codecategoeie: {label: "Code Comptable du catégorie"}
+      list:
+        title: Liste des Catégories
+        display: [codecategoeie,categorie]
+        max_per_page: 5
+      filter:  ~
+      form:    ~
+      edit:
+        title: Modifier %%categorie%%
+      new:
+        title: Nouveau Catégorie

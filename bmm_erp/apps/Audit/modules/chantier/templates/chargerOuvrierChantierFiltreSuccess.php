@@ -1,0 +1,1 @@
+<?php include_partial('liste_historique_chantier', array('annee' => $annee, 'id_ouvrier' => $id_ouvrier, 'chantier' => $chantier)) ?>

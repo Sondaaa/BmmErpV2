@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           dossierexerciceutilisateur
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          dossierexerciceutilisateur
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          date: { label: "Date Création"}
+          id_utilisateur: { label: "Agent"}
+          id_dossierexercice: { label: "Dossier & Exercice"}
+          utilisateur: { label: "Agent"}
+          dossierexercice: { label: "Dossier & Exercice"}
+      list:
+          title: Liste des affectations (Utilisateur / Dossier & Exercice)
+          display: [date,utilisateur,dossierexercice]
+      filter:
+          display: [date,id_utilisateur,id_dossierexercice]
+      form:    ~
+      edit:    ~
+      new:
+          title: Nouvelle Affectation Agent / Dossier & Exercice

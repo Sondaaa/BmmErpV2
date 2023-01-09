@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sousdirection
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sousdirection
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_direction : { label: "Direction"}
+          libelle : { label: "Libellé"}
+          direction : { label: "Direction"}
+      list:    
+          title: Liste des Sous Directions
+          display: [direction,libelle]
+      filter:  ~
+      form:    ~
+      edit:   
+          title: Mise à jour fiche
+      new:     
+          title: Nouvelle fiche

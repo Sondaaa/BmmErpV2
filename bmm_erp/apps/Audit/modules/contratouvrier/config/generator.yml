@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           contratouvrier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          contratouvrier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_ouvrier : { label: "Ouvrier (عامل الحضيرة )"}
+          daterecrutement : { label: "Date de Recrutement (تاريخ الإنتداب )"}
+          datedebutcontrat : { label: "Date de Début de Contrat (بداية العقد  )"}
+          datefincontrat : { label: "Date de Fin Contrat (نهاية العقد)"}
+          id_situationadmini : { label: "Situation Administrative"}
+      list:    
+          title: Liste des Contrats des Ouvriers Occasionnels
+          display: [ouvrier,daterecrutement,datedebutcontrat,datefincontrat]
+      filter: 
+          display: [id_ouvrier]
+      form:    ~
+      edit:    
+          title: Fiche Contrat | %%ouvrier%%
+      new:     
+          title: Nouvelle fiche Contrat

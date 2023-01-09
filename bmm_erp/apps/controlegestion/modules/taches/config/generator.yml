@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           taches
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          taches
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Libellé"}
+          id_posterh: { label: "Poste"}
+          posterh: { label: "Poste"}
+      list:     
+          title: Liste des tâches
+          display: [libelle,posterh]
+      filter:  ~
+      form:  ~  
+         
+      edit:    
+          title: Mise à jour fiche
+      new:     
+          title: Nouvelle fiche Tâche

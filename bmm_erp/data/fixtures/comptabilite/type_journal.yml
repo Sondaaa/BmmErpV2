@@ -1,0 +1,15 @@
+## YAML Template.
+---
+Typejournal:
+  Typejournal_1:
+    libelle: 'CHIFFRE D''AFFAIRES'
+  Typejournal_2:
+    libelle: 'ACHATS'
+  Typejournal_3:
+    libelle: 'TRESORERIE'
+  Typejournal_4:
+    libelle: 'RAN'
+  Typejournal_5:
+    libelle: 'OD'
+  Typejournal_6:
+    libelle: 'OUVERTURE'

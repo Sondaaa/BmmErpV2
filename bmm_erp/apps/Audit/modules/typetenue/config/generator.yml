@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typetenue
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typetenue
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Type Tenue de Travail"}
+          id_typemisson : { label: "Type Mission"}
+          typemission : { label: "Type Mission"}
+          
+      list:   
+          title: Liste des Types Tenues de Travail
+          display: [libelle,typemission]
+      filter: 
+          display: [libelle,id_typemisson]
+      form:    ~
+      edit:   
+          title: Mise a jour Fiche Type Tenue de Travail  
+      new:     
+          title: Nouvelle Fiche Type Tenue de Travail

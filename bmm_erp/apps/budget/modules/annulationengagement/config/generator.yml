@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           annulationengagement
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          annulationengagement
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          date: {label: "Date"}
+          montantecart: { label: "Montant Ecart"}
+          lignemouvementfacturation: { label: "Mouvement Facturation"}
+          ligprotitrub: { label: "N° Engagement"}
+          documentachat: { label: "Facture"}
+          id_documentachat: { label: "Facture"}
+          id_ligprotitrub: { label: "N° Engagement"}
+          id_lignemouvementfacturation: { label: "Mouvement Facturation"}
+      list:
+          title: Liste des Ajustements sur les Factures
+          display: [date,montantecart,lignemouvementfacturation,ligprotitrub,documentachat]
+      filter:
+          display: [date]
+      form:    ~
+      edit:    ~
+      new:     ~

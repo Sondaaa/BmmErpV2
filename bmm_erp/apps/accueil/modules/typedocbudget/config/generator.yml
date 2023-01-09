@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typedocbudget
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typedocbudget
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          libelle: {label: "Libellé"}
+      list:
+          title: Liste des types documents budget
+          display: [libelle]
+          max_per_page: 5
+      filter:  ~
+      form:    ~
+      edit:
+          title: Modifier %%libelle%%
+      new:
+          title: Nouveau type documents budget

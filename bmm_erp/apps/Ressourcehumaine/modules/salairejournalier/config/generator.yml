@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           salairejournalier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          salairejournalier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: 
+          montant: {label: "Montant"}          
+      list:    
+          title: Liste des salaires Journalilers
+          display: [montant]
+      filter:  
+          display: [montant]
+      form:    
+          display: [montant]
+      edit:    
+          title: Mise à jour fiche Salaire Journalilers
+      new:     
+          title: Nouvelle fiche Salaire Journalilers

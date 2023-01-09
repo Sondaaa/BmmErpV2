@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           alimentationcompte
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          alimentationcompte
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          date: { label: "Date"}
+          montant: { label: "Montant"}
+          id_compte: { label: "Banque / CCP"}
+          caissesbanques: { label: "Banque / CCP"}
+          id_tranchebudget: { label: "Titre Budget"}
+          tranchebudget: { label: "Titre Budget"}
+      list:
+          title: Liste des alimentation des comptes bancaires/CCP
+          display: [date,caissesbanques,montant,tranchebudget]
+      filter:
+          display: [date,id_compte,id_tranchebudget]
+      form:    ~
+      edit:
+          title: Mise à jour alimentation compte bancaire/CCP
+      new:
+          title: Nouvelle alimentation compte bancaire/CCP

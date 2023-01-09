@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           projet
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          projet
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: { label: "Nom du Projet"}
+          id_site: { label: "Site"}
+      list:    
+          title: Liste des projets          
+          display: [libelle,site]
+          batch_actions:  {}        
+          object_actions:                
+                _edit:      ~ 
+          
+      filter:  ~
+      form:    
+          actions:
+            _list:   ~
+            _save:   ~
+      edit:    
+          title: Mise à jour %%libelle%%
+      new:     
+          title: Nouveau projet

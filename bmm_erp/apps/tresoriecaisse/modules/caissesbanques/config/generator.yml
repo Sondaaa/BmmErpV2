@@ -1,0 +1,42 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           caissesbanques
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          caissesbanques
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: { label: "Nouvelle fiche compte "}
+      fields:  
+          libelle: { label: "Compte"}
+          codecb: { label: "Code"}
+          referencecb: { label: "Référence"}
+          mntouverture: { label: "Mnt. global"}
+          mntprov: { label: "Mnt. Provisoire"}
+          mntdefini: { label: "Mnt. définitif"}
+          dateouvert: { label: "Date D'ouverture"}
+          rib: { label: "RIB"}
+          id_typecb: { label: "Type"}
+          libellebanque: { label: "Nom du compte"}
+          id_nature: { label: "Nature du compte"}
+          naturebanque: { label: "Nature du compte "}        
+          iban : { label: "IBAN"}
+          codebic: { label: "Code BIC"}
+
+      list:    
+          title: Liste des Comptes
+          display: [libelle,rib,mntdefini]
+      filter:  
+          display: [dateouvert,rib,id_nature]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche Compte - %%libellebanque%%
+      new:     
+          title: Nouvelle Fiche Compte

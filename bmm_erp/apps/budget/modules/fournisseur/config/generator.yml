@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           fournisseur
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          fournisseur
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          reference: { label: "Référence"}
+          rs: { label: "Raison Sociale"}
+          nom: { label: "Nom responsable"}
+          prenom: { label: "Prénom responsable"}
+          tel: { label: "Tél"}
+          gsm: { label: "Gsm"}
+          mail: { label: "E-Mail"}
+          codefrs: { label: "Code"}
+          nfiche: { label: "Numéro fiche "}
+          certificatrs: { label: "Certificat R.S"}
+      list:
+          title: Liste des fournisseurs
+          display: [nfiche,reference,rs,tel,gsm,mail,certificatrs]
+      filter:
+          display: [rs,tel]
+      form:    ~
+      edit:    ~
+      new:     ~

@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           naturearticle
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          naturearticle
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: {label: Nouvelle Fiche}
+      fields:  
+          libelle: { label: "Libelle"}
+          code: { label: "Code"}
+      list:    
+          title: Listes des natures articles
+          display: [code,libelle]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour fiche nature %%code%%
+      new:     
+          title: Nouvelle fiche nature

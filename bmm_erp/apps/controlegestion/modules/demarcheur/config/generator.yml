@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           demarcheur
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          demarcheur
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_agent: { label: "Responsable"}
+          agents: { label: "Responsable"}
+          nomcomplet: { label: "Nom & Prénom du Responsable"}
+          agent: { label: "Responsable"}
+      list:    
+          title: Liste des Démarcheurs
+          display: [nomcomplet,gsm,agents]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour fiche %%nomcomplet%%
+      new:     
+          title: Nouvelle fiche Démarcheur

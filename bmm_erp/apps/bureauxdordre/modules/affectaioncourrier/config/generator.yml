@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           affectaioncourrier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          affectaioncourrier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelleaffcetation: { label: "Affectation"}
+          
+      list:    
+          title: Liste des affectations
+          display: [ libelleaffcetation]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour fiche d'affectation %%libelleaffcetation%%
+      new:     
+          title: Nouvelle fiche d'affectation

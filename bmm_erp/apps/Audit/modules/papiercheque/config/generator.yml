@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           papiercheque
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          papiercheque
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_carnet: { label: "Carnet de chèques"}
+          refpapier: { label: "Numéro de chèque"}
+          mntcheque: { label: "Mnt du chéquier"}
+          datesignature:  { label: "Date de Signature"}
+          cible: {label: "Bénéficiaire"}
+          etat: { label: "Etat du chèque"}
+          carnetcheque: { label: "Carnet du chèque"}
+          annule: { label: "Annulé"}
+      list:    
+          title: Liste des chéquiers
+          display: [carnetcheque,refpapier,etat,datesignature,cible,annule]
+      filter:  
+          display: [id_carnet,refpapier,etat,annule]
+      form:    ~
+      edit:    ~
+      new:     ~

@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           certificatretenue
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          certificatretenue
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+     config:
+      actions: ~
+      fields:
+          id_documentbudget: { label: "Ordonnance de paiement"}
+          documentbudget: { label: "Ordonnance de paiement"}
+          id_fournisseur: { label: "Fournisseur"}
+          fournisseur: { label: "Fournisseur"}
+          objetreglement: { label: "Objet de Règlement"}
+          datecreation: { label: "Date de Création"}
+      list:
+          title: Liste des Certificats de Retenue à la Source
+          display: [datecreation,documentbudget,fournisseur,objetreglement]
+      filter:
+          display: [datecreation,id_documentbudget,id_fournisseur,objetreglement]
+      form:    ~
+      edit:    ~
+      new:     ~

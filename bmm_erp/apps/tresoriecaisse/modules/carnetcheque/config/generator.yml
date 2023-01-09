@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           carnetcheque
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          carnetcheque
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          refdepart: { label: "Référence 1èr chèque"}
+          reffin: { label: "Référence dernier chèque"}
+          id_banque: { label: "Banque / CCP"}
+          caissesbanques: { label: "Banque / CCP"}
+          daterecu: { label: "Date reçu du carnet"}
+          nbrepapier: { label: "Nombre de chèques"}
+          banques: { label: "Banque / CCP"}
+      list:    
+          title: Liste des carnets de chèques
+          display: [daterecu,caissesbanques,refdepart,reffin,nbrepapier]
+      filter:  
+          display: [daterecu,id_banque]
+      form:    ~
+      edit:    
+          title: Mise à jour carnet de chèques
+      new:     
+          title: Nouveau carnet de chèques

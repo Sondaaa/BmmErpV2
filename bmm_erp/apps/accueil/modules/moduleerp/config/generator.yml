@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           moduleerp
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          moduleerp
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          nom: { label: "Nom du Module"}
+          
+      list:    
+          title: Liste des modules
+          display: [nom]
+      filter:  ~
+      form:   ~  
+      edit:    
+          title: Mise à jour du module %%nom%%
+      new:     ~

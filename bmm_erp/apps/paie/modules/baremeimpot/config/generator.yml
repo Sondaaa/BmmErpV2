@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           baremeimpot
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          baremeimpot
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          montantdebut : { label: "Montant Début"}
+          montantfin : { label: "Montant FIn"}
+          pourcentage : { label: "Pourcentage"}
+          
+      list:    
+          title: Barème de l'Impôt sur le Revenu
+          display: [montantdebut,montantfin,pourcentage]
+      filter: 
+          display: [montantdebut,montantfin]
+          
+      form:    ~
+      edit:    
+          title: Mise à jour Barème de l'Impôt sur le Revenu
+      new:     
+          title: Nouvelle Barème de l'Impôt sur le Revenu

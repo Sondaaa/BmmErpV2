@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           methodevalorisation
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          methodevalorisation
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          libelle: {label: "Libellé"}
+      list:
+          title: Liste des méthodes de valorisation des stocks
+          display: [libelle]
+          max_per_page: 5
+      filter:  ~
+      form:    ~
+      edit:
+          title: Modifier %%libelle%%
+      new:
+          title: Nouvelle méthode de valorisation des stocks

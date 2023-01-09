@@ -1,0 +1,43 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           utilisateur
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          utilisateur
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        login: {label: "Pseudo"}
+        pwd: {label: "Mot de passe"}       
+        Agents: {label: "Personnel"}
+        id_parent: {label: "Personnel"}
+        id_profil: {label: "Profile"}
+        Rolebymodule: {label: "Droits d'accées par module de ERP"}
+        is_admin: {label: "Super administrateur"}
+        is_active: {label: "Utilisateur Actif"}
+      list:
+        title: Liste des utilisateurs
+        display: [login,Agents,Rolebymodule,Profil,is_active]
+        sort: [updated_at, asc]
+        object_actions:
+          _edit:      ~
+        batch_actions: {}
+      filter:
+        display: [login,id_profil,is_admin,is_active]
+      form: 
+        actions:
+          _list:   ~
+          _save:   ~
+      edit:
+        title: Modifier utilisateur
+        display: [id_parent,login,pwd,id_profil,is_admin,is_active]  
+      new:
+        title: Ajouter utilisateur
+        display: [id_parent,login,pwd,id_profil,is_admin,is_active]  

@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           famillecourrier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          famillecourrier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: { label: "Note Courrier"}
+         
+      list:    
+          title: Liste des Notes 
+          display: [libelle]
+          
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour fiche - %%libelle%% -
+      new:     
+          title: Nouvelle fiche note courrier

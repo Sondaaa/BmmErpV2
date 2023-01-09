@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           typepiecejointbudget
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          typepiecejointbudget
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: { label: "Type Piéce Jointe"}
+      list:    
+          title: Listes des Types de Piéce-Jointe
+          display: [ libelle]
+      filter:  
+          display: [libelle]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche Type %%libelle%%
+      new:     
+          title: Nouvelle fiche Type

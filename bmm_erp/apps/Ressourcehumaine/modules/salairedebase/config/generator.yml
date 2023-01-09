@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           salairedebase
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          salairedebase
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          motant: {label: "Montant"}
+          id_categorie : { label: "Categorie"}
+          id_grade : { label: "Grade"}
+          id_echelle : { label: "Echelle"}
+          id_echelon : { label: "Echelon"}
+          id_souscorps : { label: "Sous Corps"}
+      list:    
+          title: Liste des salaires de base
+          display: [categorierh,echelle,echelon,motant]
+      filter:  
+          display: [motant]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche Salaire de base
+      new:     
+          title: Nouvelle fiche Salaire de base

@@ -1,0 +1,36 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           demandeur
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          demandeur
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          libelle: { label: "Demandeur"}
+          id_agent: { label: "Agent"}
+          agents: { label: "Agent"}
+          id_service: { label: "Service"}
+          servicerh: { label: "Service"}
+          id_unite: { label: "Unité"}
+          unite: { label: "Unité"}
+          id_direction: { label: "Direction"}
+          direction: { label: "Direction"}
+          id_sousdirection: { label: "Sous Direction"}
+          sousdirection: { label: "Sous Direction"}
+      list:
+          title: Liste des demandeurs
+          display: [libelle,agents,servicerh,unite,direction,sousdirection]
+      filter:  ~
+      form:    ~
+      edit:
+          title: Mise à jour fiche demandeur -%%libelle%%
+      new:
+          title: Nouvelle fiche demandeur

@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           direction
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          direction
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: {label: "Libellé"}
+          id_site: {label: "Site"}
+          id_projet: { label: "Projet"}
+      list:    
+          title: Liste des directions
+          display: [libelle,site,projet]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour %%libelle%%
+      new:     
+          title: Nouvelle direction

@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           objectdocument
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          objectdocument
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle: { label: "Type"}
+      list:    
+          title: Liste des types des bons commandes internes
+          display: [libelle]
+      filter:  
+          display: [libelle]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche nature %%libelle%%
+      new:     
+          title: Nouvelle fiche

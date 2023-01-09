@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           annexebudget
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          annexebudget
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          datecreation: {label: "Date Création"}
+      list:
+          title: Liste des annexes budgétaires
+          display: [datecreation,titre]
+      filter:
+          display: [titre]
+      form:    ~
+      edit:
+          title: Modifier annexe budgétaire
+      new:
+          title: Nouveau annexe budgétaire

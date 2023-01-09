@@ -1,0 +1,35 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ribbancaire
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ribbancaire
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: {label: Nouvelle fiche Rib/Fournisseur}
+      fields:  
+          etat: { label: "Etat du compte"}
+          rib: { label: "RIB"}
+          naturebanque_id: { label: "Nature du compte"}
+          naturebanque: { label: "Nature du compte"}
+          frs_id: { label: "Fournisseur"}
+          fournisseur: { label: "Fournisseur"}
+          banque_id: { label: "Banque"}
+          banque: { label: "Banque"}
+      list:    
+          title: Liste des rib/Fournisseur
+          display: [etat_rib,rib,fournisseur,naturebanque,banque]
+      filter:  
+          display: [frs_id]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche rib/fournisseur -%%rib%%
+      new:     
+          title: Nouvelle fiche rib/fournisseur

@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           domaineuntilisation
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          domaineuntilisation
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          
+           code : { label: "Code "}
+           libelle : { label: "Domaine d'utilisation "}
+       
+      list:    
+          title: Liste des Domaines d'utilisation
+          display: [code,libelle]
+      filter:  
+          display: [libelle]
+      form:    ~
+      edit:   
+          title: Mise à jour fiche
+      new: 
+          title: Nouvelle fiche 

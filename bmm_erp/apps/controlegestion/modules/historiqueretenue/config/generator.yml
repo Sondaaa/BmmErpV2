@@ -1,0 +1,35 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           historiqueretenue
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          historiqueretenue
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_demandeavance : { label: "Type Avance"}
+          id_demandepret : { label: "Type Prêt"}
+          id_retenue : { label: "Fournisseur"}
+          demandeavance : { label: "Retenue Avance"}
+          demandepret : { label: "Retenue Prêt"}
+          retenuesursalaire : { label: "Retenue sur Salaire"}
+          montantsoustre : { label: "Montant Mensuel"}
+          annee : { label: "Année"}
+          nbrmoissoustre : { label: "Agents"}
+      list:   
+          title: Liste des Demandes De Paiement 
+          display: [retenuesursalaire,demandepret,demandeavance,mois,annee,montantsoustre]
+      filter:  
+           display: [nbrmoissoustre,id_retenue,id_demandeavance,id_demandepret,annee,mois]
+      form:    ~
+      edit:   
+          title: Mise à jour Fiche Paiement de Retenue 
+      new:     
+          title: Nouvelle Fiche Paiement de Retenue 

@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           famille
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          famille
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id_categorie: {label: "Catégorie"}
+        categoerie: {label: "Catégorie"}
+      list:
+        title: Liste des familles
+        display: [famille,categoerie]
+        max_per_page: 5
+      filter:
+        display: [famille,id_categorie]
+      form:    ~
+      edit:
+        title: Modifier %%famille%%
+      new:
+        title: Nouveau Famille

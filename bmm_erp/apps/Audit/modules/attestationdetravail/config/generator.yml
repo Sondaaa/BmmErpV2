@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           attestationdetravail
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          attestationdetravail
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+           id_agents : { label: "Agents"}
+           id_contrat : { label: "Contrat"}
+      list:    
+          title: Liste des Attestations de Travail 
+          display: [agents]
+      filter:  
+          display: [id_agents]
+      form:    ~
+      edit:    
+          title: Mise a jour Attestation de Travail 
+      new:     
+          title: Nouvelle Fiche Attestation de Travail 

@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           regimehoraire
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          regimehoraire
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+           libelle : { label: "Libellé"}
+           nbheure : { label: "Nbre heure"}
+      list:    
+          title: Liste des régimes horaires
+          display : [libelle,nbheure]
+      filter:  ~
+      form:    ~
+      edit:    
+          title: Mise à jour fiche
+      new:    
+          title: Nouvelle fiche

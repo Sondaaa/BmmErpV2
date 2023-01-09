@@ -1,0 +1,240 @@
+marche_prevesionelle:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                MarchePrevesionelle
+    module:               marche_prevesionelle
+    prefix_path:          /marche_prevesionelle
+    column:               id
+    with_wildcard_routes: true
+
+source_marcheprevesionelle:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                SourceMarcheprevesionelle
+    module:               source_marcheprevesionelle
+    prefix_path:          /source_marcheprevesionelle
+    column:               id
+    with_wildcard_routes: true
+
+procedure_marche:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ProcedureMarche
+    module:               procedure_marche
+    prefix_path:          /procedure_marche
+    column:               id
+    with_wildcard_routes: true
+
+methode_conclusion:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                MethodeConclusion
+    module:               methode_conclusion
+    prefix_path:          /methode_conclusion
+    column:               id
+    with_wildcard_routes: true
+
+marcheprevesionelle:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Marcheprevesionelle
+    module:               marcheprevesionelle
+    prefix_path:          /marcheprevesionelle
+    column:               id
+    with_wildcard_routes: true
+
+
+pvrception:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                pvrception
+    module:               pvrception
+    prefix_path:          /pvrception
+    column:               id
+    with_wildcard_routes: true
+
+demandeur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                demandeur
+    module:               demandeur
+    prefix_path:          /demandeur
+    column:               id
+    with_wildcard_routes: true
+
+ordredeservice:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ordredeservice
+    module:               ordredeservice
+    prefix_path:          /ordredeservice
+    column:               id
+    with_wildcard_routes: true
+
+unitemarche:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                unitemarche
+    module:               unitemarche
+    prefix_path:          /unitemarche
+    column:               id
+    with_wildcard_routes: true
+piecejoint:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                piecejoint
+    module:               piecejoint
+    prefix_path:          /piecejoint
+    column:               id
+    with_wildcard_routes: true
+sousdetailprix:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sousdetailprix
+    module:               sousdetailprix
+    prefix_path:          /sousdetailprix
+    column:               id
+    with_wildcard_routes: true
+
+lots:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                lots
+    module:               lots
+    prefix_path:          /lots
+    column:               id
+    with_wildcard_routes: true
+
+financement:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                financement
+    module:               financement
+    prefix_path:          /financement
+    column:               id
+    with_wildcard_routes: true
+
+procedurepassation:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                procedurepassation
+    module:               procedurepassation
+    prefix_path:          /procedurepassation
+    column:               id
+    with_wildcard_routes: true
+
+naturemarche:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                naturemarche
+    module:               naturemarche
+    prefix_path:          /naturemarche
+    column:               id
+    with_wildcard_routes: true
+
+marches:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                marches
+    module:               marches
+    prefix_path:          /marches
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+reclamationfrs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                reclamationfrs
+    module:               reclamationfrs
+    prefix_path:          /reclamationfrs
+    column:               id
+    with_wildcard_routes: true
+agents:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                agents
+    module:               agents
+    prefix_path:          /agents
+    column:               id
+    with_wildcard_routes: true
+documentachat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                documentachat
+    module:               documentachat
+    prefix_path:          /documentachat
+    column:               id
+    with_wildcard_routes: true
+    requirements:
+       
+        sf_method: [post]
+visaachat:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                visaachat
+    module:               visaachat
+    prefix_path:          /visaachat
+    column:               id
+    with_wildcard_routes: true
+parametragetypedoc:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                parametragetypedoc
+    module:               parametragetypedoc
+    prefix_path:          /parametragetypedoc
+    column:               id
+    with_wildcard_routes: true
+avis:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                avis
+    module:               avis
+    prefix_path:          /avis
+    column:               id
+    with_wildcard_routes: true
+
+familleartfrs:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                familleartfrs
+    module:               familleartfrs
+    prefix_path:          /familleartfrs
+    column:               id
+    with_wildcard_routes: true
+activitetiers:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                activitetiers
+    module:               activitetiers
+    prefix_path:          /activitetiers
+    column:               id
+    with_wildcard_routes: true    
+fournisseur:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                fournisseur
+    module:               fournisseur
+    prefix_path:          /fournisseur
+    column:               id
+    with_wildcard_routes: true
+# default rules
+
+homepage:
+  url:   /
+  param: { module: Accueil, action: tableauBord }
+connect:
+  url:   /connect
+  param: { module: Admin, action: connect }
+deconnect:
+  url:   /deconnect
+  param: { module: Admin, action: deconnect }
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           organisme
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          organisme
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+       libelle: { label: "Organisme" }
+      list:
+        title: "Liste des Organismes"
+        display: [libelle]
+      filter:
+        display: [libelle]
+      form: 
+        display: [libelle]
+      edit:
+        title: Modifier Organisme
+      new:
+        title: Nouveau Organisme

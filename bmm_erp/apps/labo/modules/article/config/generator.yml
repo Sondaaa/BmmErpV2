@@ -1,0 +1,66 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           article
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          article
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: {label: Nouvelle fiche article}
+      fields:  
+          datecreation: { label: "Date de Création"}
+          numero: { label: "Numéro"}
+          id_user : { label: "Utilisateur"}
+          codeart : { label: "Code"}
+          designation : { label: "Désignation"}
+          id_unite : { label: "Unité"}
+          id_typestock : { label: "Type de Stock"}
+          id_famille : {label: "Famille"}
+          famillearticle: { label: "Famille Article"}
+          sousfamillearticle: { label: "Sous Famille Article"}
+          codefamille : { label: "Code Famille"}
+          stockmin : { label: "Stock Min"}
+          stocksecurite: { label: "Stock Sécurite"}
+          stockalert : { label: "Stock Alert"}
+          stockmax : { label: "Stock Max"}
+          codeabc : { label: "Code ABC"}
+          id_modele : { label: "Modèle d'Approvisionnement"}
+          delai : { label: "Délai"}
+          blocappro : { label: "Bloc Appro."}
+          comptegenerale : { label: "Compte Géneral"}
+          id_methode : { label: "Méthode de Valorisation des Stocks"}
+          stockreel: { label: "Stock Réel"}
+          stockreelvaleur : { label: "Valeur de Stock Réel"}
+          enlinstance : { label: "Enlèvement en Instance"}
+          senqteenle : { label: "Stock en Qte & Enlèvement en Instance"}
+          id_fabriquant : { label: "Fabricant"}
+          aht : { label: "Achat HT"}
+          id_tva : { label: "T.V.A"}
+          tva: { label: "T.V.A"}
+          attc : { label: "Achat TTC"}
+          unitemarche: { label: "Unité"}
+          id_sousfamille: { label: "Sous Famille"}
+          codesf: { label: "Code Sous Famille"}
+          id_nature: { label: "Nature"}
+          pamp: { label: "PAMP"}
+          anciencode: {label: "Ancien code"}
+          qtetheorique: {label: "Qte"}
+          Articleenvaleur: {label: "Valeur"}
+      list:    
+          title: Liste des articles
+          display: [anciencode,codeart,designation,famillearticle,sousfamillearticle,qtetheorique]
+          max_per_page: 10
+      filter:  
+          display: [anciencode,codeart,designation,id_famille,id_sousfamille]
+      form:    ~
+      edit:    
+          title: Mise à jour fiche article %%numero%%
+      new:     
+          title: Nouvelle fiche article

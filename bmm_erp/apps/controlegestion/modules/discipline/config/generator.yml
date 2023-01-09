@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           discipline
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          discipline
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          explication : { label: "Motif"}
+       
+          id_agents : { label: "Agents"}
+          id_typediscipline : {label: "Type Discipline"}
+      list:    
+          title: Liste des Disciplines & Sanctions
+          display: [agents,typediscipline,explication]
+      filter: 
+          display: [explication]
+          
+      form:    ~
+      edit:    
+          title: Mise à jour fiche Discipline & sanction
+      new:     
+          title: Nouvelle fiche Discipline & sanction 

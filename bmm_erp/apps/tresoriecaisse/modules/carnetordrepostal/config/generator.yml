@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           carnetordrepostal
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          carnetordrepostal
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+          refdepart: { label: "Référence 1èr ordre"}
+          reffin: { label: "Référence dernier ordre"}
+          id_compte: { label: "Banque / CCP"}
+          caissesbanques: { label: "Banque / CCP"}
+          daterecu: { label: "Date reçu du carnet"}
+          nbrepapier: { label: "Nombre d'ordres"}
+          banques: { label: "Banque / CCP"}
+      list:
+          title: Liste des carnets des ordres de virements
+          display: [daterecu,caissesbanques,refdepart,reffin]
+      filter:
+          display: [daterecu,id_compte]
+      form:    ~
+      edit:
+          title: Mise à jour carnet des ordres de virements
+      new:
+          title: Nouveau carnet des ordres de virements

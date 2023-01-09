@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sousfamille
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sousfamille
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        id_famille: {label: "Famille"}
+        sousfamille: {label: "Sous Famille"}
+      list:
+        title: Liste des Sous Familles
+        display: [sousfamille,famille]
+        max_per_page: 5
+      filter:
+        display: [sousfamille,id_famille]
+      form:    ~
+      edit:
+        title: Modifier %%sousfamille%%
+      new:
+        title: Nouveau Sous Famille

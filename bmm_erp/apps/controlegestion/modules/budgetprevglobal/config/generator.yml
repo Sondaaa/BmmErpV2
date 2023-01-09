@@ -1,0 +1,43 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Titrebudjet
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          budgetprevglobal
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: {label: "Generate budget Prévisionnel Global"}
+      fields:  
+          libelle: { label: "Titre de budget"}
+          datecreation: { label : "Date de Création"}
+          id_projet: { label: " Projet"}
+          id_direction: { label: " Direction"}
+          id_source : { label: "Origine"}
+          sourcesbudget: { label: "Origine"}
+          projet: { label: "Projet"}
+          mntglobal: { label: "Mnt. global"}
+          typebudget: { label: "Type Budget"}
+          id_cat: { label: "Catégorie du budget"}
+          categorietitre: { label: "Catégorie du budget"}
+      list:    
+          title: Budget Prévisionnel Global
+          display: [datecreation,categorietitre,mntglobal]
+          object_actions:
+            _edit:      ~
+            _delete:      ~
+          batch_actions: {}
+          max_per_page: 20
+      filter:  
+          display: [id_cat]
+      form:   ~
+      edit:    
+          title: Mise à jour fiche budget - %%categorietitre%%
+      new:     
+          title: Nouvelle fiche budget

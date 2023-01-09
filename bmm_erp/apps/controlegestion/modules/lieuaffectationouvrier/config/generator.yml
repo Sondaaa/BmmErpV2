@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           lieuaffectationouvrier
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          lieuaffectationouvrier
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          libelle : { label: "Libellé (مكان العمل )"}
+      list:   
+          title: Liste des Lieux d'affectations(مكان العمل )
+          display: [libelle]
+      filter:  ~
+      form:    ~
+      edit:   
+          title: Mise a jour Fiche  Lieu de Travail
+      new:     
+          title: Nouvelle Fiche Lieu de Travail

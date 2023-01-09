@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           accidents
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          accidents
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          id_agents : { label: "Agents"}  
+          motif : { label: "Motif d'accident"} 
+          date : { label: "Date d'accident"}
+          lieutravail: { label: "Lieu de Travail"}
+          id_lieu: { label: "Lieu de Travail"}
+          nbrjour : { label: "Nbre Jour de Convalescence"}
+          observation : { label: "Observation"}
+      list:   
+          title: Liste des Accidents de Travail
+          display: [agents,motif,lieutravail,date,nbrjour,observation]
+      filter:  
+           display: [id_agents, date,id_lieu]
+      form:    ~
+      edit:   
+          title: Mise à jour Fiche Accident de Travail
+      new:     
+          title: Nouvelle Fiche Accident de Travail

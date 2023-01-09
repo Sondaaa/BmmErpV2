@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           evaluation
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          evaluation
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+          
+           id_agents : { label: "Agents "}
+           typeformation : { label: "Type de Formation "}
+           observation  : { label: "Observation "}
+           connaissanceaquise : { label: "Connaissances générales acquises "}
+      list:    
+          title: Liste des Evaluations
+          display: [agents,observation]
+      filter:  
+          display: [id_agents]
+      form:    ~
+      edit:   
+          title: Mise à jour Formulaire d'Evaluation
+      new: 
+          title: Nouvelle Formulaire d'Evaluation

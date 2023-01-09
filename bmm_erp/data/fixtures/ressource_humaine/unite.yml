@@ -1,0 +1,43 @@
+Unite:
+  Unite_22:
+    libelle:'Unité Achat'
+    Servicerh: Servicerh_31
+  Unite_23:
+    libelle:'Unité Marché'
+    Servicerh: Servicerh_31
+  Unite_24:
+    libelle:'Unité Facturation'
+    Servicerh: Servicerh_31
+  Unite_25:
+    libelle:'Unité Budget'
+    Servicerh: Servicerh_31
+  Unite_26:
+    libelle:'Unité Caisse'
+    Servicerh: Servicerh_31
+  Unite_27:
+    libelle:'Unité Patrimoine'
+    Servicerh: Servicerh_31
+  Unite_28:
+    libelle:'Unité Gestion de stock'
+    Servicerh: Servicerh_31
+  Unite_29:
+    libelle:'Unité des affaires sociales'
+    Servicerh: Servicerh_32
+  Unite_30:
+    libelle:'Unité Paie'
+    Servicerh: Servicerh_32
+  Unite_31:
+    libelle:'Unité Suivi des carrières et des ouvriers occasionnel                                                                                                        '
+    Servicerh: Servicerh_32
+  Unite_32:
+    libelle:'Unité de suivi de la présence et des congés                                                                                                                  '
+    Servicerh: Servicerh_32
+  Unite_33:
+    libelle:'Unité Formation'
+    Servicerh: Servicerh_32
+  Unite_34:
+    libelle:'Unité Comptabilité Générale'
+    Servicerh: Servicerh_33
+  Unite_35:
+    libelle:'Unité Comptabilité Analytique'
+    Servicerh: Servicerh_33
