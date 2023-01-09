@@ -12,5 +12,185 @@
  */
 class Salaireouvrier extends BaseSalaireouvrier
 {
+    
+    public function ReadHtmlFichesalaire($id) {
+        $salaireouvrier = Doctrine_Core::getTable('salaireouvrier')->findOneById($id);
+        $contratouvrier = $salaireouvrier->getContratouvrier();
+        $ouvrier = $contratouvrier->getOuvrier();
 
+        $contratouvrier = ContratouvrierTable::getInstance()->find($id);
+        $ouvrier = $contratouvrier->getOuvrier();
+        $lieu_naissance = '';
+        if($ouvrier->getIdLieunaissance())
+            $lieu_naissance = GouverneraTable::getInstance()->find($ouvrier->getIdLieunaissance());
+        $html = '<h3 style="font-size:18px;">Fiche Salaire Ouvrier<br>' . $contratouvrier->getOuvrier() . '</h3>
+            <h5 style="font-size:4px;">&nbsp;</h5>
+            <h4 border="1" style="text-align:center;background-color:#DCDCDC;"><i>Contrat</i></h4>
+            &nbsp;<br>
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="width: 20%; border-right: 1px solide #000;"><h4>Informations Ouvrier</h4><hr width="96%"></td>
+                        <td style="width: 80%;">
+                            <table boder="1">
+                                <tr>
+                                    <td style="width: 16%; height: 25px;"><b>Matricule :</b></td>
+                                    <td style="width: 34%;">' . $ouvrier->getMatricule() . '</td>
+                                    <td style="width: 15%;"><b>C.I.N :</b></td>
+                                    <td style="width: 35%;">' . $ouvrier->getCin() . '</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 10%; height: 25px;"><b>Nom :</b></td>
+                                    <td style="width: 40%;">' . $ouvrier->getNom() . '</td>
+                                    <td style="width: 15%;"><b>Prénom :</b></td>
+                                    <td style="width: 35%;">' . $ouvrier->getPrenom() . '</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 25%; height: 25px;"><b>Date Naissance :</b></td>
+                                    <td style="width: 25%;">' . $ouvrier->getDatenaissance() . '</td>
+                                    <td style="width: 28%;"><b>I. unique (CNRPS) :</b></td>
+                                    <td style="width: 22%;">' . $ouvrier->getIdcnrps() . '</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 25%; height: 25px;"><b>Lieu Naissance :</b></td>
+                                    <td style="width: 39%;">' . $lieu_naissance . '</td>
+                                    <td style="width: 10%;"><b>Sexe :</b></td>
+                                    <td style="width: 26%;">' . $ouvrier->getSexe() . '</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 15%; height: 25px;"><b>Adresse :</b></td>
+                                    <td style="width: 49%;">' . $ouvrier->getAdresse() . '</td>
+                                    <td style="width: 30%;"><b>Nombres d\'enfants :</b></td>
+                                    <td style="width: 6%;">' . $ouvrier->getNbrenfant() . '</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 10%; height: 25px;"><b>Ville :</b></td>
+                                    <td style="width: 40%;">' . $ouvrier->getGouvernera() . '</td>
+                                    <td style="width: 29%;"><b>Situation Familiale :</b></td>
+                                    <td style="width: 21%;">' . $ouvrier->getEtatcivil() . '</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 28%; height: 20px;"><b>Date d\'affiliation :</b></td>
+                                    <td style="width: 22%;">' . $ouvrier->getDateafficliation() . '</td>
+                                    <td style="width: 10%;"><b>RIP/B :</b></td>
+                                    <td style="width: 40%;">' . $ouvrier->getRib() . '</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                <tbody>
+            </table>&nbsp;<br>&nbsp;<br>
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="width: 20%; border-right: 1px solide #000;"><h4>Informations Contrat</h4><hr width="95%"></td>
+                        <td style="width: 80%;">
+                            <table boder="1">
+                                <tr>
+                                    <td style="width: 32%; height: 42px;"><b>Date de recrutement :<br>(تاريخ الإنتداب )</b></td>
+                                    <td style="width: 18%;">' . $contratouvrier->getDaterecrutement() . '</td>
+                                    <td style="width: 39%;"><b>Situation administrative :<br> (الوضع الاداري)</b></td>
+                                    <td style="width: 11%;">' . $contratouvrier->getSituationadminouvrier() . '</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 32%; height: 42px;"><b>Date début contrat :<br> (بداية العقد )</b></td>
+                                    <td style="width: 18%;">' . $contratouvrier->getDatedebutcontrat() . '</td>
+                                    <td style="width: 32%;"><b>Date fin contrat :<br> (نهاية العقد)</b></td>
+                                    <td style="width: 18%;">' . $contratouvrier->getDatefincontrat() . '</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 25%; height: 42px;"><b>Lieu affectation :<br>(مكان العمل)</b></td>
+                                    <td style="width: 25%;">' . $contratouvrier->getLieuaffectationouvrier() . '</td>
+                                    <td style="width: 15%;"><b>Chantier :<br>(الحضيرة)</b></td>
+                                    <td style="width: 35%;">' . $contratouvrier->getChantier() . '</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 18%; height: 42px;"><b>Spécialité :<br>(الاختصاص )</b></td>
+                                    <td style="width: 32%;">' . $contratouvrier->getSpecialiteouvrier() . '</td>
+                                    <td style="width: 20%;"><b>Montant :<br>(الأجر اليومي)</b></td>
+                                    <td style="width: 30%;">' . $contratouvrier->getMontant() . '</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 31%; height: 37px;"><b>Projet :<br>(المشروع المخصص )</b></td>
+                                    <td style="width: 40%;">' . $contratouvrier->getProjet() . '</td>
+                                    <td style="width: 21%;"><b>Age Retraite :<br>(التقاعد)</b></td>
+                                    <td style="width: 8%;">' . $contratouvrier->getRetraite() . '</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                <tbody>
+            </table>&nbsp;<br>';
+            $html.='&nbsp;<br>&nbsp;<br>
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="width: 20%; border-right: 1px solide #000;"><h4>Informations Salaire Ouvrier</h4><hr width="95%"></td>
+                        <td style="width: 80%;">
+                            <table boder="1">
+                                <tr>
+                                <td style="width: 32%; height: 42px;"><b>Libellé:<br> </b></td>
+                                    <td style="width: 18%;">' . $salaireouvrier->getTitle() . '</td>
+                                   
+                                    <td style="width: 32%; height: 42px;"><b>Date Debut :</b></td>
+                                    <td style="width: 18%;">' . $salaireouvrier->getDatedebut() . '</td>
+                                   </tr>
+                                   <tr>
+                                   <td style="width: 32%; height: 42px;"><b><br> </b></td>
+                                   <td style="width: 18%;">' . '' . '</td>
+                                  
+                                   <td style="width: 32%;"><b>Date Fin :</b></td>
+                                   <td style="width: 18%;">' . $salaireouvrier->getDatefin() . '</td>
+                               
+                                   </tr>
+                                <tr>
+                                    <td style="width: 32%; height: 42px;"><b>Jour Férié :<br> </b></td>
+                                    <td style="width: 18%;">' . $salaireouvrier->getJourferier() . '</td>
+                                    <td style="width: 32%;"><b>Salaire :</b></td>
+                                    <td style="width: 18%;">' . $salaireouvrier->getSalaire() . '</td>
+                                </tr>
+                               
+                            </table>
+                        </td>
+                    </tr>
+                <tbody>
+            </table>&nbsp;<br>';
+            
+        $html.='<h4 border="1" style="text-align:center;background-color:#DCDCDC;"><i>Historique des Affectations</i></h4>
+                <h5 style="font-size:4px;">&nbsp;</h5>
+                <h4><i>Liste des Affectations (Lieu & Chantier) :</i></h4>
+                <table border="1" cellspace="0" cellpadding="3">
+                    <tr style="background-color:#ECECEC;">
+                        <td style="width:5%;height:25px;text-align:center;"><b>N°</b></td>
+                        <td style="width:23%;text-align:center;"><b>Date début période<br>(بداية الفترة )</b></td>
+                        <td style="width:21%;text-align:center;"><b>date fin période<br>(نهاية الفترة)</b></td>
+                        <td style="width:10%;text-align:center;"><b>Période<br>(الفترة)</b></td>
+                        <td style="width:23%;text-align:center;"><b>Lieu d\'affectation<br>(مكان العمل)</b></td>
+                        <td style="width:18%;text-align:center;"><b>Chantier<br>(الحضيرة)</b></td>
+                    </tr>';
+        $i = 1;
+        $contratouvrier_historiques = HistoriquecontratouvrierTable::getInstance()->getByIds($salaireouvrier->getIdAffectation());
+        //$contratouvrier_historiques = $contratouvrier->getHistoriquecontratouvrier();
+        if ($contratouvrier_historiques->count() != 0):
+            foreach ($contratouvrier_historiques as $contratouvrier_historique):
+                $html.='<tr>
+                        <td style="height:20px;text-align:center;">' . $i . '</td>
+                        <td style="text-align:center;">' . $contratouvrier_historique->getDatedebutcontrat() . '</td>
+                        <td style="text-align:center;">' . $contratouvrier_historique->getDatefoncontrat() . '</td>
+                        <td style="text-align:center;">' . $contratouvrier_historique->getNbjour() . ' j</td>
+                        <td style="text-align:center;">' . $contratouvrier_historique->getLieuaffectationouvrier() . '</td>
+                        <td style="text-align:center;">' . $contratouvrier_historique->getChantier() . '</td>
+                    </tr>';
+                $i++;
+            endforeach;
+        else:
+            $html.='<tr>
+                        <td style="width:100%;height:20px;text-align:center;">Pas de historiques</td>
+                    </tr>';
+        endif;
+
+        $html.='</table>';
+
+        return $html;
+    }
 }

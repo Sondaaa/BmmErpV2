@@ -22,6 +22,8 @@ abstract class BaseSalaireouvrierForm extends BaseFormDoctrine
       'datefin'           => new sfWidgetFormInputText(array(), array('type' => 'date')),
       'title'             => new sfWidgetFormInputText(),
       'jourferier'        => new sfWidgetFormInputText(),
+      
+      'id_affectation'        => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
@@ -32,6 +34,8 @@ abstract class BaseSalaireouvrierForm extends BaseFormDoctrine
       'datefin'           => new sfValidatorDate(array('required' => false)),
       'title'             => new sfValidatorString(array('required' => false)),
       'jourferier'        => new sfValidatorInteger(array('required' => false)),
+      'id_affectation'        => new sfValidatorInteger(array('required' => false)),
+      
     ));
 
     $this->widgetSchema->setNameFormat('salaireouvrier[%s]');

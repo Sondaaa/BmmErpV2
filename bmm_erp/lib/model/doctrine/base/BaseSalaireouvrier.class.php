@@ -10,6 +10,8 @@ Doctrine_Manager::getInstance()->bindComponent('Salaireouvrier', 'doctrine');
  * @property integer $id
  * @property integer $id_contratouvrier
  * @property string $salaire
+ * * @property string $id_affectation
+ * 
  * @property date $datedebut
  * @property date $datefin
  * @property string $title
@@ -19,6 +21,8 @@ Doctrine_Manager::getInstance()->bindComponent('Salaireouvrier', 'doctrine');
  * @method integer        getId()                Returns the current record's "id" value
  * @method integer        getIdContratouvrier()  Returns the current record's "id_contratouvrier" value
  * @method string         getSalaire()           Returns the current record's "salaire" value
+ *  * @method string         getIdAffectation()           Returns the current record's "id_affectation" value
+ 
  * @method date           getDatedebut()         Returns the current record's "datedebut" value
  * @method date           getDatefin()           Returns the current record's "datefin" value
  * @method string         getTitle()             Returns the current record's "title" value
@@ -27,6 +31,8 @@ Doctrine_Manager::getInstance()->bindComponent('Salaireouvrier', 'doctrine');
  * @method Salaireouvrier setId()                Sets the current record's "id" value
  * @method Salaireouvrier setIdContratouvrier()  Sets the current record's "id_contratouvrier" value
  * @method Salaireouvrier setSalaire()           Sets the current record's "salaire" value
+ * * @method Salaireouvrier setIdAffectation()           Sets the current record's "id_affectation" value
+ 
  * @method Salaireouvrier setDatedebut()         Sets the current record's "datedebut" value
  * @method Salaireouvrier setDatefin()           Sets the current record's "datefin" value
  * @method Salaireouvrier setTitle()             Sets the current record's "title" value
@@ -48,6 +54,7 @@ abstract class BaseSalaireouvrier extends sfDoctrineRecord
              'fixed' => 0,
              'unsigned' => false,
              'primary' => true,
+             'sequence' => 'salaireouvrier_id',
              'length' => 4,
              ));
         $this->hasColumn('id_contratouvrier', 'integer', 4, array(
@@ -90,6 +97,15 @@ abstract class BaseSalaireouvrier extends sfDoctrineRecord
              'primary' => false,
              'length' => '',
              ));
+             
+     $this->hasColumn('id_affectation', 'string', null, array(
+     'type' => 'string',
+     'fixed' => 0,
+     'unsigned' => false,
+     'notnull' => false,
+     'primary' => false,
+     'length' => '',
+     ));
         $this->hasColumn('jourferier', 'integer', 4, array(
              'type' => 'integer',
              'fixed' => 0,

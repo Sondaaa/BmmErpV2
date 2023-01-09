@@ -17,10 +17,13 @@ Doctrine_Manager::getInstance()->bindComponent('Historiquecontratouvrier', 'doct
  * @property integer $id_chantier
  * @property integer $id_situtaion
  * @property integer $id_contratouvrier
- * @property Contratouvrier $Contratouvrier
- * @property Situationadminouvrier $Situationadminouvrier
- * @property Lieuaffectationouvrier $Lieuaffectationouvrier
+ * @property string $nbjour
+ * @property string $montanttotal
+ * @property boolean $paye
  * @property Chantier $Chantier
+ * @property Contratouvrier $Contratouvrier
+ * @property Lieuaffectationouvrier $Lieuaffectationouvrier
+ * @property Situationadminouvrier $Situationadminouvrier
  * @property Specialiteouvrier $Specialiteouvrier
  * 
  * @method integer                  getId()                     Returns the current record's "id" value
@@ -28,41 +31,39 @@ Doctrine_Manager::getInstance()->bindComponent('Historiquecontratouvrier', 'doct
  * @method date                     getDatedebutcontrat()       Returns the current record's "datedebutcontrat" value
  * @method date                     getDatefoncontrat()         Returns the current record's "datefoncontrat" value
  * @method string                   getMontant()                Returns the current record's "montant" value
- * @method string                   getNbjour()                 Returns the current record's "nbjour" value
- * 
- * @method string                   getMontanttotal()                 Returns the current record's "montanttotal" value
- 
  * @method integer                  getIdSpecialite()           Returns the current record's "id_specialite" value
  * @method integer                  getIdLieu()                 Returns the current record's "id_lieu" value
  * @method integer                  getIdChantier()             Returns the current record's "id_chantier" value
  * @method integer                  getIdSitutaion()            Returns the current record's "id_situtaion" value
  * @method integer                  getIdContratouvrier()       Returns the current record's "id_contratouvrier" value
- * @method Contratouvrier           getContratouvrier()         Returns the current record's "Contratouvrier" value
- * @method Situationadminouvrier    getSituationadminouvrier()  Returns the current record's "Situationadminouvrier" value
- * @method Lieuaffectationouvrier   getLieuaffectationouvrier() Returns the current record's "Lieuaffectationouvrier" value
+ * @method string                   getNbjour()                 Returns the current record's "nbjour" value
+ * @method string                   getMontanttotal()           Returns the current record's "montanttotal" value
+ * @method boolean                  getPaye()                   Returns the current record's "paye" value
  * @method Chantier                 getChantier()               Returns the current record's "Chantier" value
+ * @method Contratouvrier           getContratouvrier()         Returns the current record's "Contratouvrier" value
+ * @method Lieuaffectationouvrier   getLieuaffectationouvrier() Returns the current record's "Lieuaffectationouvrier" value
+ * @method Situationadminouvrier    getSituationadminouvrier()  Returns the current record's "Situationadminouvrier" value
  * @method Specialiteouvrier        getSpecialiteouvrier()      Returns the current record's "Specialiteouvrier" value
  * @method Historiquecontratouvrier setId()                     Sets the current record's "id" value
  * @method Historiquecontratouvrier setDaterecrutement()        Sets the current record's "daterecrutement" value
  * @method Historiquecontratouvrier setDatedebutcontrat()       Sets the current record's "datedebutcontrat" value
  * @method Historiquecontratouvrier setDatefoncontrat()         Sets the current record's "datefoncontrat" value
  * @method Historiquecontratouvrier setMontant()                Sets the current record's "montant" value
- *  @method Historiquecontratouvrier setNbjour()                Sets the current record's "nbjour" value
- * 
- *  @method Historiquecontratouvrier setMontanttotal()                Sets the current record's "montanttotal" value
- 
- *  @method Historiquecontratouvrier setIdSpecialite()           Sets the current record's "id_specialite" value
+ * @method Historiquecontratouvrier setIdSpecialite()           Sets the current record's "id_specialite" value
  * @method Historiquecontratouvrier setIdLieu()                 Sets the current record's "id_lieu" value
  * @method Historiquecontratouvrier setIdChantier()             Sets the current record's "id_chantier" value
  * @method Historiquecontratouvrier setIdSitutaion()            Sets the current record's "id_situtaion" value
  * @method Historiquecontratouvrier setIdContratouvrier()       Sets the current record's "id_contratouvrier" value
- * @method Historiquecontratouvrier setContratouvrier()         Sets the current record's "Contratouvrier" value
- * @method Historiquecontratouvrier setSituationadminouvrier()  Sets the current record's "Situationadminouvrier" value
- * @method Historiquecontratouvrier setLieuaffectationouvrier() Sets the current record's "Lieuaffectationouvrier" value
+ * @method Historiquecontratouvrier setNbjour()                 Sets the current record's "nbjour" value
+ * @method Historiquecontratouvrier setMontanttotal()           Sets the current record's "montanttotal" value
+ * @method Historiquecontratouvrier setPaye()                   Sets the current record's "paye" value
  * @method Historiquecontratouvrier setChantier()               Sets the current record's "Chantier" value
+ * @method Historiquecontratouvrier setContratouvrier()         Sets the current record's "Contratouvrier" value
+ * @method Historiquecontratouvrier setLieuaffectationouvrier() Sets the current record's "Lieuaffectationouvrier" value
+ * @method Historiquecontratouvrier setSituationadminouvrier()  Sets the current record's "Situationadminouvrier" value
  * @method Historiquecontratouvrier setSpecialiteouvrier()      Sets the current record's "Specialiteouvrier" value
  * 
- * @package    PhpProjectTest
+ * @package    Bmm
  * @subpackage model
  * @author     Your name here
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
@@ -77,7 +78,6 @@ abstract class BaseHistoriquecontratouvrier extends sfDoctrineRecord
              'fixed' => 0,
              'unsigned' => false,
              'primary' => true,
-             'sequence' => 'historiquecontratouvrier_id',
              'length' => 4,
              ));
         $this->hasColumn('daterecrutement', 'date', 25, array(
@@ -152,42 +152,49 @@ abstract class BaseHistoriquecontratouvrier extends sfDoctrineRecord
              'primary' => false,
              'length' => 4,
              ));
-         $this->hasColumn('nbjour', 'string', 255, array(
+        $this->hasColumn('nbjour', 'string', 25, array(
              'type' => 'string',
              'fixed' => 1,
              'unsigned' => false,
              'notnull' => false,
              'primary' => false,
-             'length' => 255,
+             'length' => 25,
              ));
-        
-          $this->hasColumn('montanttotal', 'string', 255, array(
+        $this->hasColumn('montanttotal', 'string', 25, array(
              'type' => 'string',
              'fixed' => 1,
              'unsigned' => false,
              'notnull' => false,
              'primary' => false,
-             'length' => 255,
+             'length' => 25,
+             ));
+        $this->hasColumn('paye', 'boolean', 1, array(
+             'type' => 'boolean',
+             'fixed' => 0,
+             'unsigned' => false,
+             'notnull' => false,
+             'primary' => false,
+             'length' => 1,
              ));
     }
 
     public function setUp()
     {
         parent::setUp();
-        $this->hasOne('Contratouvrier', array(
-             'local' => 'id_contratouvrier',
+        $this->hasOne('Chantier', array(
+             'local' => 'id_chantier',
              'foreign' => 'id'));
 
-        $this->hasOne('Situationadminouvrier', array(
-             'local' => 'id_situtaion',
+        $this->hasOne('Contratouvrier', array(
+             'local' => 'id_contratouvrier',
              'foreign' => 'id'));
 
         $this->hasOne('Lieuaffectationouvrier', array(
              'local' => 'id_lieu',
              'foreign' => 'id'));
 
-        $this->hasOne('Chantier', array(
-             'local' => 'id_chantier',
+        $this->hasOne('Situationadminouvrier', array(
+             'local' => 'id_situtaion',
              'foreign' => 'id'));
 
         $this->hasOne('Specialiteouvrier', array(

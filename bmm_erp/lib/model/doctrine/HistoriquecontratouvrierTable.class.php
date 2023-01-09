@@ -16,6 +16,13 @@ class HistoriquecontratouvrierTable extends Doctrine_Table
         return Doctrine_Core::getTable('Historiquecontratouvrier');
     }
     
+    public function getByIds($id_afecation) {//die('id_aff'.$id_afecation);
+        $q = $this->createQuery('hco')
+                ->where("hco.id in (" . $id_afecation.")")
+                ->orderBy('hco.datefoncontrat')
+                ->execute();
+        return $q;
+    }
     public function getLastByIdContrat($id_contrat) {
         $q = $this->createQuery('hco')
                 ->where('hco.id_contratouvrier = ' . $id_contrat)
